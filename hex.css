@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+path{
+    stroke: white;
+    stroke-width: 1;
+    z-index: 0;
+}
+
+#title{
+    position: absolute;
+    font-family: Helvetica;
+    margin-left: 50vw;
+    margin-top: 48vh;
+    color: rgb(173, 173, 173);
+    z-index: 9999;
+    text-align: center;
+}
+
+#title h1{
+    font-size: 4em;
+    letter-spacing: .1em;
+}
+
+#title h3{
+    margin-top: 1vh;
+    font-size: 2em;
+    letter-spacing: .03em;
+}
+
+#title ul{
+    margin-top: 2vh;
+    list-style-type: none;
+    text-align: center;
+}
+
+#title ul li{
+    display: inline-block;
+}
+
+#title ul li a{
+    display: block;
+    text-decoration: none;
+    margin: 14px 16px;
+    color: rgb(173, 173, 173);
+    font-family: Helvetica;
+    font-size: 2em;
+}
+
+#bg{
+    position: absolute;
+}
