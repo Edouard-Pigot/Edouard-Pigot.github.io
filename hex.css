@@ -11,9 +11,10 @@ path{
 
 #title{
     position: absolute;
-    font-family: Helvetica;
+    font-family: Roboto, Helvetica;
     margin-left: 50vw;
     margin-top: 48vh;
+    width: 50vw;
     color: rgb(173, 173, 173);
     z-index: 9999;
     text-align: center;
@@ -45,7 +46,7 @@ path{
     text-decoration: none;
     margin: 14px 16px;
     color: rgb(173, 173, 173);
-    font-family: Helvetica;
+    font-family: Roboto, Helvetica;
     font-size: 2em;
 }
 
