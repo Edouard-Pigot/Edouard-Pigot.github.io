@@ -12,7 +12,7 @@
                     <li><a href="#">Projets</a></li>
                     <li><a href="#">Parcours</a></li>
                     <li><a href="#">Expériences</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Contacts</a></li>
                 </ul>
             </div>
         </header>
@@ -150,6 +150,16 @@
             var xOffset = 0;
             var yOffset = 0;
 
+            var colors = [[255,153,0,255,255,0],
+                        [0,255,0,51,204,255],
+                        [51,204,255,255,51,204],
+                        [255,51,204,255,153,0],
+                        [255,255,0,51,204,255],
+                        [255,255,0,0,255,0],
+                        [255,255,0,255,51,204]];
+
+            var rand = Math.floor(Math.random() * Math.floor(colors.length));
+
             function colorShift(){
                 var i = 0;
                 for(var y = 0; y < yRepetition*4; y++){
@@ -157,13 +167,13 @@
                         var value1 = noise.perlin3((x+xOffset)/8, (y+yOffset)/8, 0);
                         var value2 = noise.perlin3((x+xOffset)/8+10, (y+yOffset)/8+10, 2);
 
-                        var R1 = 255-Math.abs(value1)*(255-5);
-                        var G1 = 255-Math.abs(value1)*(255-180);
-                        var B1 = 255-Math.abs(value1)*(255-255);
+                        var R1 = 255-Math.abs(value1)*(255-colors[rand][0]);
+                        var G1 = 255-Math.abs(value1)*(255-colors[rand][1]);
+                        var B1 = 255-Math.abs(value1)*(255-colors[rand][2]);
 
-                        var R2 = 255-Math.abs(value2)*(255-255);
-                        var G2 = 255-Math.abs(value2)*(255-5);
-                        var B2 = 255-Math.abs(value2)*(255-180);
+                        var R2 = 255-Math.abs(value2)*(255-colors[rand][3]);
+                        var G2 = 255-Math.abs(value2)*(255-colors[rand][4]);
+                        var B2 = 255-Math.abs(value2)*(255-colors[rand][5]);
 
                         hex = rgbToHex(Math.floor(R1/2 + R2/2), Math.floor(G1/2 + G2/2), Math.floor(B1/2 + B2/2));
                         //hex = rgbToHex(rgbBlue.r, rgbBlue.g, rgbBlue.b);
