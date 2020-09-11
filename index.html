@@ -188,7 +188,19 @@
 
             function background(){
                 var newSvg = document.querySelector('header');
-                newSvg.outerHTML += '<svg id="bg" width="' + window.innerWidth + '" height="' + window.innerHeight + '"></svg>';
+                newSvg.outerHTML += '<svg id="bg" width="' + window.innerWidth + '" height="' + window.innerHeight + '">' + 
+                    '<filter id="dropshadow" height="130%">' +
+                    '<feGaussianBlur in="SourceAlpha" stdDeviation="3"/>' +
+                    '<feOffset dx="2" dy="2" result="offsetblur"/>' +
+                    '<feComponentTransfer>' +
+                    '<feFuncA type="linear" slope="0.2"/>' +
+                    '</feComponentTransfer>' +
+                    '<feMerge>' +
+                    '<feMergeNode/>' +
+                    '<feMergeNode in="SourceGraphic"/>' +
+                    '</feMerge>' +
+                    '</filter>' +
+                    '</svg>';
 
                 var bg = document.createElementNS("http://www.w3.org/2000/svg", "path");
                 bg.setAttribute('d','M'+ startPositionX + ' ' + startPositionY + 
@@ -197,6 +209,7 @@
                                     ' L' + (startPositionX + rectangleSizeX*xRepetition-rectangleSizeX) + ' ' + ((yRepetition*2)*rectangleSizeY+startPositionY) + 
                                     ' L' + startPositionX + ' ' + (startPositionY + rectangleSizeY*yRepetition*2) + ' Z');
                 bg.style.fill = 'white';
+                bg.setAttribute("filter","url(#dropshadow)");
                 document.getElementById('bg').appendChild(bg);
 
                 var bg2 = document.createElementNS("http://www.w3.org/2000/svg", "path");
@@ -206,6 +219,7 @@
                                     ' L' + (startPositionX + rectangleSizeX*(xRepetition+3)) + ' ' + (startPositionY + rectangleSizeY*yRepetition*2) +
                                     ' L' + (startPositionX + rectangleSizeX*1.5 + rectangleSizeX*3) + ' ' + (startPositionY + rectangleSizeY/2 + rectangleSizeY*yRepetition) + ' Z');
                 bg2.style.fill = 'white';
+                bg2.setAttribute("filter","url(#dropshadow)");
                 document.getElementById('bg').appendChild(bg2);
             }
 
