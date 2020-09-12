@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("2.bmp");
+    background-size: cover;
+}
+
+#svg-image {
+    filter:url(#svg-blur);
+  }
