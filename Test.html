@@ -113,6 +113,20 @@
                 }
             }
 
+            function colorPixel(table, index, color){
+                table[index][0].style.fill = color;
+                table[index][1].style.fill = color;
+            };
+
+            function componentToHex(c) {
+                var hex = c.toString(16);
+                return hex.length == 1 ? "0" + hex : hex;
+            }
+
+            function rgbToHex(r, g, b) {
+                return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+            }
+
             var xOffset = 0;
             var yOffset = 0;
 
