@@ -4,19 +4,15 @@
 		<link rel="stylesheet" href="hex.css">
 	</head>
     <body style='overflow-x: hidden;'>
+        <img id="scream" src="Perlin.png" alt="The Scream" width="220" height="277">
+        <canvas id="myCanvas" width="220" height="277" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
         <header>
-            <img id="scream" src="Perlin.png" alt="The Scream" width="220" height="277">
-            <canvas id="myCanvas" width="220" height="277" style="border:1px solid #d3d3d3;">
-            Your browser does not support the HTML5 canvas tag.</canvas>
         </header>
         <script>
             document.getElementById("scream").onload = function() {
-                var c = document.getElementById("myCanvas");
-                var ctx = c.getContext("2d");
                 var img = document.getElementById("scream");
-                img.setAttribute('crossOrigin', '')
-                ctx.drawImage(img, 0, 0);
-                var imgData = ctx.getImageData(0, 0, c.width, c.height);
+                var imgData = img.getImageData(0, 0, img.width, img.height);
                 var i;
                 for (i = 0; i < imgData.data.length; i += 4) {
                     var red = imgData.data[i];
@@ -25,7 +21,6 @@
                     var alpha = imgData.data[i+3];
                 }
                 alert(red + " " + green + " " + blue + " " + alpha);
-
             };
 /*
             var screenMiddleX = window.innerWidth/2;

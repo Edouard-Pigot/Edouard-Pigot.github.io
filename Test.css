@@ -8,6 +8,6 @@ body{
     background-size: cover;
 }
 
-#svg-image {
-    filter:url(#svg-blur);
-  }
+body img, body canvas{
+    display: none;
+}
