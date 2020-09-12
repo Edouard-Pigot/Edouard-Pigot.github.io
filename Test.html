@@ -1,0 +1,119 @@
+<!DOCTYPE html>	
+<html>
+	<head>
+		<link rel="stylesheet" href="hex.css">
+	</head>
+    <body style='overflow-x: hidden;'>
+        <header>
+            <img id="scream" src="Perlin.png" alt="The Scream" width="220" height="277">
+            <canvas id="myCanvas" width="220" height="277" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.</canvas>
+        </header>
+        <script>
+            document.getElementById("scream").onload = function() {
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                var img = document.getElementById("scream");
+                img.setAttribute('crossOrigin', '')
+                ctx.drawImage(img, 0, 0);
+                var imgData = ctx.getImageData(0, 0, c.width, c.height);
+                var i;
+                for (i = 0; i < imgData.data.length; i += 4) {
+                    var red = imgData.data[i];
+                    var green = imgData.data[i+1];
+                    var blue = imgData.data[i+2];
+                    var alpha = imgData.data[i+3];
+                }
+                //alert(red + " " + green + " " + blue + " " + alpha);
+            };
+/*
+            var screenMiddleX = window.innerWidth/2;
+            var screenMiddleY = window.innerHeight/2;
+            var rectangleSizeX = 131;
+            var rectangleSizeY = 77;
+
+            var xRepetition = Math.ceil(screenMiddleX/rectangleSizeX);
+            var yRepetition = Math.ceil(screenMiddleY/rectangleSizeY);
+
+            var startPositionX = screenMiddleX-xRepetition*rectangleSizeX;
+            var startPositionY = screenMiddleY-yRepetition*rectangleSizeY;
+
+            var newSvg = document.querySelector('header');
+            newSvg.outerHTML += '<svg id="grid" width="' + window.innerWidth + '" height="' + window.innerHeight + '"></svg>';
+            
+            var Ax,Bx,Cx,Dx,Ex;
+            var Ay,By,Cy,Dy,Ey;
+
+            var table = [];
+
+            var leftSide = true;
+            var rightSide = false;
+            
+            for(var y = 0; y < yRepetition*2; y++){
+                for(var x = 0; x < xRepetition*2; x++){
+                    Ax = startPositionX + rectangleSizeX*x;
+                    Ay = startPositionY + rectangleSizeY*y;
+                    Bx = startPositionX + rectangleSizeX + rectangleSizeX*x;
+                    By = startPositionY + rectangleSizeY*y;
+                    Cx = startPositionX  + rectangleSizeX*x;
+                    Cy = startPositionY + rectangleSizeY + rectangleSizeY*y;
+                    Dx = startPositionX + rectangleSizeX  + rectangleSizeX*x;
+                    Dy = startPositionY + rectangleSizeY + rectangleSizeY*y;
+                    Ex = startPositionX + rectangleSizeX/2  + rectangleSizeX*x;
+                    Ey = startPositionY + rectangleSizeY/2 + rectangleSizeY*y;
+
+                    var left = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    left.setAttribute('d','M'+ Ax + ' ' + Ay + 
+                                          ' L' + Ex + ' ' + Ey + 
+                                          ' L' + Cx + ' ' + Cy + ' Z');
+                    left.style.fill = '#000000';
+                    left.style.stroke = 'white';
+                    left.style.strokeWidth = '1';
+                    document.getElementById('grid').appendChild(left);
+
+                    var up = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    up.setAttribute('d','M'+ Ax + ' ' + Ay + 
+                                        ' L' + Bx + ' ' + By + 
+                                        ' L' + Ex + ' ' + Ey + ' Z');
+                    up.style.fill = '#000000';
+                    up.style.stroke = 'white';
+                    up.style.strokeWidth = '1';
+                    document.getElementById('grid').appendChild(up);
+
+                    var right = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    right.setAttribute('d','M'+ Bx + ' ' + By + 
+                                            ' L' + Dx + ' ' + Dy + 
+                                            ' L' + Ex + ' ' + Ey + ' Z');
+                    right.style.fill = '#000000';
+                    right.style.stroke = 'white';
+                    right.style.strokeWidth = '1';
+                    document.getElementById('grid').appendChild(right);
+
+                    var down = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                    down.setAttribute('d','M'+ Cx + ' ' + Cy + 
+                                          ' L' + Ex + ' ' + Ey + 
+                                          ' L' + Dx + ' ' + Dy + ' Z');
+                    down.style.fill = '#000000';
+                    down.style.stroke = 'white';
+                    down.style.strokeWidth = '1';
+                    document.getElementById('grid').appendChild(down);
+
+                    if(leftSide){
+                        table.push([left, up]);
+                        table.push([down, right]);
+                    } else if(rightSide){
+                        table.push([left, down]);
+                        table.push([up, right]);
+                    }
+                }
+                if(leftSide){
+                    leftSide = false;
+                    rightSide = true;
+                } else if(rightSide){
+                    leftSide = true;
+                    rightSide = false;
+                }
+            }*/
+        </script>
+	</body>
+</html>
