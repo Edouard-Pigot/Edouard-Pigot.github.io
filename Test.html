@@ -113,6 +113,9 @@
                 }
             }
 
+            var xOffset = 0;
+            var yOffset = 0;
+
             function colorShift(){
                 var i = 0;
                 for(var y = 0; y < yRepetition*4; y++){
@@ -138,7 +141,7 @@
                 yOffset += 0.1;
             }
 
-            setInterval(colorShift,5000);
+            setInterval(colorShift,1000);
         </script>
 	</body>
 </html>
