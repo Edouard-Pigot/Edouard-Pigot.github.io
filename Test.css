@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-body{
-    background-image: url("2.bmp");
-    background-size: cover;
-}
-
 body img, body canvas{
     display: none;
 }
