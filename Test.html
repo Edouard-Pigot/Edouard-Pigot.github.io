@@ -155,7 +155,17 @@
                 yOffset += 0.1;
             }
 
-            setInterval(colorShift,1000);
+            function debug(){
+                var i = 0;
+                for(var y = 0; y < yRepetition*4; y++){
+                    for(var x = 0; x < xRepetition*4; x++, i++){
+                        var value1 = imgData.data[x+(y*220)]/255;
+                        console.log(value1);
+                    }
+                }
+            }
+
+            //setInterval(colorShift,1000);
         </script>
 	</body>
 </html>
