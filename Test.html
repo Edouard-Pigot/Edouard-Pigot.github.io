@@ -10,7 +10,7 @@
         <header>
         </header>
         <script>
-            var imgData
+            var data = []
             document.getElementById("scream").onload = function() {
                 var canvas = document.createElement('canvas');
                 var context = canvas.getContext('2d');
@@ -18,11 +18,10 @@
                 canvas.width = img.width;
                 canvas.height = img.height;
                 context.drawImage(img, 0, 0 );
-                imgData = context.getImageData(0, 0, img.width, img.height);
-                /*var red = imgData.data[i];
-                var green = imgData.data[i+1];
-                var blue = imgData.data[i+2];
-                var alpha = imgData.data[i+3];*/
+                var imgData = context.getImageData(0, 0, img.width, img.height);
+                for(var i = 0; i < imgData.data.length; i+=3){
+                    data.push(imgData.data[i]);
+                }
             };
 
             var screenMiddleX = window.innerWidth/2;
@@ -134,7 +133,7 @@
                 var i = 0;
                 for(var y = 0; y < yRepetition*4; y++){
                     for(var x = 0; x < xRepetition*4; x++, i++){
-                        var value1 = imgData.data[x+xOffset+(y*220)]/255;
+                        var value1 = data[x+xOffset+(y*220)]/255;
                         //var value2 = imgData.data[x+xOffset];
 
                         var R1 = 255-Math.abs(value1)*(255-180);
@@ -156,11 +155,12 @@
             }
 
             function debug(){
+                console.log("Data length = " + data.length);
                 var i = 0;
                 for(var y = 0; y < yRepetition*4; y++){
                     for(var x = 0; x < xRepetition*4; x++, i++){
-                        var value1 = imgData.data[x+(y*220-x)]/255;
-                        console.log(value1);
+                        var value1 = data[i]/255;
+                        console.log("X " + x + " / Y " + y + " = " + value1);
                     }
                 }
             }
