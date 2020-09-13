@@ -114,12 +114,15 @@
 
             var xOffset = 0;
             var yOffset = 0;
+            var datas = [];
 
             function colorShift(){
                 var i = 0;
                 for(var y = 0; y < yRepetition*4; y++){
                     for(var x = 0; x < xRepetition*4; x++, i++){
                         var value1 = datas[i*20]/255;
+
+                        console.log(value1);
 
                         var R1 = Math.abs(value1)*255;
                         var G1 = Math.abs(value1)*255;
@@ -137,7 +140,7 @@
                 }
             }
 
-            var datas = []
+           
             document.getElementById("scream").onload = function() {
                 var canvas = document.createElement('canvas');
                 var context = canvas.getContext('2d');
