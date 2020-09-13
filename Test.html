@@ -151,17 +151,9 @@
                 var imgData = context.getImageData(0, 0, img.width, img.height);
                 console.log("imgData length = " + imgData.data.length);
                 for(var i = 0; i < imgData.data.length; i += 4){
-                    console.log("Setup data i " + i + " = " + imgData.data[i]);
                     datas.push(imgData.data[i]);
                 }
-                console.log("Data length = " + datas.length);
-                var i = 0;
-                for(var y = 0; y < yRepetition*4; y++){
-                    for(var x = 0; x < xRepetition*4; x++, i++){
-                        var value1 = datas[i]/255;
-                        console.log("X " + x + " / Y " + y + " = " + value1);
-                    }
-                }
+                colorShift();
             };
 
             //setInterval(colorShift,1000);
