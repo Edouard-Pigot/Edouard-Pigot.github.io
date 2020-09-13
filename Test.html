@@ -134,7 +134,7 @@
                 var i = 0;
                 for(var y = 0; y < yRepetition*4; y++){
                     for(var x = 0; x < xRepetition*4; x++, i++){
-                        var value1 = imgData.data[x+xOffset]/255;
+                        var value1 = imgData.data[x+xOffset+(y*220)]/255;
                         //var value2 = imgData.data[x+xOffset];
 
                         var R1 = 255-Math.abs(value1)*(255-180);
