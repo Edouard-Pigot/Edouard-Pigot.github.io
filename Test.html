@@ -4,8 +4,8 @@
 		<link rel="stylesheet" href="Test.css">
 	</head>
     <body style='overflow-x: hidden;'>
-        <img id="scream" src="Perlin.png" alt="The Scream" width="220" height="277">
-        <canvas id="myCanvas" width="220" height="277" style="border:1px solid #d3d3d3;">
+        <img id="scream" src="Perlin.png" alt="The Scream" width="2048" height="2048">
+        <canvas id="myCanvas" width="2048" height="2048" style="border:1px solid #d3d3d3;">
         Your browser does not support the HTML5 canvas tag.</canvas>
         <header>
         </header>
@@ -119,8 +119,7 @@
                 var i = 0;
                 for(var y = 0; y < yRepetition*4; y++){
                     for(var x = 0; x < xRepetition*4; x++, i++){
-                        var value1 = datas[i]/255;
-                        //var value2 = imgData.data[x+xOffset];
+                        var value1 = datas[i*20]/255;
 
                         var R1 = Math.abs(value1)*255;
                         var G1 = Math.abs(value1)*255;
@@ -136,8 +135,6 @@
                         }
                     }
                 }
-                xOffset += 0.1;
-                yOffset += 0.1;
             }
 
             var datas = []
