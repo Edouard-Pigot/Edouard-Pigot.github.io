@@ -121,18 +121,17 @@
                 for(var y = 0; y < yRepetition*4; y++){
                     for(var x = 0; x < xRepetition*4; x++, i++){
                         var value1 = datas[i*20]/255;
+                        var value2 = datas[datas.length-i*20]/255;
 
-                        console.log(value1);
+                        var R1 = 255-Math.abs(value1)*(255-180);
+                        var G1 = 255-Math.abs(value1)*(255-5);
+                        var B1 = 255-Math.abs(value1)*(255-255);
 
-                        var R1 = Math.abs(value1)*255;
-                        var G1 = Math.abs(value1)*255;
-                        var B1 = Math.abs(value1)*255;
+                        var R2 = 255-Math.abs(value2)*(255-5);
+                        var G2 = 255-Math.abs(value2)*(255-180);
+                        var B2 = 255-Math.abs(value2)*(255-255);
 
-                        //var R2 = 255-Math.abs(value2)*(255-5);
-                        //var G2 = 255-Math.abs(value2)*(255-180);
-                        //var B2 = 255-Math.abs(value2)*(255-255);
-
-                        hex = rgbToHex(Math.floor(R1/*/2 + R2/2*/), Math.floor(G1/*/2 + G2/2*/), Math.floor(B1/*/2 + B2/2*/));
+                        hex = rgbToHex(Math.floor(R1/2 + R2/2), Math.floor(G1/2 + G2/2), Math.floor(B1/2 + B2/2));
                         if(i < table.length){
                             colorPixel(table, i, hex);
                         }
