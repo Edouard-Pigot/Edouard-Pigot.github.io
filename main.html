@@ -1,0 +1,659 @@
+<!DOCTYPE html>	
+<html lan="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Edouard&nbsp;Pigot&nbsp;-&nbsp;Portfolio</title>
+		<link rel="stylesheet" href="main.css"/>
+		<script src="https://kit.fontawesome.com/fea9b294eb.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.parallax-1.1.3.js"></script>
+		<script>
+			$(document).ready(function(){		
+				$('#projets').parallax(0, 0.05);
+				
+				$(document).scroll(function () {
+					var position = $(document).scrollTop();
+					var header = $('nav').outerHeight();
+					var offset = 200;
+					$('section').each(function(i) {
+						if($(this).position().top <= (position + header + offset))
+						{
+							$("a.activeItem").removeClass('activeItem');
+							$("a").eq(i).addClass('activeItem');
+						}
+					});
+				}); 
+
+				$(".navItem").click(function () {
+					$("a.activeItem").removeClass('activeItem');
+					$(this).addClass('activeItem');
+					var active_section = $(this).attr('href');
+					$('html, body').animate({
+					scrollTop: $(active_section).offset().top
+					}, 1000);
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<section id="accueil">
+			<nav id="navContainer">
+				<div id="navWrap">
+					<ul id="navBar">
+						<li><a href="#accueil" class="navItem activeItem">ACCUEIL</a></li>
+						<li><a href="#projets" class="navItem">PROJETS</a></li>
+						<li><a class="navItemDisabled">EXPERIENCE</a></li>
+						<li><a class="navItemDisabled">PARCOURS</a></li>
+						<li><a class="navItemDisabled">CONTACT</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div id="titleContainer">
+				<div id="title">
+					<p id="main">EDOUARD PIGOT</p>
+					<div id="separator" class="accentColor"></div>
+					<p id="sub">ÉTUDIANT EN M2 INFORMATIQUE</p>
+				</div>
+			</div>
+			<div id="arrows">
+				<div id="arrow_1" class="arrow"></div>
+				<div id="arrow_2" class="arrow"></div>
+				<div id="arrow_3" class="arrow"></div>
+			</div>
+		</section>
+		<section id="projets">
+			<h2>PROJETS</h2>
+			<div class="underline accentColor"></div>
+			
+			<!--Boids-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide1" src="./Project_Pictures/Boids.jpg">
+					<a class="prev" onclick="plusSlides(-1,0)"></a>
+					<a class="next" onclick="plusSlides(1,0)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot1 dot active" onclick="showSlides(1, 0)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Boids <b style="color: red;">[Projet en cours]</b> <span>Octobre - Novembre 2020</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>C++</li>
+							<li>OpenGL</li>
+							<li>Qt</li>
+							<li>GLSL</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Second projet d'Animation et Rendu consistant à créer un aquarium grâce aux boids. Projet en cours.</p>
+					</div>
+				</div> 
+			</div>
+			<!--Particules-->
+			<div class="projet">
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Emetteur de particules <span>Octobre 2020</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>C++</li>
+							<li>OpenGL</li>
+							<li>Qt</li>
+							<li>GLSL</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Projet d'Animation et Rendu. Création d'un système de particule qui émet de la fumée. Cette fumée peut recevoir des paramètres comme la couleur de la texture, le temps de vie et la fréquence d'émission d'une nouvelle particule. La texture est animée grâce à un atlas qui est découpé dans un shader qui rajoute y rajoute la couleur passée en paramètre.</p>
+					</div>
+				</div>
+				<div class="carrouselContainer">
+					<img class="slide slide2" src="./Project_Pictures/Smoke1.jpg">
+					<img class="slide slide2 transparent" src="./Project_Pictures/Smoke2.jpg">
+					<a class="prev" onclick="plusSlides(-1,1)"></a>
+					<a class="next" onclick="plusSlides(1,1)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot2 dot active" onclick="currentSlide(1)"></span>
+						<span class="dot2 dot" onclick="currentSlide(2)"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--Portfolio-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide3" src="./Project_Pictures/Portfolio1.jpg">
+					<img class="slide slide3 transparent" src="./Project_Pictures/Portfolio2.jpg">
+					<a class="prev" onclick="plusSlides(-1,2)"></a>
+					<a class="next" onclick="plusSlides(1,2)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot3 dot active" onclick="currentSlide(1)"></span>
+						<span class="dot3 dot" onclick="currentSlide(2)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Portfolio <span>Octobre 2020</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet personnel</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Javascript</li>
+							<li>JQuery</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Création de ce site afin de regrouper et présenter mes projets à un seul endroit dans le cadre de ma recherche de stage pour l'année 2021.</p>
+					</div>
+				</div> 
+			</div>
+			<!--TER/Stage-->
+			<div class="projet">
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Simulateur d'inondation de musée <span>Mai - juillet 2020</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Institut de Prévention et de Gestion des Risques Urbain</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>Unity</li>
+							<li>C#</li>
+							<li>ECS</li>
+							<li>Jobs system</li>
+							<li>Marching cubes</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Projet de TER (Travail en Environnement de Recherche) en lien avec l'IPGR. Le projet consiste à créer un simulateur d'inondation de musée afin d'apporter un élément pédagogique à la formation du personnel de musées dans le cadre de catastrophes comme une crue, une infiltration d'eau ou une rupture de canalisation. Développé sous Unity afin d'avoir une bonne compatibilité et la possibilité de déploiement de l'application sur le web. Le défi majeur est l'équilibre entre performance et qualité de rendu afin d'avoir une simulation la plus proche du réel tout en pouvant la faire fonctionner sur les machines les moins véloces.
+							<br><br>Développé en binôme, ce projet a été continué en dehors du cadre scolaire sous la forme d'un stage de juin à juillet 2020.
+						</p>
+					</div>
+				</div>
+				<div class="carrouselContainer">
+					<img class="slide slide4" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,3)"></a>
+					<a class="next" onclick="plusSlides(1,3)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot4 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--Lumipic-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide5" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,4)"></a>
+					<a class="next" onclick="plusSlides(1,4)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot5 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Lumipic <span>Février 2020</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>C++</li>
+							<li>Qt</li>
+							<li>CSS</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Logiciel de création d'albums photo réalisé dans le cadre d'un cours d'Interface Homme-Machine. L'interface reprend la thématique de l'explorateur de fichier de Windows 10 et possède un thème sombre et un thème clair. Le programme permet d'explorer les dossiers contenus sur l'ordinateur et affiche seulement les fichiers image dans le répertoire courant. La création d'un album passe par la sélection puis l'ajout de plusieurs images dans un groupe que l'utilisateur peut nommer et supprimer.</p>
+					</div>
+				</div> 
+			</div>
+			<!--Pacman-->
+			<div class="projet">
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Pacman <span>Décembre 2019</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>Java</li>
+							<li>JavaFX</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Second projet de génie logiciel. Il fallait créer un jeu de type Pacman. Nous avons recréé le Pacman de 1980 avec les mêmes graphismes, la même carte et les mêmes IA pour les fantômes. Le jeu est codé en utilisant massivement les Design Patterns afin de séparer chaque fonctionnalité et séparer la partie gameplay de la partie moteur.</p>
+					</div>
+				</div>
+				<div class="carrouselContainer">
+					<img class="slide slide6" src="./Project_Pictures/Pacman1.jpg">
+					<img class="slide slide6 transparent" src="./Project_Pictures/Pacman2.jpg">
+					<a class="prev" onclick="plusSlides(-1,5)"></a>
+					<a class="next" onclick="plusSlides(1,5)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot6 dot active" onclick="currentSlide(1)"></span>
+						<span class="dot6 dot" onclick="currentSlide(2)"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--Ascenseur-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide7" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,6)"></a>
+					<a class="next" onclick="plusSlides(1,6)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot7 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Ascenseur <span>Octobre 2019</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>Java</li>
+							<li>JavaFX</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Projet de génie logiciel demandant d'implémenter une interface et système modulaire de gestion d'une cage d'ascenseur.</p>
+					</div>
+				</div> 
+			</div>
+			<!--Jeu de carte-->
+			<div class="projet">
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Blitz <span>Mai 2019</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Javascript</li>
+							<li>NodeJS</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Projet de fin de L3 Informatique réalisé à 4. Il s'agit du jeu de carte Blitz. Disponible sur navigateur il permet de jouer en multijoueur en temps réel avec un lobby pour créer et rejoindre des parties, se connecter ou créer un compte. Le site et le jeu sont 100 % en HTML/CSS/NodeJS ce qui permet une compatibilité avec tous les appareils et une plus grande simplicité d'utilisation. L'interface est intuitive et incorpore une fonction de chat lors d'une partie.</p>
+					</div>
+				</div>
+				<div class="carrouselContainer">
+					<img class="slide slide8" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,7)"></a>
+					<a class="next" onclick="plusSlides(1,7)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot8 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--Animation-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide9" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,8)"></a>
+					<a class="next" onclick="plusSlides(1,8)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot9 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Animation <span>Avril 2019</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>Blender</li>
+							<li>Python</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Script Python permettant l'animation d'un véhicule.</p>
+					</div>
+				</div> 
+			</div>
+			<!--Face painting-->
+			<div class="projet">
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Face painter <span>Mars 2019</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>Blender</li>
+							<li>Python</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Scripts Python sous Blender qui parcours le maillage d'un objet 3D et va colorer les faces en fonction de différents paramètres :
+							<br>- N faces
+							<br>- N faces jusqu'à une distance maximale
+							<br>- N faces en fonction des normales jusqu'à une distance maximale
+							<br>- l'angle sur chaque face en fonction de ses voisines
+						</p>
+					</div>
+				</div>
+				<div class="carrouselContainer">
+					<img class="slide slide10" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,9)"></a>
+					<a class="next" onclick="plusSlides(1,9)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot10 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--Procedural sword-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide11" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,10)"></a>
+					<a class="next" onclick="plusSlides(1,10)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot11 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Epée procédurale <span>Mars 2019</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>Blender</li>
+							<li>Python</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Écriture d'un script Python sous Blender permettant la génération automatique d'armes (épées, poignards, lances, ...) en fonction de paramètres indiqués par l'utilisateur comme la longueur et l'épaisseur de la lame, la longueur du manche, la largeur de la garde, ...</p>
+					</div>
+				</div> 
+			</div>
+			<!--Tank shooter-->
+			<div class="projet">
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Tank shooter <span>Février 2019</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet personnel</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>Unity</li>
+							<li>C#</li>
+							<li>Blender</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Prototype de top shooter sous Unity avec une gestion de la physique des projectiles pour avoir un système de ricochets sur les obstacles. Le clavier contrôle les déplacements du tank tandis que la tourelle est dirigée vers le curseur de la souris. Un générateur de maillage permet de laisser la trace du passage des chenilles sur le sol et le châssis du char se tourne automatiquement pour suivre la direction demandée par le joueur.</p>
+					</div>
+				</div>
+				<div class="carrouselContainer">
+					<img class="slide slide12" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,11)"></a>
+					<a class="next" onclick="plusSlides(1,11)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot12 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--Modélisation 3D-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide13" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,12)"></a>
+					<a class="next" onclick="plusSlides(1,12)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot13 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Modélisation 3D <span>Janvier 2019</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet scolaire</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>Blender</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Projets scolaires d'introduction à la modélisation sous Blender. Réalisation d'un katana avec un patron et d'un poulpe grâce aux courbes de Bézier.</p>
+					</div>
+				</div> 
+			</div>
+			<!--Stage-->
+			<div class="projet">
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Gestionnaire de projet <span>Avril - Juin 2018</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Fiducial Cloud</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>PHP</li>
+							<li>SQL</li>
+							<li>Python</li>
+							<li>Smarty</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Il s'agit du sujet de mon stage de fin de DUT. L'équipe Cloud utilise deux outils de gestion de projet : un outil interne et SOPlanning qui est un outil de planification en ligne. Afin de gagner en efficacité il m'a été demandé de faire le lien entre les bases de données des deux outils et de rajouter des fonctions dans SOPlanning comme l'affichage des statuts des projets. Afin de déployer efficacement la nouvelle solution sur les serveurs il m'a également été demandé d'écrire un script Python qui devait arrêter le serveur Apache, faire une sauvegarde des fichiers présents sur le serveur, écrire les nouveaux fichiers et enfin redémarrer le serveur. SOPlanning utilise Smarty qui est un moteur et compilateur de template PHP.</p>
+					</div>
+				</div> 
+				<div class="carrouselContainer">
+					<img class="slide slide14" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,13)"></a>
+					<a class="next" onclick="plusSlides(1,13)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot14 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+			</div>
+
+			<!--Tank physics-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide15" src="./Project_Pictures/WIP.jpg">
+					<a class="prev" onclick="plusSlides(-1,14)"></a>
+					<a class="next" onclick="plusSlides(1,14)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot15 dot active" onclick="currentSlide(1)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetHeader">
+						<div class="projetTitle">
+							<h3>Tank physics <span>Juillet 2017</span></h3>
+						</div>
+						<div class="projetLink">
+							<i class="fab fa-github"></i>
+							<i class="far fa-file-pdf"></i>
+						</div>
+					</div>
+					<div class="projetInformation">
+						<p>Projet personnel</p>
+					</div>
+					<div class="projetTag">
+						<ul>
+							<li>Unity</li>
+							<li>Blender</li>
+							<li>C#</li>
+						</ul>
+					</div>
+					<div class="projetDescription">
+						<p>Premier véritable projet sous Unity qui consistait a créé un système complet de contrôle de char avec principalement les rotations des roues, le déplacement des suspensions et des chenilles, ainsi que les contrôles horizontaux et verticaux du canon et le tir. Les déplacements du char sont gérés par le moteur physique d'Unity. Les chenilles sont animées avec des os, rajoutés avec Blender, raccordés aux positions des roues et une texture dont l'offset varie en fonction de la vitesse du char.</p>
+					</div>
+				</div> 
+			</div>
+		</section>
+		<script>
+			var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+			var slideId = ["slide1", "slide2", "slide3", "slide4", "slide5", "slide6", "slide7", "slide8", "slide9", "slide10", "slide11", "slide12", "slide13", "slide14", "slide15"];
+			var dotId = ["dot1", "dot2", "dot3", "dot4", "dot5", "dot6", "dot7", "dot8", "dot9", "dot10", "dot11", "dot12", "dot13", "dot14", "dot15"];
+			showSlides(1, 0);
+			showSlides(1, 1);
+			showSlides(1, 2);
+			showSlides(1, 3);
+			showSlides(1, 4);
+			showSlides(1, 5);
+			showSlides(1, 6);
+			showSlides(1, 7);
+			showSlides(1, 8);
+			showSlides(1, 9);
+			showSlides(1, 10);
+			showSlides(1, 11);
+			showSlides(1, 12);
+			showSlides(1, 13);
+			showSlides(1, 14);
+			
+			function plusSlides(n, no) {
+			  showSlides(slideIndex[no] += n, no);
+			}
+			
+			function showSlides(n, no) {
+				var i;
+				var x = document.getElementsByClassName(slideId[no]);
+				var y = document.getElementsByClassName(dotId[no]);
+				if (n > x.length) {slideIndex[no] = 1}    
+				if (n < 1) {slideIndex[no] = x.length}
+				for (i = 0; i < x.length; i++) {
+					x[i].style.opacity = "0";  
+				}
+				for (i = 0; i < y.length; i++) {
+					y[i].className = y[i].className.replace(" active", "");
+				}
+				x[slideIndex[no]-1].style.opacity = "1";  
+				y[slideIndex[no]-1].className += " active";
+			}
+		</script>
+	</body>
+</html>
