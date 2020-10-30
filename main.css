@@ -221,10 +221,11 @@ section h2{
 .carrouselContainer{
 	height: 100%;
 	padding: 0;
+	background: rgba(0, 0, 0, 1);
 }
 
 .carrouselContainer img{
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .projetText{
