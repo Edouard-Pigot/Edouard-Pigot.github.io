@@ -240,11 +240,15 @@ section h2{
 	float: left;
 }
 
-.projetLink{
+.fa-file-pdf{
 	width: 10%;
 	height: 100%;
 	float: right;
-	display: none;
+	display: none !important;
+}
+
+.projetLink{
+	float: right;
 }
 
 .projetLink i{
