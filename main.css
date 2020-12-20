@@ -53,7 +53,7 @@ nav{
 	float: left;
 	width: auto;
 	margin: 15px 20px;
-	padding: 9px 0 6px 0;
+	padding: 9px 0 2px 0;
 	font-size: 17px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -213,9 +213,13 @@ section h2{
 	position: relative;
 	width: 640px;
 	margin: 0;
-	padding: 1em;
-	background: rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 10px 50px 5px black;
+	background: rgba(50, 50, 50, 0.6);
+	/*box-shadow: 0px 10px 50px 5px black;*/
+	/*backdrop-filter: blur(5px);*/
+}
+
+.projetTextContainer{
+	padding: 2em;
 }
 
 .carrouselContainer{
@@ -233,11 +237,12 @@ section h2{
 }
 
 .projetHeader, .projetTag{
-	height: 8%;
+	margin: 0 0.5em;
 }
 
-.projetTitle{
-	float: left;
+.projetHeader{
+	height: 2em;
+	padding: 0 0 0.5em 0;
 }
 
 .fa-file-pdf{
@@ -252,74 +257,59 @@ section h2{
 }
 
 .projetLink i{
-	font-size: 1.2em;
-	margin: .3em .5em 0 0;
-}
-
-.projetInformation{
-	margin-bottom: 0.3em;
-	float: left;
-	width: 100%;
+	font-size: 1.3em;
 }
 
 .projetDescription{
-	height : 76%;
 	float: left;
+	margin: 1.0em 0.5em 0 0.5em;
+	text-align: justify;
 }
 
-.projetTag{
-	float: left;
-	font-size: .8em;
+.projetInformation{
 	height: 1em;
-	padding: 0.7em 0;
-	width: 100%;
+	padding: 1.0em 0;
+	margin: 0 0.5em;
 }
 
-.projetTag ul{
+.projetInformation ul{
+	float: left;
 	list-style-type: none;
 }
 
-.projetTag ul li:first-child{
-	margin-left: 0;
-	margin-right: 0.2em;
-}
-
-.projetTag ul li:last-child{
-	margin-left: 0.2em;
-	margin-right: 0;
-}
-
-.projetTag ul li{
+.projetInformation ul li{
 	display: inline;
-	border: solid #fff 2px;
-	border-radius: 10px;
-	padding: 5px 10px;
-	margin: 0.2em;
+	margin: 0.8em;
+}
+
+.projetInformation ul li:first-child{
+	margin: 0;
 }
 
 .projetTitle h3{
 	float: left;
-	font-size: 1.5em;
+	font-size: 1.3em;
+	color: cyan;
+	font-weight: bold;
 }
 
-.projetTitle h3 span{
-	font-size: .7em;
-	font-weight: normal;
+.projetTitle p{
+	float: right;
+	font-size: 1.3em;
+	color: white;
+	font-weight: 1000;
+}
+
+.projectSeparator{
+	width: 100%;
+	background-color: rgba(200,200,200,0.3);
+	height: 0.25em;
 }
 
 .projetText p{
 	height: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
-}
-
-.projetDescription{
-	margin-top: .3em;
-	text-align: justify;
-}
-
-.projetDescription p{
-	padding-right: 1em;
 }
 
 .slide {

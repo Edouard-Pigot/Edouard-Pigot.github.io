@@ -26,12 +26,12 @@
 				}); 
 
 				$(".navItem").click(function () {
-					$("a.activeItem").removeClass('activeItem');
-					$(this).addClass('activeItem');
+					//$("a.activeItem").removeClass('activeItem');
 					var active_section = $(this).attr('href');
 					$('html, body').animate({
-					scrollTop: $(active_section).offset().top
-					}, 1000);
+						scrollTop: $(active_section).offset().top
+					}, 1000);					
+					//$(this).addClass('activeItem');
 					return false;
 				});
 			});
@@ -80,56 +80,59 @@
 					</div>
 				</div>
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Boids <b style="color: red;">[Projet en cours]</b> <span>Octobre - Novembre 2020</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Boids</h3>
+								<p>10 - 11/2020</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/Boids">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>C++</li>
+								<li>OpenGL</li>
+								<li>Qt</li>
+								<li>GLSL</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Boids"><i class="fab fa-github"></i></a>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>C++</li>
-							<li>OpenGL</li>
-							<li>Qt</li>
-							<li>GLSL</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Second projet d'Animation et Rendu consistant à créer un aquarium grâce aux boids. Projet en cours.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Second projet d'Animation et Rendu consistant à créer un aquarium grâce aux boids. Projet en cours.</p>
+						</div>
 					</div>
 				</div> 
 			</div>
 			<!--Particules-->
 			<div class="projet">
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Emetteur de particules <span>Octobre 2020</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Emetteur de particules</h3>
+								<p>10/2020</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/Smoke-Particule">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>C++</li>
+								<li>OpenGL</li>
+								<li>Qt</li>
+								<li>GLSL</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Smoke-Particule"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>C++</li>
-							<li>OpenGL</li>
-							<li>Qt</li>
-							<li>GLSL</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Projet d'Animation et Rendu. Création d'un système de particule qui émet de la fumée. Cette fumée peut recevoir des paramètres comme la couleur de la texture, le temps de vie et la fréquence d'émission d'une nouvelle particule. La texture est animée grâce à un atlas qui est découpé dans un shader et qui y rajoute la couleur passée en paramètre.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Projet d'Animation et Rendu. Création d'un système de particule qui émet de la fumée. Cette fumée peut recevoir des paramètres comme la couleur de la texture, le temps de vie et la fréquence d'émission d'une nouvelle particule. La texture est animée grâce à un atlas qui est découpé dans un shader et qui y rajoute la couleur passée en paramètre.</p>
+						</div>
 					</div>
 				</div>
 				<div class="carrouselContainer">
@@ -161,59 +164,63 @@
 					</div>
 				</div>
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Portfolio <span>Octobre 2020</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Portfolio</h3>
+								<p>10/2020</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/Edouard-Pigot.github.io">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>JQuery</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Edouard-Pigot.github.io"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet personnel</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Javascript</li>
-							<li>JQuery</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Création de ce site afin de regrouper et présenter mes projets à un seul endroit dans le cadre de ma recherche de stage pour l'année 2021.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Création de ce site afin de regrouper et présenter mes projets à un seul endroit dans le cadre de ma recherche de stage pour l'année 2021.</p>
+						</div>
 					</div>
 				</div> 
 			</div>
 			<!--TER/Stage-->
 			<div class="projet">
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Simulateur d'inondation de musée <span>Mai - juillet 2020</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Simulateur d'inondation de musée</h3>
+								<p>05 - 07/2020</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/TER">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Unity</li>
+								<li>C#</li>
+								<li>ECS</li>
+								<li>Jobs system</li>
+								<li>Marching cubes</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/TER"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Institut de Prévention et de Gestion des Risques Urbain</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>Unity</li>
-							<li>C#</li>
-							<li>ECS</li>
-							<li>Jobs system</li>
-							<li>Marching cubes</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Projet de TER (Travail en Environnement de Recherche) en lien avec l'IPGR. Le projet consiste à créer un simulateur d'inondation de musée afin d'apporter un élément pédagogique à la formation du personnel de musées dans le cadre de catastrophes comme une crue, une infiltration d'eau ou une rupture de canalisation. Développé sous Unity afin d'avoir une bonne compatibilité et la possibilité de déploiement de l'application sur le web. Le défi majeur est l'équilibre entre performance et qualité de rendu afin d'avoir une simulation la plus proche du réel tout en pouvant la faire fonctionner sur les machines les moins véloces.
-							<br><br>Développé en binôme, ce projet a été continué en dehors du cadre scolaire sous la forme d'un stage de juin à juillet 2020.
-						</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Projet de TER (Travail en Environnement de Recherche) en lien avec l'IPGR. Le projet consiste à créer un simulateur d'inondation de musée afin d'apporter un élément pédagogique à la formation du personnel de musées dans le cadre de catastrophes comme une crue, une infiltration d'eau ou une rupture de canalisation. Développé sous Unity afin d'avoir une bonne compatibilité et la possibilité de déploiement de l'application sur le web. Le défi majeur est l'équilibre entre performance et qualité de rendu afin d'avoir une simulation la plus proche du réel tout en pouvant la faire fonctionner sur les machines les moins véloces.
+								<br><br>Développé en binôme, ce projet a été continué en dehors du cadre scolaire sous la forme d'un stage de juin à juillet 2020.
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="carrouselContainer">
@@ -249,53 +256,57 @@
 					</div>
 				</div>
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Lumipic <span>Février 2020</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Lumipic</h3>
+								<p>02/2020</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/Lumipic">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>C++</li>
+								<li>Qt</li>
+								<li>CSS</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Lumipic"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>C++</li>
-							<li>Qt</li>
-							<li>CSS</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Logiciel de création d'albums photo réalisé dans le cadre d'un cours d'Interface Homme-Machine. L'interface reprend la thématique de l'explorateur de fichier de Windows 10 et possède un thème sombre et un thème clair. Le programme permet d'explorer les dossiers contenus sur l'ordinateur et affiche seulement les fichiers image dans le répertoire courant. La création d'un album passe par la sélection puis l'ajout de plusieurs images dans un groupe que l'utilisateur peut nommer et supprimer.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Logiciel de création d'albums photo réalisé dans le cadre d'un cours d'Interface Homme-Machine. L'interface reprend la thématique de l'explorateur de fichier de Windows 10 et possède un thème sombre et un thème clair. Le programme permet d'explorer les dossiers contenus sur l'ordinateur et affiche seulement les fichiers image dans le répertoire courant. La création d'un album passe par la sélection puis l'ajout de plusieurs images dans un groupe que l'utilisateur peut nommer et supprimer.</p>
+						</div>
 					</div>
 				</div> 
 			</div>
 			<!--Pacman-->
 			<div class="projet">
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Pacman <span>Décembre 2019</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Pacman</h3>
+								<p>12/2019</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/Pacman">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Java</li>
+								<li>JavaFX</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Pacman"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>Java</li>
-							<li>JavaFX</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Second projet de génie logiciel. Il fallait créer un jeu de type Pacman. Nous avons recréé le Pacman de 1980 avec les mêmes graphismes, la même carte et les mêmes IA pour les fantômes. Le jeu est codé en utilisant massivement les Design Patterns afin de séparer chaque fonctionnalité et séparer la partie gameplay de la partie moteur.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Second projet de génie logiciel. Il fallait créer un jeu de type Pacman. Nous avons recréé le Pacman de 1980 avec les mêmes graphismes, la même carte et les mêmes IA pour les fantômes. Le jeu est codé en utilisant massivement les Design Patterns afin de séparer chaque fonctionnalité et séparer la partie gameplay de la partie moteur.</p>
+						</div>
 					</div>
 				</div>
 				<div class="carrouselContainer">
@@ -323,54 +334,58 @@
 					</div>
 				</div>
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Ascenseur <span>Octobre 2019</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Ascenseur</h3>
+								<p>10/2019</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/Ascenseur">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Java</li>
+								<li>JavaFX</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Ascenseur"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>Java</li>
-							<li>JavaFX</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Projet de génie logiciel demandant d'implémenter une interface et un système modulaire de gestion d'une cage d'ascenseur.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Projet de génie logiciel demandant d'implémenter une interface et un système modulaire de gestion d'une cage d'ascenseur.</p>
+						</div>
 					</div>
 				</div> 
 			</div>
 			<!--Jeu de carte-->
 			<div class="projet">
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Blitz <span>Mai 2019</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Blitz</h3>
+								<p>05/2019</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/Blitz">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>NodeJS</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Blitz"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>Javascript</li>
-							<li>NodeJS</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Projet de fin de L3 Informatique réalisé à 4. Il s'agit du jeu de carte Blitz. Disponible sur navigateur il permet de jouer en multijoueur en temps réel avec un lobby pour créer et rejoindre des parties, se connecter ou créer un compte. Le site et le jeu sont 100 % en HTML/CSS/NodeJS ce qui permet une compatibilité avec tous les appareils et une plus grande simplicité d'utilisation. L'interface est intuitive et incorpore une fonction de chat lors d'une partie.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Projet de fin de L3 Informatique réalisé à 4. Il s'agit du jeu de carte Blitz. Disponible sur navigateur il permet de jouer en multijoueur en temps réel avec un lobby pour créer et rejoindre des parties, se connecter ou créer un compte. Le site et le jeu sont 100 % en HTML/CSS/NodeJS ce qui permet une compatibilité avec tous les appareils et une plus grande simplicité d'utilisation. L'interface est intuitive et incorpore une fonction de chat lors d'une partie.</p>
+						</div>
 					</div>
 				</div>
 				<div class="carrouselContainer">
@@ -398,57 +413,53 @@
 					</div>
 				</div>
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Animation <span>Avril 2019</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Animation</h3>
+								<p>04/2019</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<!--<i class="fab fa-github"></i>
-							<i class="far fa-file-pdf"></i>-->
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Blender</li>
+								<li>Python</li>
+							</ul>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>Blender</li>
-							<li>Python</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Script Python permettant l'animation d'un véhicule.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Script Python permettant l'animation d'un véhicule.</p>
+						</div>
 					</div>
 				</div> 
 			</div>
 			<!--Face painting-->
 			<div class="projet">
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Face painter <span>Mars 2019</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Face painter</h3>
+								<p>03/2019</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<!--<i class="fab fa-github"></i>
-							<i class="far fa-file-pdf"></i>-->
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Blender</li>
+								<li>Python</li>
+							</ul>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>Blender</li>
-							<li>Python</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Scripts Python sous Blender qui parcours le maillage d'un objet 3D et va colorer les faces en fonction de différents paramètres :
-							<br>- N faces
-							<br>- N faces jusqu'à une distance maximale
-							<br>- N faces en fonction des normales jusqu'à une distance maximale
-							<br>- l'angle sur chaque face en fonction de ses voisines
-						</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Scripts Python sous Blender qui parcours le maillage d'un objet 3D et va colorer les faces en fonction de différents paramètres :
+								<br>- N faces
+								<br>- N faces jusqu'à une distance maximale
+								<br>- N faces en fonction des normales jusqu'à une distance maximale
+								<br>- l'angle sur chaque face en fonction de ses voisines
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="carrouselContainer">
@@ -486,53 +497,53 @@
 					</div>
 				</div>
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Epée procédurale <span>Mars 2019</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Epée procédurale</h3>
+								<p>03/2019</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<!--<i class="fab fa-github"></i>
-							<i class="far fa-file-pdf"></i>-->
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Blender</li>
+								<li>Python</li>
+							</ul>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>Blender</li>
-							<li>Python</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Écriture d'un script Python sous Blender permettant la génération automatique d'armes (épées, poignards, lances, ...) en fonction de paramètres indiqués par l'utilisateur comme la longueur et l'épaisseur de la lame, la longueur du manche, la largeur de la garde, ...</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Écriture d'un script Python sous Blender permettant la génération automatique d'armes (épées, poignards, lances, ...) en fonction de paramètres indiqués par l'utilisateur comme la longueur et l'épaisseur de la lame, la longueur du manche, la largeur de la garde, ...</p>
+						</div>
 					</div>
 				</div> 
 			</div>
 			<!--Tank shooter-->
 			<div class="projet">
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Tank shooter <span>Février 2019</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Tank shooter</h3>
+								<p>02/2019</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/Tank-Shooter">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Unity</li>
+								<li>C#</li>
+								<li>Blender</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Tank-Shooter"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet personnel</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>Unity</li>
-							<li>C#</li>
-							<li>Blender</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Prototype de top shooter sous Unity avec une gestion de la physique des projectiles pour avoir un système de ricochets sur les obstacles. Le clavier contrôle les déplacements du tank tandis que la tourelle est dirigée vers le curseur de la souris. Un générateur de maillage permet de laisser la trace du passage des chenilles sur le sol et le châssis du char se tourne automatiquement pour suivre la direction demandée par le joueur.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Prototype de top shooter sous Unity avec une gestion de la physique des projectiles pour avoir un système de ricochets sur les obstacles. Le clavier contrôle les déplacements du tank tandis que la tourelle est dirigée vers le curseur de la souris. Un générateur de maillage permet de laisser la trace du passage des chenilles sur le sol et le châssis du char se tourne automatiquement pour suivre la direction demandée par le joueur.</p>
+						</div>
 					</div>
 				</div>
 				<div class="carrouselContainer">
@@ -560,55 +571,51 @@
 					</div>
 				</div>
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Modélisation 3D <span>Janvier 2019</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Modélisation 3D</h3>
+								<p>01/2019</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<!--<i class="fab fa-github"></i>
-							<i class="far fa-file-pdf"></i>-->
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Blender</li>
+							</ul>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet scolaire</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>Blender</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Projets scolaires d'introduction à la modélisation sous Blender. Réalisation d'un katana avec un patron et d'un poulpe grâce aux courbes de Bézier.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Projets scolaires d'introduction à la modélisation sous Blender. Réalisation d'un katana avec un patron et d'un poulpe grâce aux courbes de Bézier.</p>
+						</div>
 					</div>
 				</div> 
 			</div>
 			<!--Stage-->
 			<div class="projet">
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Gestionnaire de projet <span>Avril - Juin 2018</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Gestionnaire de projet</h3>
+								<p>04 - 06/2018</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<!--<i class="fab fa-github"></i>
-							<i class="far fa-file-pdf"></i>-->
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>PHP</li>
+								<li>SQL</li>
+								<li>Python</li>
+								<li>Smarty</li>
+							</ul>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Fiducial Cloud</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>PHP</li>
-							<li>SQL</li>
-							<li>Python</li>
-							<li>Smarty</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Il s'agit du sujet de mon stage de fin de DUT. L'équipe Cloud utilise deux outils de gestion de projet : un outil interne et SOPlanning qui est un outil de planification en ligne. Afin de gagner en efficacité il m'a été demandé de faire le lien entre les bases de données des deux outils et de rajouter des fonctions dans SOPlanning comme l'affichage des statuts des projets. Afin de déployer efficacement la nouvelle solution sur les serveurs il m'a également été demandé d'écrire un script Python qui devait arrêter le serveur Apache, faire une sauvegarde des fichiers présents sur le serveur, écrire les nouveaux fichiers et enfin redémarrer le serveur. SOPlanning utilise Smarty qui est un moteur et compilateur de template PHP.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Il s'agit du sujet de mon stage de fin de DUT. L'équipe Cloud utilise deux outils de gestion de projet : un outil interne et SOPlanning qui est un outil de planification en ligne. Afin de gagner en efficacité il m'a été demandé de faire le lien entre les bases de données des deux outils et de rajouter des fonctions dans SOPlanning comme l'affichage des statuts des projets. Afin de déployer efficacement la nouvelle solution sur les serveurs il m'a également été demandé d'écrire un script Python qui devait arrêter le serveur Apache, faire une sauvegarde des fichiers présents sur le serveur, écrire les nouveaux fichiers et enfin redémarrer le serveur. SOPlanning utilise Smarty qui est un moteur et compilateur de template PHP.</p>
+						</div>
 					</div>
 				</div> 
 				<div class="carrouselContainer">
@@ -650,27 +657,29 @@
 					</div>
 				</div>
 				<div class="projetText">
-					<div class="projetHeader">
-						<div class="projetTitle">
-							<h3>Tank physics <span>Mars - juillet 2017</span></h3>
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Tank physics</h3>
+								<p>03 - 07/2017</p>
+							</div>
 						</div>
-						<div class="projetLink">
-							<a href="https://github.com/Edouard-Pigot/Tank-Physics">&#60;code&#62; <i class="fab fa-github"></i></a>
-							<i class="far fa-file-pdf"></i>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Unity</li>
+								<li>Blender</li>
+								<li>C#</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Tank-Physics"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
 						</div>
-					</div>
-					<div class="projetInformation">
-						<p>Projet personnel</p>
-					</div>
-					<div class="projetTag">
-						<ul>
-							<li>Unity</li>
-							<li>Blender</li>
-							<li>C#</li>
-						</ul>
-					</div>
-					<div class="projetDescription">
-						<p>Premier véritable projet sous Unity qui consistait a créé un système complet de contrôle de char avec principalement les rotations des roues, le déplacement des suspensions et des chenilles, ainsi que les contrôles horizontaux et verticaux du canon et le tir. Les déplacements du char sont gérés par le moteur physique d'Unity. Les chenilles sont animées avec des os, rajoutés avec Blender, raccordés aux positions des roues et une texture dont l'offset varie en fonction de la vitesse du char.</p>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Premier véritable projet sous Unity qui consistait a créé un système complet de contrôle de char avec principalement les rotations des roues, le déplacement des suspensions et des chenilles, ainsi que les contrôles horizontaux et verticaux du canon et le tir. Les déplacements du char sont gérés par le moteur physique d'Unity. Les chenilles sont animées avec des os, rajoutés avec Blender, raccordés aux positions des roues et une texture dont l'offset varie en fonction de la vitesse du char.</p>
+						</div>
 					</div>
 				</div> 
 			</div>
