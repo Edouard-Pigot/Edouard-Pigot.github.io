@@ -388,7 +388,11 @@ section h2{
 	background: #888;
 }
 
-::-webkit-scrollbar-thumb:hover, .accentColor, .active{
+::-webkit-scrollbar-thumb:hover, .active{
 	background-color: rgb(255,187,0);
 	border: solid 0.15em rgb(255,187,0);
+}
+
+.accentColor{
+	background-color: rgb(255,187,0);
 }
