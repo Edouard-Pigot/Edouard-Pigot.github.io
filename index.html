@@ -10,38 +10,6 @@
 		<title>Edouard&nbsp;Pigot&nbsp;-&nbsp;Portfolio</title>
 
 		<link rel="stylesheet" href="main.css"/>
-		
-		<script src="https://kit.fontawesome.com/fea9b294eb.js" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script type="text/javascript" src="jquery.parallax-1.1.3.js"></script>
-		<script>
-			$(document).ready(function(){		
-				$('#projets').parallax(0, 0.05);
-				
-				$(document).scroll(function () {
-					var position = $(document).scrollTop();
-					var header = $('nav').outerHeight();
-					var offset = 200;
-					$('section').each(function(i) {
-						if($(this).position().top <= (position + header + offset))
-						{
-							$("a.activeItem").removeClass('activeItem');
-							$("a").eq(i).addClass('activeItem');
-						}
-					});
-				}); 
-
-				$(".navItem").click(function () {
-					//$("a.activeItem").removeClass('activeItem');
-					var active_section = $(this).attr('href');
-					$('html, body').animate({
-						scrollTop: $(active_section).offset().top
-					}, 1000);					
-					//$(this).addClass('activeItem');
-					return false;
-				});
-			});
-		</script>
 	</head>
 	<body>
 		<section id="accueil">
@@ -73,6 +41,82 @@
 			<h2>PROJETS</h2>
 			<div class="underline accentColor"></div>
 			
+			<!--Drones-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide17" src="./Project_Pictures/Drones1.jpg">
+					<a class="prev" onclick="plusSlides(-1,16)"></a>
+					<a class="next" onclick="plusSlides(1,16)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot17 dot active" onclick="showSlides(1, 16)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Chorégraphie de drones</h3>
+								<p>12/2020</p>
+							</div>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>WebGL</li>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Javascript</li>
+								<li>JQuery</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Drones"><i class="fab fa-github"></i></a>
+							</div>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Projet d'Animation et Rendu. Réalisation d'un visualisateur de Chorégraphie de drones en WebGL. Un fichier de keyframes est lu et permet de mettre en places des modèles de drones que dont la lecture de l'animation est contrôlée par l'utilisateur. Il peut choisir d'afficher ou non une grille, les repères des axes, les trajectoires des drones, une ligne qui va du drone au sol, le nom de chaque drones, et il peut jouer ou stopper l'animation. Le programme permet également de détecter les collisions et les vitesse trop élevée des drones.</p>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<!--Shader-->
+			<div class="projet">
+				<div class="projetText">
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3>Introduction aux shaders</h3>
+								<p>12/2020</p>
+							</div>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>GLSL</li>
+							</ul>
+							<div class="projetLink">
+								<a href="https://github.com/Edouard-Pigot/Shader"><i class="fab fa-github"></i></a>
+								<i class="far fa-file-pdf"></i>
+							</div>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Cours d'introduction au langage GLSL et à l'écritre de shaders sur le site shadertoy.com. Réalisation d'un fragment shader permettant l'affichage d'un cycle jour/nuit au dessus de la mer.</p>
+						</div>
+					</div>
+				</div>
+				<div class="carrouselContainer">
+					<video class="slide slide16" width="320" height="240" controls>
+						<source src="./Project_Pictures/Shader1.mp4" type="video/mp4">
+					</video>
+					<a class="prev" onclick="plusSlides(-1,15)"></a>
+					<a class="next" onclick="plusSlides(1,15)"></a>
+					<div class="dot-container" style="text-align:center">
+						<span class="dot16 dot active" onclick="showSlides(1, 15)"></span>
+					</div>
+				</div>
+			</div>
+
 			<!--Boids-->
 			<div class="projet">
 				<div class="carrouselContainer">
@@ -107,7 +151,7 @@
 						</div>
 						<div class="projectSeparator"></div>
 						<div class="projetDescription">
-							<p>Second projet d'Animation et Rendu consistant à créer un aquarium grâce aux boids. Projet en cours.</p>
+							<p>Second projet d'Animation et Rendu consistant à créer une IA de poissons grâce aux boids. Intégration d'obstacles et de prédateurs sous la forme de sphères que les poissons évitent.</p>
 						</div>
 					</div>
 				</div> 
@@ -150,9 +194,9 @@
 					<a class="prev" onclick="plusSlides(-1,1)"></a>
 					<a class="next" onclick="plusSlides(1,1)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot2 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot2 dot" onclick="currentSlide(2)"></span>
-						<span class="dot2 dot" onclick="currentSlide(3)"></span>
+						<span class="dot2 dot active" onclick="showSlides(1, 1)"></span>
+						<span class="dot2 dot" onclick="showSlides(2, 1)"></span>
+						<span class="dot2 dot" onclick="showSlides(3, 1)"></span>
 					</div>
 				</div>
 			</div>
@@ -165,8 +209,8 @@
 					<a class="prev" onclick="plusSlides(-1,2)"></a>
 					<a class="next" onclick="plusSlides(1,2)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot3 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot3 dot" onclick="currentSlide(2)"></span>
+						<span class="dot3 dot active" onclick="showSlides(1, 2)"></span>
+						<span class="dot3 dot" onclick="showSlides(2, 2)"></span>
 					</div>
 				</div>
 				<div class="projetText">
@@ -236,9 +280,9 @@
 					<a class="prev" onclick="plusSlides(-1,3)"></a>
 					<a class="next" onclick="plusSlides(1,3)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot4 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot4 dot" onclick="currentSlide(2)"></span>
-						<span class="dot4 dot" onclick="currentSlide(3)"></span>
+						<span class="dot4 dot active" onclick="showSlides(1, 3)"></span>
+						<span class="dot4 dot" onclick="showSlides(2, 3)"></span>
+						<span class="dot4 dot" onclick="showSlides(3, 3)"></span>
 					</div>
 				</div>
 			</div>
@@ -254,11 +298,11 @@
 					<a class="prev" onclick="plusSlides(-1,4)"></a>
 					<a class="next" onclick="plusSlides(1,4)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot5 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot5 dot" onclick="currentSlide(2)"></span>
-						<span class="dot5 dot" onclick="currentSlide(3)"></span>
-						<span class="dot5 dot" onclick="currentSlide(4)"></span>
-						<span class="dot5 dot" onclick="currentSlide(5)"></span>
+						<span class="dot5 dot active" onclick="showSlides(1, 4)"></span>
+						<span class="dot5 dot" onclick="showSlides(2, 4)"></span>
+						<span class="dot5 dot" onclick="showSlides(3, 4)"></span>
+						<span class="dot5 dot" onclick="showSlides(4, 4)"></span>
+						<span class="dot5 dot" onclick="showSlides(5, 4)"></span>
 					</div>
 				</div>
 				<div class="projetText">
@@ -321,8 +365,8 @@
 					<a class="prev" onclick="plusSlides(-1,5)"></a>
 					<a class="next" onclick="plusSlides(1,5)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot6 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot6 dot" onclick="currentSlide(2)"></span>
+						<span class="dot6 dot active" onclick="showSlides(1, 5)"></span>
+						<span class="dot6 dot" onclick="showSlides(2, 5)"></span>
 					</div>
 				</div>
 			</div>
@@ -335,8 +379,8 @@
 					<a class="prev" onclick="plusSlides(-1,6)"></a>
 					<a class="next" onclick="plusSlides(1,6)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot7 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot7 dot" onclick="currentSlide(2)"></span>
+						<span class="dot7 dot active" onclick="showSlides(1, 6)"></span>
+						<span class="dot7 dot" onclick="showSlides(2, 6)"></span>
 					</div>
 				</div>
 				<div class="projetText">
@@ -400,8 +444,8 @@
 					<a class="prev" onclick="plusSlides(-1,7)"></a>
 					<a class="next" onclick="plusSlides(1,7)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot8 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot8 dot" onclick="currentSlide(2)"></span>
+						<span class="dot8 dot active" onclick="showSlides(1, 7)"></span>
+						<span class="dot8 dot" onclick="showSlides(2, 7)"></span>
 					</div>
 				</div>
 			</div>
@@ -415,7 +459,7 @@
 					<a class="prev" onclick="plusSlides(-1,8)"></a>
 					<a class="next" onclick="plusSlides(1,8)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot9 dot active" onclick="currentSlide(1)"></span>
+						<span class="dot9 dot active" onclick="showSlides(1, 8)"></span>
 					</div>
 				</div>
 				<div class="projetText">
@@ -479,13 +523,13 @@
 					<a class="prev" onclick="plusSlides(-1,9)"></a>
 					<a class="next" onclick="plusSlides(1,9)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot10 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot10 dot" onclick="currentSlide(2)"></span>
-						<span class="dot10 dot" onclick="currentSlide(3)"></span>
-						<span class="dot10 dot" onclick="currentSlide(4)"></span>
-						<span class="dot10 dot" onclick="currentSlide(5)"></span>
-						<span class="dot10 dot" onclick="currentSlide(6)"></span>
-						<span class="dot10 dot" onclick="currentSlide(7)"></span>
+						<span class="dot10 dot active" onclick="showSlides(1, 9)"></span>
+						<span class="dot10 dot" onclick="showSlides(2, 9)"></span>
+						<span class="dot10 dot" onclick="showSlides(3, 9)"></span>
+						<span class="dot10 dot" onclick="showSlides(4, 9)"></span>
+						<span class="dot10 dot" onclick="showSlides(5, 9)"></span>
+						<span class="dot10 dot" onclick="showSlides(6, 9)"></span>
+						<span class="dot10 dot" onclick="showSlides(7, 9)"></span>
 					</div>
 				</div>
 			</div>
@@ -498,8 +542,8 @@
 					<a class="prev" onclick="plusSlides(-1,10)"></a>
 					<a class="next" onclick="plusSlides(1,10)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot11 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot11 dot" onclick="currentSlide(2)"></span>
+						<span class="dot11 dot active" onclick="showSlides(1, 10)"></span>
+						<span class="dot11 dot" onclick="showSlides(2, 10)"></span>
 					</div>
 				</div>
 				<div class="projetText">
@@ -559,7 +603,7 @@
 					<a class="prev" onclick="plusSlides(-1,11)"></a>
 					<a class="next" onclick="plusSlides(1,11)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot12 dot active" onclick="currentSlide(1)"></span>
+						<span class="dot12 dot active" onclick="showSlides(1, 11)"></span>
 					</div>
 				</div>
 			</div>
@@ -572,8 +616,8 @@
 					<a class="prev" onclick="plusSlides(-1,12)"></a>
 					<a class="next" onclick="plusSlides(1,12)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot13 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot13 dot" onclick="currentSlide(2)"></span>
+						<span class="dot13 dot active" onclick="showSlides(1, 12)"></span>
+						<span class="dot13 dot" onclick="showSlides(2, 12)"></span>
 					</div>
 				</div>
 				<div class="projetText">
@@ -629,7 +673,7 @@
 					<a class="prev" onclick="plusSlides(-1,13)"></a>
 					<a class="next" onclick="plusSlides(1,13)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot14 dot active" onclick="currentSlide(1)"></span>
+						<span class="dot14 dot active" onclick="showSlides(1, 13)"></span>
 					</div>
 				</div>
 			</div>
@@ -655,11 +699,11 @@
 					<a class="prev" onclick="plusSlides(-1,14)"></a>
 					<a class="next" onclick="plusSlides(1,14)"></a>
 					<div class="dot-container" style="text-align:center">
-						<span class="dot15 dot active" onclick="currentSlide(1)"></span>
-						<span class="dot15 dot" onclick="currentSlide(2)"></span>
-						<span class="dot15 dot" onclick="currentSlide(3)"></span>
-						<span class="dot15 dot" onclick="currentSlide(4)"></span>
-						<span class="dot15 dot" onclick="currentSlide(5)"></span>
+						<span class="dot15 dot active" onclick="showSlides(1, 14)"></span>
+						<span class="dot15 dot" onclick="showSlides(2, 14)"></span>
+						<span class="dot15 dot" onclick="showSlides(3, 14)"></span>
+						<span class="dot15 dot" onclick="showSlides(4, 14)"></span>
+						<span class="dot15 dot" onclick="showSlides(5, 14)"></span>
 					</div>
 				</div>
 				<div class="projetText">
@@ -690,25 +734,45 @@
 				</div> 
 			</div>
 		</section>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://kit.fontawesome.com/fea9b294eb.js" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.parallax-1.1.3.js"></script>
 		<script>
-			var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-			var slideId = ["slide1", "slide2", "slide3", "slide4", "slide5", "slide6", "slide7", "slide8", "slide9", "slide10", "slide11", "slide12", "slide13", "slide14", "slide15"];
-			var dotId = ["dot1", "dot2", "dot3", "dot4", "dot5", "dot6", "dot7", "dot8", "dot9", "dot10", "dot11", "dot12", "dot13", "dot14", "dot15"];
-			showSlides(1, 0);
-			showSlides(1, 1);
-			showSlides(1, 2);
-			showSlides(1, 3);
-			showSlides(1, 4);
-			showSlides(1, 5);
-			showSlides(1, 6);
-			showSlides(1, 7);
-			showSlides(1, 8);
-			showSlides(1, 9);
-			showSlides(1, 10);
-			showSlides(1, 11);
-			showSlides(1, 12);
-			showSlides(1, 13);
-			showSlides(1, 14);
+			var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+			var slideId = ["slide1", "slide2", "slide3", "slide4", "slide5", "slide6", "slide7", "slide8", "slide9", "slide10", "slide11", "slide12", "slide13", "slide14", "slide15", "slide16", "slide17"];
+			var dotId = ["dot1", "dot2", "dot3", "dot4", "dot5", "dot6", "dot7", "dot8", "dot9", "dot10", "dot11", "dot12", "dot13", "dot14", "dot15", "dot16", "dot17"];
+
+			$(document).ready(function(){		
+				$('#projets').parallax(0, 0.05);
+				
+				$(document).scroll(function () {
+					var position = $(document).scrollTop();
+					var header = $('nav').outerHeight();
+					var offset = 200;
+					$('section').each(function(i) {
+						if($(this).position().top <= (position + header + offset))
+						{
+							$("a.activeItem").removeClass('activeItem');
+							$("a").eq(i).addClass('activeItem');
+						}
+					});
+				}); 
+
+				$(".navItem").click(function () {
+					//$("a.activeItem").removeClass('activeItem');
+					var active_section = $(this).attr('href');
+					$('html, body').animate({
+						scrollTop: $(active_section).offset().top
+					}, 1000);					
+					//$(this).addClass('activeItem');
+					return false;
+				});
+
+				for(var i = 0; i < slideId.length; i++){
+					showSlides(1, i);
+				}
+			});
 			
 			function plusSlides(n, no) {
 			  showSlides(slideIndex[no] += n, no);
@@ -716,8 +780,10 @@
 			
 			function showSlides(n, no) {
 				var i;
+
 				var x = document.getElementsByClassName(slideId[no]);
 				var y = document.getElementsByClassName(dotId[no]);
+
 				if (n > x.length) {slideIndex[no] = 1}    
 				if (n < 1) {slideIndex[no] = x.length}
 				for (i = 0; i < x.length; i++) {
