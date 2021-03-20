@@ -56,6 +56,69 @@
 		<section id="projets">
 			<h2>PROJETS</h2>
 			<div class="underline accentColor"></div>
+
+			<!--Catan-->
+			<div class="projet">
+				<div class="carrouselContainer">
+					<img class="slide slide18" src="./Project_Pictures/Catan1.jpg">
+					<div class="dot-container" style="text-align:center">
+						<span class="dot18 dot active" onclick="showSlides(1, 18)"></span>
+					</div>
+				</div>
+				<div class="projetText">
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3 class="textGradient">Catan <span class="WIP">(Projet en cours)</span></h3>
+								<p>03 - ?/2021</p>
+							</div>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Unity</li>
+								<li>Blender</li>
+								<li>C#</li>
+							</ul>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Re-création du jeu de plateau "Les Colons de Catane" en 3D sur le moteur de jeu Unity.</p>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<!--PFE-->
+			<div class="projet">
+				<div class="projetText">
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3 class="textGradient">Projet de fin d'étude <span class="WIP">(Projet en cours)</span></h3>
+								<p>02 - 03/2021</p>
+							</div>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>C++</li>
+								<li>CGAL</li>
+								<li>Qt</li>
+							</ul>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>Projet de fin d'étude consistant à améliorer un programme de visualisation par axe médian en ajoutant des visuels à chaques étapes de fusion des boules d'axe médian.</p>
+						</div>
+					</div>
+				</div>
+				<div class="carrouselContainer">
+					<img class="slide slide17" src="./Project_Pictures/PFE1.jpg">
+					<div class="dot-container" style="text-align:center">
+						<span class="dot17 dot active" onclick="showSlides(1, 17)"></span>
+					</div>
+				</div>
+			</div>
 			
 			<!--Drones-->
 			<div class="projet">
@@ -787,9 +850,9 @@
 			
 		</section>
 		<script>
-			var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-			var slideId = ["slide0", "slide1", "slide2", "slide3", "slide4", "slide5", "slide6", "slide7", "slide8", "slide9", "slide10", "slide11", "slide12", "slide13", "slide14", "slide15", "slide16"];
-			var dotId = ["dot0", "dot1", "dot2", "dot3", "dot4", "dot5", "dot6", "dot7", "dot8", "dot9", "dot10", "dot11", "dot12", "dot13", "dot14", "dot15", "dot16"];
+			var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+			var slideId = ["slide0", "slide1", "slide2", "slide3", "slide4", "slide5", "slide6", "slide7", "slide8", "slide9", "slide10", "slide11", "slide12", "slide13", "slide14", "slide15", "slide16", "slide17", "slide18"];
+			var dotId = ["dot0", "dot1", "dot2", "dot3", "dot4", "dot5", "dot6", "dot7", "dot8", "dot9", "dot10", "dot11", "dot12", "dot13", "dot14", "dot15", "dot16", "dot17", "dot18"];
 
 			$(document).ready(function(){		
 				$('#projets').parallax(0, 0.05);
