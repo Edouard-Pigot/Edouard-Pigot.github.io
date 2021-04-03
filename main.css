@@ -14,9 +14,9 @@ html, body{
 	min-height: 100vh;
 }
 
-body.loading{
+/*body.loading{
 	overflow: hidden;
-}
+}*/
 
 #loader{
 	height: 100vh;
@@ -352,7 +352,7 @@ section h2{
 }
 
 .projetInformation ul li:first-child{
-	margin: 0;
+	margin: 0 0.8em 0 0;
 }
 
 .projetTitle h3{

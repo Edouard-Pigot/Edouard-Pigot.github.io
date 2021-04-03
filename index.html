@@ -16,18 +16,19 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script type="text/javascript" src="jquery.parallax-1.1.3.js"></script>
 		<script>
-			$(window).load(function() {
+			/*$(window).load(function() {
 				$("#loader").fadeOut("slow");
 				$("body").removeClass("loading");
-			});
+			});*/
+			$("body").removeClass("loading");
 		</script>
 
 	</head>
 	<body class="loading">
-		<div id="loader">
+		<!--<div id="loader">
 			<h1>Chargement...</h1>
 			<div id="wheel"></div>
-		</div>
+		</div>-->
 		<section id="accueil">
 			<nav id="navContainer">
 				<div id="navWrap">
@@ -57,14 +58,46 @@
 			<h2>PROJETS</h2>
 			<div class="underline accentColor"></div>
 
-			<!--Catan-->
+			<!--Wallpaper-->
 			<div class="projet">
 				<div class="carrouselContainer">
-					<img class="slide slide18" src="./Project_Pictures/Catan1.jpg">
+					<img class="slide slide18" src="./Project_Pictures/Wallpaper1.jpg">
+					<img class="slide slide18 transparent" src="./Project_Pictures/Wallpaper2.jpg">
+					<img class="slide slide18 transparent" src="./Project_Pictures/Wallpaper3.jpg">
+					<a class="prev" onclick="plusSlides(-1,18)"></a>
+					<a class="next" onclick="plusSlides(1,18)"></a>
 					<div class="dot-container" style="text-align:center">
 						<span class="dot18 dot active" onclick="showSlides(1, 18)"></span>
+						<span class="dot18 dot" onclick="showSlides(2, 18)"></span>
+						<span class="dot18 dot" onclick="showSlides(3, 18)"></span>
 					</div>
 				</div>
+				<div class="projetText">
+					<div class="projetTextContainer">
+						<div class="projetHeader">
+							<div class="projetTitle">
+								<h3 class="textGradient">Wallpaper <span class="WIP">(Projet en cours)</span></h3>
+								<p>04 - ?/2021</p>
+							</div>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetInformation">
+							<ul>
+								<li>Unity</li>
+								<li>Blender</li>
+								<li>C#</li>
+								<li>Shader</li>
+							</ul>
+						</div>
+						<div class="projectSeparator"></div>
+						<div class="projetDescription">
+							<p>En partant d'une illustration prise sur le web, re-création en 3D sous Unity avec shader pour les effets d'ombre et des animations.</p>
+						</div>
+					</div>
+				</div> 
+			</div>
+			<!--Catan-->
+			<div class="projet">
 				<div class="projetText">
 					<div class="projetTextContainer">
 						<div class="projetHeader">
@@ -87,33 +120,8 @@
 						</div>
 					</div>
 				</div> 
-			</div>
-			<!--PFE-->
-			<div class="projet">
-				<div class="projetText">
-					<div class="projetTextContainer">
-						<div class="projetHeader">
-							<div class="projetTitle">
-								<h3 class="textGradient">Projet de fin d'étude <span class="WIP">(Projet en cours)</span></h3>
-								<p>02 - 03/2021</p>
-							</div>
-						</div>
-						<div class="projectSeparator"></div>
-						<div class="projetInformation">
-							<ul>
-								<li>C++</li>
-								<li>CGAL</li>
-								<li>Qt</li>
-							</ul>
-						</div>
-						<div class="projectSeparator"></div>
-						<div class="projetDescription">
-							<p>Projet de fin d'étude consistant à améliorer un programme de visualisation par axe médian en ajoutant des visuels à chaques étapes de fusion des boules d'axe médian.</p>
-						</div>
-					</div>
-				</div>
 				<div class="carrouselContainer">
-					<img class="slide slide17" src="./Project_Pictures/PFE1.jpg">
+					<img class="slide slide17" src="./Project_Pictures/Catan1.jpg">
 					<div class="dot-container" style="text-align:center">
 						<span class="dot17 dot active" onclick="showSlides(1, 17)"></span>
 					</div>
