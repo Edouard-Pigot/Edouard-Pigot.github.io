@@ -2,13 +2,13 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto';
+	z-index: 2;
 }
 
 body{
-	/*background-color: white;*/
-	background-color: #101010;
-	/*color: #222222;*/
-	color: white;
+	z-index: 0;
+	position: relative;
+	overflow-x: hidden;
 }
 
 #home{
@@ -17,7 +17,10 @@ body{
 }
 
 nav{
+	position: fixed;
+	width: 100%;
 	text-align: center;
+	z-index: 3;
 }
 
 .nav-item{
@@ -26,26 +29,12 @@ nav{
 	margin: .4em;
 }
 
-#fixed-navbar{
-	position: fixed;
-	width: 100%;
-	text-align: center;
-	top: -4.1em;
-	background-color: #101010;
-	transition: top 0.3s;
-	z-index: 1;
-	border-bottom: 1px solid red;
-}
-
-#fixed-navbar ul{
+nav ul{
 	padding: .5em;
 }
 
 .active{
-	background: red;
-	/*border-radius: .4em;*/
-	box-shadow: #565656 3px 3px 15px -5px;
-	color: white;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 ul{
@@ -81,7 +70,6 @@ h1{
 }
 
 hr{
-	border: solid 1px red;
 	width: 50%;
 	margin: 0 0 .5em 50%;
 }
@@ -144,7 +132,7 @@ hr{
 	width: 100%;
 	opacity: 0;
 	transition: .5s ease;
-	background-color: #ff0000e1;
+	border-left: 1px solid #00000000;
 }
   
 .container:hover .overlay {
@@ -216,8 +204,6 @@ hr{
 	overflow: hidden;
 }
 
-
-
 #schooling{
 	width: 100%;
 }
@@ -256,4 +242,69 @@ hr{
 
 #schooling-container div{
 	overflow: hidden;
+}
+
+/*	THEMES	*/
+.dark-background{
+	background-color: rgb(29, 29, 29);
+}
+
+.light-background{
+	background-color: rgb(255, 255, 255);
+}
+
+.colored-background-fade{
+	background-color: rgba(179, 255, 0, 0.699);
+}
+
+.colored-background{
+	background-color: rgb(179, 255, 0);
+}
+
+.colored-border{
+	border: solid 1px rgb(179, 255, 0);
+}
+
+.dark-text{
+	color: #ffffff;
+}
+
+.light-text{
+	color: #292929;
+}
+
+/*
+purple 251 0 255
+rose bonbon 255 0 124
+cyan 0 191 255
+vert 105 255 0
+jaune poussin 255 217 0
+*/
+
+.loader-container{
+	position: absolute;
+	z-index: 0;
+	width: 500px;
+	height: 500px;
+}
+
+.loader {
+	z-index: 0;
+	border: 2em solid #00000000;
+	border-radius: 50%;
+	border-top: 2em solid rgba(179, 255, 0, 0.13);
+	width: 20em;
+	height: 20em;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes spinReverse {
+	0% { transform: rotate(360deg); }
+	100% { transform: rotate(0deg); }
 }
