@@ -30,22 +30,18 @@ nav{
 }
 
 nav ul{
-	padding: .5em;
+	padding: 1em;
 }
 
 .active{
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-ul{
-	padding: 1em;
-}
-
 #title{
 	text-align: right;
 	position: relative;
 	top: 50%;
-	transform: translateY(-100%);
+	transform: translateY(-50%);
 	margin-left: 5%;
 	float: left;
 	width: 40%;
@@ -55,7 +51,7 @@ ul{
 	text-align: right;
 	position: relative;
 	top: 50%;
-	transform: translateY(-55%);
+	transform: translateY(-50%);
 	margin-left: 10%;
 	float: left;
 	height: 60%;
@@ -246,7 +242,7 @@ hr{
 
 /*	THEMES	*/
 .dark-background{
-	background-color: rgb(29, 29, 29);
+	background-color: rgb(21, 21, 21);
 }
 
 .light-background{
