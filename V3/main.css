@@ -77,7 +77,8 @@ hr{
 #about-container{
 	position: relative;
 	margin-left: 25%;
-	margin-bottom: 8em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	width: 50%;
 }
 
@@ -97,7 +98,8 @@ hr{
 #projects-container{
 	position: relative;
 	margin-left: 25%;
-	margin-bottom: 8em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	width: 50%;
 }
 
@@ -161,7 +163,8 @@ hr{
 #experience-container{
 	position: relative;
 	margin-left: 25%;
-	margin-bottom: 8em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	width: 50%;
 }
 
@@ -170,10 +173,11 @@ hr{
 	padding: 3em;
 }
 
-#experience-container img{
+#experience-container img, #schooling-container img{
 	width: 100%;
 	margin-bottom: 1em;
 	background-color: white;
+	border: solid 1px rgb(179, 255, 0);
 }
 
 .logo{
@@ -207,19 +211,14 @@ hr{
 #schooling-container{
 	position: relative;
 	margin-left: 25%;
-	margin-bottom: 8em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 	width: 50%;
 }
 
 #schooling-container h2{
 	text-align: center;
 	padding: 3em;
-}
-
-#schooling-container img{
-	width: 100%;
-	margin-bottom: 1em;
-	background-color: white;
 }
 
 .schooling-description{
@@ -250,7 +249,7 @@ hr{
 }
 
 .colored-background-fade{
-	background-color: rgba(179, 255, 0, 0.699);
+	background-color: rgba(179, 255, 0, 0.85);
 }
 
 .colored-background{
@@ -267,6 +266,19 @@ hr{
 
 .light-text{
 	color: #292929;
+}
+
+.active{
+	background-color: rgb(179, 255, 0);
+}
+
+.active a{
+	color: #292929;
+}
+
+a{
+	text-decoration: none;
+	color: #ffffff;
 }
 
 /*
@@ -286,21 +298,25 @@ jaune poussin 255 217 0
 
 .loader {
 	z-index: 0;
-	border: 2em solid #00000000;
 	border-radius: 50%;
-	border-top: 2em solid rgba(179, 255, 0, 0.13);
-	width: 20em;
-	height: 20em;
+	width: 2em;
+	height: 2em;
 	opacity: 0;
-	transition: opacity 1s;
+	transition: opacity 1s, transform 10s;
+	background-color: rgba(179, 255, 0, 0.199);
 }
 
-@keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+
+
+#project-viewer{
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 4;
 }
 
-@keyframes spinReverse {
-	0% { transform: rotate(360deg); }
-	100% { transform: rotate(0deg); }
+.project{
+	width: 100vw;
+	height: 100vh;
 }

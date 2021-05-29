@@ -19,12 +19,12 @@
 		<div id="home">
 			<nav class="dark-background">
 				<ul>
-					<li class="nav-item active colored-background light-text"><a>Home</a></li>
-					<li class="nav-item"><a>About me</a></li>
-					<li class="nav-item"><a>Projects</a></li>
-					<li class="nav-item"><a>Experience</a></li>
-					<li class="nav-item"><a>Schooling</a></li>
-					<li class="nav-item"><a>Contact</a></li>
+					<li class="nav-item active"><a href="#home">Home</a></li>
+					<li class="nav-item"><a href="#about">About me</a></li>
+					<li class="nav-item"><a href="#projects">Projects</a></li>
+					<li class="nav-item"><a href="#experience">Experience</a></li>
+					<li class="nav-item"><a href="#schooling">Schooling</a></li>
+					<li class="nav-item"><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 			<div id="title">
@@ -48,6 +48,9 @@
 				</p>
 			</div>
 		</div>
+		<!--<div id="project-viewer">
+			<div class="project dark-background"></div>
+		</div>-->
 		<div id="projects">
 			<div id="projects-container">
 				<h2>PROJECTS</h2>
@@ -58,6 +61,7 @@
 							<div class="overlay colored-background-fade">
 								<div class="text light-text">Hello World</div>
 							</div>
+							
 						</div>
 						<div class="container">
 							<img src="Project_Pictures/Faces1.jpg" alt="Avatar" class="image colored-border">
@@ -256,24 +260,18 @@
 
 			animate();
 
-			
-
 			function spawnRandomObject() {
 				var new_rot_cont = document.createElement('div');
 				new_rot_cont.className = "loader-container";
 				new_rot_cont.style.top = parseInt(100*Math.random()) + '%';
 				new_rot_cont.style.left = parseInt(100*Math.random()) + '%';
-				new_rot_cont.style.transform = 'rotate(' + parseInt( 360 * Math.random() ) + 'deg)';
 				var new_rot = document.createElement('div');
 				new_rot.className = "loader";
-				if(Math.random() > 0.5) new_rot.style.animation = "spinReverse 10s linear infinite";
-				else new_rot.style.animation = "spin 10s linear infinite";
 				new_rot_cont.appendChild(new_rot);
 				document.body.appendChild(new_rot_cont);
 				setTimeout(function(){new_rot.style.opacity = '1';}, 0);
+				setTimeout(function(){new_rot.style.transform = 'scale(' + (parseInt(Math.random())+1)*5 + ')';}, 0);
 			}
-
-
 
 			function animate() {
 				// get the elapsed time
@@ -296,6 +294,17 @@
 
 				// request another animation frame
 				requestAnimationFrame(animate);
+			}
+
+			// Add active class to the current button (highlight it)
+			var btns = document.getElementsByClassName("nav-item");
+			for (var i = 0; i < btns.length; i++) {
+				btns[i].addEventListener("click", function() {
+					var current = document.getElementsByClassName("active");
+					current[0].className = current[0].className.replace(" active", "");
+					this.className += " active";
+					
+				});
 			}
 		</script>
 	</body>
