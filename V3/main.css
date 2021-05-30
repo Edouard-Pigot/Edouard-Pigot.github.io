@@ -5,10 +5,18 @@
 	z-index: 2;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	z-index: 0;
+}
+
+#main-container{
 	position: relative;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 #home{
@@ -25,12 +33,18 @@ nav{
 
 .nav-item{
 	display: inline-block;
-	padding: .5em;
 	margin: .4em;
+	cursor: pointer;
 }
 
 nav ul{
 	padding: 1em;
+}
+
+a{
+	text-decoration: none;
+	padding: .75em;
+	line-height: 2.5em;
 }
 
 .active{
@@ -74,7 +88,7 @@ hr{
 	width: 100%;
 }
 
-#about-container{
+#about-container, #projects-container, #experience-container, #schooling-container, #contact-container{
 	position: relative;
 	margin-left: 25%;
 	padding-top: 4em;
@@ -82,7 +96,7 @@ hr{
 	width: 50%;
 }
 
-#about-container h2{
+#about-container h2, #projects-container h2, #experience-container h2, #schooling-container h2, #contact-container h2{
 	text-align: center;
 	padding: 3em;
 }
@@ -93,19 +107,6 @@ hr{
 
 #projects{
 	width: 100%;
-}
-
-#projects-container{
-	position: relative;
-	margin-left: 25%;
-	padding-top: 4em;
-	padding-bottom: 4em;
-	width: 50%;
-}
-
-#projects-container h2{
-	text-align: center;
-	padding: 3em;
 }
 
 .container {
@@ -130,7 +131,6 @@ hr{
 	width: 100%;
 	opacity: 0;
 	transition: .5s ease;
-	border-left: 1px solid #00000000;
 }
   
 .container:hover .overlay {
@@ -160,24 +160,10 @@ hr{
 	width: 100%;
 }
 
-#experience-container{
-	position: relative;
-	margin-left: 25%;
-	padding-top: 4em;
-	padding-bottom: 4em;
-	width: 50%;
-}
-
-#experience-container h2{
-	text-align: center;
-	padding: 3em;
-}
-
 #experience-container img, #schooling-container img{
 	width: 100%;
 	margin-bottom: 1em;
 	background-color: white;
-	border: solid 1px rgb(179, 255, 0);
 }
 
 .logo{
@@ -208,19 +194,6 @@ hr{
 	width: 100%;
 }
 
-#schooling-container{
-	position: relative;
-	margin-left: 25%;
-	padding-top: 4em;
-	padding-bottom: 4em;
-	width: 50%;
-}
-
-#schooling-container h2{
-	text-align: center;
-	padding: 3em;
-}
-
 .schooling-description{
 	width: calc(70% - 4em);
     float: right;
@@ -239,74 +212,140 @@ hr{
 	overflow: hidden;
 }
 
-/*	THEMES	*/
-.dark-background{
-	background-color: rgb(21, 21, 21);
+#copyright{
+	margin-top: 2em;
 }
 
-.light-background{
-	background-color: rgb(255, 255, 255);
+line{
+	stroke-width: .1em;
+}
+
+.overlay{
+	border-left: 2px solid #00000000;
+}
+
+/*	THEMES	*/
+.theme-background{
+	background-color: var(--background-color);
+}
+
+.theme-item{
+	border: solid 2px var(--background-color);
+}
+
+*, a{
+	color: var(--text-color);
+}
+
+.theme-text, ::selection, .active a, .theme-text-reverse{
+	color: var(--text-color-accent);
+}
+
+.theme-icon{
+	filter: invert(var(--icon-invert));
+}
+
+#theme-button{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 2em;
+	cursor: pointer;
+	line-height: 1em;
+	padding: 0.25em;
+}
+
+#theme-button img{
+	height: 1.5em;
+	width: 1.5em;
+	filter: invert(var(--icon-invert));
+}
+
+:root {
+	--background-color: #fff;
+	--text-color: #151515;
+	--text-color-accent: #fff;
+	--icon-invert: 100%;
+}
+
+[data-theme="dark"] {
+	--background-color: #151515;
+	--text-color: #fff;
+	--text-color-accent: #fff;
+	--icon-invert: 0%;
+}
+
+/*purple 251 0 255*/
+
+/*rose bonbon 255 0 124*/
+.colored-background, .active, ::selection{
+	background-color: rgb(255, 0, 124);
 }
 
 .colored-background-fade{
-	background-color: rgba(179, 255, 0, 0.85);
+	background-color: rgba(255, 0, 124, 0.85);
 }
 
-.colored-background{
-	background-color: rgb(179, 255, 0);
+.colored-border, .active, .nav-item:hover{
+	border: solid 2px rgb(255, 0, 124);
 }
 
-.colored-border{
-	border: solid 1px rgb(179, 255, 0);
+.decorator {	
+	background-color: rgba(255, 0, 124, 0.05);
 }
 
-.dark-text{
-	color: #ffffff;
+line{
+	stroke: rgb(255, 0, 124);
 }
 
-.light-text{
-	color: #292929;
+#experience-container img, #schooling-container img{
+	border: solid 2px rgb(255, 0, 124);
 }
 
-.active{
-	background-color: rgb(179, 255, 0);
+#contact-container div img:hover, #theme-button:hover img{
+	filter: invert(75%) sepia(100%) hue-rotate(297deg) saturate(9);
+}	
+
+  /* width */
+::-webkit-scrollbar {
+	width: 1em;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
 }
 
-.active a{
-	color: #292929;
-}
-
-a{
-	text-decoration: none;
-	color: #ffffff;
-}
-
-/*
-purple 251 0 255
-rose bonbon 255 0 124
-cyan 0 191 255
-vert 105 255 0
-jaune poussin 255 217 0
-*/
-
-.loader-container{
+.decorator {
 	position: absolute;
-	z-index: 0;
-	width: 500px;
-	height: 500px;
-}
-
-.loader {
 	z-index: 0;
 	border-radius: 50%;
 	width: 2em;
 	height: 2em;
 	opacity: 0;
 	transition: opacity 1s, transform 10s;
-	background-color: rgba(179, 255, 0, 0.199);
 }
 
+#contact-container div{
+	text-align: center;
+}
 
+#contact-container div img{
+	width: 3em;
+	height: auto;
+	margin: 2em;
+	cursor: pointer;
+}
 
 #project-viewer{
 	position: fixed;
