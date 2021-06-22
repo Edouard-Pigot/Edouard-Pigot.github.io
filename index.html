@@ -1,332 +1,403 @@
-<!DOCTYPE html>	
+<!DOCTYPE html>
 <html lan="fr">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="description" content="Portfolio d'Edouard PIGOT, étudiant en M2 GIG à Marseille">
-		<meta name="keywords" content="Edouard, Pigot, portfolio, site, personnel, projets, master, GIG, étudiant, informatique">
-		<meta name="author" content="Edouard Pigot">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<title>Edouard&nbsp;Pigot&nbsp;-&nbsp;Portfolio</title>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Portfolio d'Edouard PIGOT, étudiant en M2 GIG à Marseille">
+	<meta name="keywords"
+		content="Edouard, Pigot, portfolio, site, personnel, projets, master, GIG, étudiant, informatique">
+	<meta name="author" content="Edouard Pigot">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script src="https://kit.fontawesome.com/fea9b294eb.js" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script type="text/javascript" src="jquery.parallax-1.1.3.js"></script>
+	<title>Edouard&nbsp;Pigot&nbsp;-&nbsp;Portfolio</title>
 
-		<link rel="stylesheet" href="main.css"/>
-	</head>
-	<body>
-		<section id="accueil" class="row">
-			<div class="col-2"></div>
-			<nav id="navContainer" class="col-2 mainColor1">
-				<ul id="navBar">
-					<li><a class="nav-link active" href="#accueil">ACCUEIL</a></li>
-					<li><a class="nav-link" href="#about">A PROPOS</a></li>
-					<li><a class="nav-link" href="#projets">PROJETS</a></li>
-					<li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
-					<li><a class="nav-link" href="#parcours">PARCOURS</a></li>
-					<li><a class="nav-link" href="#contact">CONTACT</a></li>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://kit.fontawesome.com/fea9b294eb.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="main.css" />
+</head>
+
+<body class="theme-background theme-text">
+	<div id="main-container">
+		<section id="home">
+			<nav id="navbar" class="theme-background">
+				<ul>
+					<li id="home-nav" class="theme-item nav-item active"><a href="#home">Accueil</a></li>
+					<li id="about-nav" class="theme-item nav-item"><a href="#about">A propos</a></li>
+					<li id="projects-nav" class="theme-item nav-item"><a href="#projects">Projets</a></li>
+					<li id="experience-nav" class="theme-item nav-item"><a href="#experience">Experience</a></li>
+					<li id="schooling-nav" class="theme-item nav-item"><a href="#schooling">Parcours</a></li>
+					<li id="contact-nav" class="theme-item nav-item"><a href="#contact">Contact</a></li>
 				</ul>
+				<a id="theme-button" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg"
+						enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000">
+						<rect fill="none" height="20" width="20" />
+						<path
+							d="M8.04,4.86C7.88,5.39,7.8,5.94,7.8,6.5c0,3.14,2.56,5.7,5.7,5.7c0.56,0,1.11-0.08,1.64-0.24c-0.79,2.07-2.8,3.54-5.14,3.54 c-3.03,0-5.5-2.47-5.5-5.5C4.5,7.66,5.97,5.65,8.04,4.86z M10,3c-3.87,0-7,3.13-7,7s3.13,7,7,7s7-3.13,7-7 c0-0.36-0.03-0.72-0.08-1.06C16.16,10,14.91,10.7,13.5,10.7c-2.32,0-4.2-1.88-4.2-4.2c0-1.41,0.7-2.66,1.76-3.42 C10.72,3.03,10.36,3,10,3L10,3z" />
+					</svg></a>
 			</nav>
-			<div class="col-1"></div>
-			<div id="title" class="col-5">
-				<div id="main" class="mainColor2 shadow">
-					<h1>EDOUARD PIGOT</h1>
-				</div>
-				<div id="sub" class="mainColor3 shadow">
-					<h3>ETUDIANT EN M2 INFORMATIQUE</h3>
-				</div>
+			<div id="title" style="text-align: center !important; width: 100% !important; margin: 0 !important;">
+				<h1>EDOUARD PIGOT</h1>
+				<hr class="colored-border" style="width: 50% !important; margin-left: 25% !important	;">
+				<h2>ETUDIANT EN M2 INFORMATIQUE,</h2>
+				<h2>STAGIAIRE INGENIEUR LOGICIEL.</h2>
+			</div>
+			<!--<div id="title">
+				<h1>EDOUARD PIGOT</h1>
+				<hr class="colored-border">
+				<h2>ETUDIANT EN M2 INFORMATIQUE,</h2>
+				<h2>STAGIAIRE INGENIEUR LOGICIEL.</h2>
+			</div>
+			<div id="picture">
+				<img src="PP-pink.png">
+			</div>-->
+		</section>
+		<section id="about">
+			<div id="about-container">
+				<h2>A PROPOS</h2>
+				<p>
+					Actuellement en M2 Informatique - Géométrie et Informatique Graphique, je réalise mon
+					stage de fin d'étude au sein de l'équipe Human Interface chez Dassault Système.
+					<br>
+					Vous pouvez découvrir mes différents projets réalisés ainsi que mon parcours ci-dessous.
+				</p>
 			</div>
 		</section>
-		<section id="about" class="row shadow">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis malesuada neque, 
-				sed interdum eros euismod nec. Sed rutrum, dolor sit amet tempor scelerisque, erat sem volutpat ex, 
-				non lobortis erat odio at ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida 
-				tincidunt lorem, ut auctor mi malesuada at. Nam a lacus ac ligula congue mollis vel in sem. Etiam vehicula 
-				fringilla nisl sed sagittis. Cras non diam vitae mi sodales dapibus. Aenean gravida odio diam, et gravida 
-				felis congue quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nisi felis, ultrices et est in, 
-				eleifend tincidunt odio. Mauris pretium ultricies tristique.<br><br>
+		<!--<div id="project-viewer" class="theme-background">
+				<div class="project">
+					<div class="project-text">
+						<h2>MON SUPER PROJET</h2>
+						<ul>
+							<li>C++</li>
+							<li>Python</li>
+							<li>HTML</li>
+						</ul>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec erat in erat pretium 
+						tincidunt suscipit quis turpis. Donec sed venenatis magna. Aenean ornare imperdiet libero, 
+						sit amet elementum lacus hendrerit eu. Praesent ac eros eget erat tincidunt viverra et vel 
+						enim. Donec semper tortor augue, et lacinia ex laoreet in. Phasellus gravida volutpat arcu 
+						dignissim placerat. Sed cursus fringilla quam, sed mollis risus cursus at. Suspendisse id 
+						imperdiet lectus, eu malesuada ex. Etiam ut tempor magna. Etiam eu dui hendrerit, tempus 
+						nulla vitae, rutrum lectus. Suspendisse interdum ornare libero, sed consectetur mi varius 
+						et. Duis vel rutrum sapien. Ut mi tortor, venenatis eu malesuada vitae, ullamcorper non nisi. 
+						Etiam lacinia, turpis vitae vehicula sagittis, quam sem sollicitudin elit, in sollicitudin nunc libero in ligula.
+						</p>
+					</div>
+					<div class="project-images">
+						<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block mx-auto w-100" src="data:image/jpeg;base64,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" alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block mx-auto w-100" src="https://www.pompes-funebres-santilly.com/wp-content/uploads/2021/02//La-fore%CC%82t-870x450.jpg" alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block mx-auto w-100" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Dscn3308-rg-e-from-w_900x500.jpg" alt="Third slide">
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleControls" onclick="plusSlides(1)">
+									<span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleControls">
+									<span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>-->
+		<section id="projects">
+			<div id="projects-container">
+				<h2>PROJETS</h2>
+				<div class="row">
+					<div class="column">
+						<div class="container">
+							<img src="Project_Pictures/TP1.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Tank physics</div>
+							</div>
 
-				Curabitur ultricies semper tortor, commodo facilisis erat semper sed. Integer leo libero, tincidunt at pulvinar 
-				laoreet, auctor sed neque. Phasellus ut erat bibendum dui pharetra lobortis pellentesque a augue. Vivamus placerat 
-				feugiat urna quis dapibus. Duis iaculis lectus eget eros ultricies pulvinar. Nunc ultrices eu nulla eget ultrices. 
-				In ipsum tellus, aliquam non egestas in, ultrices eu velit. In sit amet nisl vestibulum, mattis massa nec, ultricies odio. 
-				Nam pellentesque est a augue placerat, sagittis sagittis libero porta. Duis sit amet risus et tellus tempus ultrices eu in mi. 
-				Morbi ex lorem, feugiat ut ultrices et, venenatis quis nisi. Nunc ornare dui eget ultricies interdum. Nam congue magna nisi, 
-				nec lacinia justo gravida id. Pellentesque rhoncus nunc a maximus mollis.
-			</p>
-		</section>
-		<section id="projets" class="row">
-			<!--Portfolio V2-->
-			<div class="col-12 row projet">
-				<div class="col-2"></div>
-				<div class="col-2 row timeline mainColor1">
-					<div class="col-8">
-						<div></div>
-						<div class="date">
-							<div></div>
-							<h1>04 - ?/2021</h1>
 						</div>
-					</div>
-					<div class="col-2 line">
-						<div>
-							<svg width="100%">
-								<line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(255,255,255); stroke-width:5" />
-							</svg>
+						<div class="container">
+							<img src="Project_Pictures/3D1.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Modélisation 3D</div>
+							</div>
 						</div>
-						<div>
-							<svg width="100%">
-								<line x1="50%" y1="0" x2="50%" y2="40%" style="stroke:rgb(255,255,255); stroke-width:5" />
-								<line x1="50%" y1="60%" x2="50%" y2="100%" style="stroke:rgb(255,255,255); stroke-width:5" />
-								<rect x="calc(50% - .75em)" y="calc(50% - .75em" fill="none" width="1.5em" height="1.5em" style="stroke:rgb(255,255,255); stroke-width:5" />
-							</svg>
+						<div class="container">
+							<img src="Project_Pictures/Procedural0.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Epées procédurales</div>
+							</div>
 						</div>
-						<div>
-							<svg width="100%">
-								<line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(255,255,255); stroke-width:5" />
-							</svg>
+						<div class="container">
+							<img src="Project_Pictures/Animation1.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Animation scriptée</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-8">
-					<div class="projetContainer">
-						<div class="projetBody shadow">
-							<div class="pointer shadow"></div>
-							<div class="projetBackground row">
-								<div class="projetTextContainer col-6">
-									<div class="projetText">
-										<div class="projetHeader">
-											<h1>Wallpaper (Projet en cours)</h1>
-										</div>
-										<div class="projetTags">
-											<ul>
-												<li>Unity</li>
-												<li>Blender</li>
-												<li>C#</li>
-											</ul>
-										</div>
-										<div class="projetDescription">
-											<p>En partant d'une illustration prise sur le web, re-création en 3D sous Unity avec shader pour les effets d'ombre et des animations.</p>
-										</div>
-									</div>
-								</div>
-								<div class="projetImagesContainer col-6">
-									<div class="projetImages">
-										<img src="Project_Pictures/Wallpaper1.jpg" width="3840" height="2160">
-										<div class="imageNavigatorContainer">
-											<div class="imageNavigator">
-												<div class="dot"></div>
-												<div class="dot"></div>
-												<div class="dot"></div>
-											</div>
-										</div>
-									</div>
-								</div>
+						<div class="container">
+							<img src="Project_Pictures/Ascenseur1.JPG" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Contrôleur d'ascenseur</div>
+							</div>
+						</div>
+						<div class="container">
+							<img src="Project_Pictures/Lumipic1.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Lumipic</div>
+							</div>
+						</div>
+						<div class="container">
+							<img src="Project_Pictures/Portfolio1.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Portfolio</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<!--Portfolio V2-->
-			<div class="col-12 row projet">
-				<div class="col-2"></div>
-				<div class="col-2 row timeline mainColor1">
-					<div class="col-8">
-						<div></div>
-						<div class="date">
-							<div></div>
-							<h1>04 - ?/2021</h1>
-						</div>
-					</div>
-					<div class="col-2 line">
-						<div>
-							<svg width="100%">
-								<line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(255,255,255); stroke-width:5" />
-							</svg>
-						</div>
-						<div>
-							<svg width="100%">
-								<line x1="50%" y1="0" x2="50%" y2="40%" style="stroke:rgb(255,255,255); stroke-width:5" />
-								<line x1="50%" y1="60%" x2="50%" y2="100%" style="stroke:rgb(255,255,255); stroke-width:5" />
-								<rect x="calc(50% - .75em)" y="calc(50% - .75em" fill="none" width="1.5em" height="1.5em" style="stroke:rgb(255,255,255); stroke-width:5" />
-							</svg>
-						</div>
-						<div>
-							<svg width="100%">
-								<line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(255,255,255); stroke-width:5" />
-							</svg>
-						</div>
-					</div>
-				</div>
-				<div class="col-8">
-					<div class="projetContainer">
-						<div class="projetBody shadow">
-							<div class="pointer shadow"></div>
-							<div class="projetBackground row">
-								<div class="projetTextContainer col-6">
-									<div class="projetText">
-										<div class="projetHeader">
-											<h1>Wallpaper (Projet en cours)</h1>
-										</div>
-										<div class="projetTags">
-											<ul>
-												<li>Unity</li>
-												<li>Blender</li>
-												<li>C#</li>
-											</ul>
-										</div>
-										<div class="projetDescription">
-											<p>En partant d'une illustration prise sur le web, re-création en 3D sous Unity avec shader pour les effets d'ombre et des animations.</p>
-										</div>
-									</div>
-								</div>
-								<div class="projetImagesContainer col-6">
-									<div class="projetImages">
-										<img src="Project_Pictures/Wallpaper1.jpg" width="3840" height="2160">
-										<div class="imageNavigatorContainer">
-											<div class="imageNavigator">
-												<div class="dot"></div>
-												<div class="dot"></div>
-												<div class="dot"></div>
-											</div>
-										</div>
-									</div>
-								</div>
+					<div class="column">
+						<div class="container">
+							<img src="Project_Pictures/TS1.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Tank shooter</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<!--Portfolio V2-->
-			<div class="col-12 row projet">
-				<div class="col-2"></div>
-				<div class="col-2 row timeline mainColor1">
-					<div class="col-8">
-						<div></div>
-						<div class="date">
-							<div></div>
-							<h1>04 - ?/2021</h1>
+						<div class="container">
+							<img src="Project_Pictures/Faces6.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Détecteur de faces</div>
+							</div>
 						</div>
-					</div>
-					<div class="col-2 line">
-						<div>
-							<svg width="100%">
-								<line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(255,255,255); stroke-width:5" />
-							</svg>
+						<div class="container">
+							<img src="Project_Pictures/Blitz1.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Blitz</div>
+							</div>
 						</div>
-						<div>
-							<svg width="100%">
-								<line x1="50%" y1="0" x2="50%" y2="40%" style="stroke:rgb(255,255,255); stroke-width:5" />
-								<line x1="50%" y1="60%" x2="50%" y2="100%" style="stroke:rgb(255,255,255); stroke-width:5" />
-								<rect x="calc(50% - .75em)" y="calc(50% - .75em" fill="none" width="1.5em" height="1.5em" style="stroke:rgb(255,255,255); stroke-width:5" />
-							</svg>
+						<div class="container">
+							<img src="Project_Pictures/Pacman1.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Pacman</div>
+							</div>
 						</div>
-						<div>
-							<svg width="100%">
-								<line x1="50%" y1="0" x2="50%" y2="100%" style="stroke:rgb(255,255,255); stroke-width:5" />
-							</svg>
+						<div class="container">
+							<img src="Project_Pictures/TER1.JPG" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Simulateur d'inondation</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-8">
-					<div class="projetContainer">
-						<div class="projetBody shadow">
-							<div class="pointer shadow"></div>
-							<div class="projetBackground row">
-								<div class="projetTextContainer col-6">
-									<div class="projetText">
-										<div class="projetHeader">
-											<h1>Wallpaper (Projet en cours)</h1>
-										</div>
-										<div class="projetTags">
-											<ul>
-												<li>Unity</li>
-												<li>Blender</li>
-												<li>C#</li>
-											</ul>
-										</div>
-										<div class="projetDescription">
-											<p>En partant d'une illustration prise sur le web, re-création en 3D sous Unity avec shader pour les effets d'ombre et des animations.</p>
-										</div>
-									</div>
-								</div>
-								<div class="projetImagesContainer col-6">
-									<div class="projetImages">
-										<img src="Project_Pictures/Wallpaper1.jpg" width="3840" height="2160">
-										<div class="imageNavigatorContainer">
-											<div class="imageNavigator">
-												<div class="dot"></div>
-												<div class="dot"></div>
-												<div class="dot"></div>
-											</div>
-										</div>
-									</div>
-								</div>
+						<div class="container">
+							<img src="Project_Pictures/Smoke1.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Emetteur de particules</div>
+							</div>
+						</div>
+						<div class="container">
+							<img src="Project_Pictures/Boids.jpg" alt="Avatar" class="image colored-border">
+							<div class="overlay colored-background-fade">
+								<div class="text theme-text-reverse">Boids</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<script>
-			/*var slideIndex = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-			var slideId = ["slide0", "slide1", "slide2", "slide3", "slide4", "slide5", "slide6", "slide7", "slide8", "slide9", "slide10", "slide11", "slide12", "slide13", "slide14", "slide15", "slide16", "slide17", "slide18"];
-			var dotId = ["dot0", "dot1", "dot2", "dot3", "dot4", "dot5", "dot6", "dot7", "dot8", "dot9", "dot10", "dot11", "dot12", "dot13", "dot14", "dot15", "dot16", "dot17", "dot18"];
-*/
-			$(document).ready(function(){		
-				$('#projets').parallax(0, 0.05);
-				
-				$(document).scroll(function () {
-					var position = $(document).scrollTop();
-					var header = $('#navContainer').outerHeight();
-					var offset = 200;
-					$('section').each(function(i) {
-						if($(this).position().top <= (position + header + offset))
-						{
-							$("a.active").removeClass('active');
-							$("a").eq(i).addClass('active');
-						}
-					});
-				}); 
+		<section id="experience">
+			<div id="experience-container">
+				<h2>EXPERIENCE</h2>
+				<div>
+					<div class="logo">
+						<img src="DS.png">
+						<svg width="100%">
+							<line x1="50%" y1="0" x2="50%" y2="100%" />
+						</svg>
+					</div>
+					<div class="experience-description">
+						<h3>INGENIEUR LOGICIEL - STAGE</h3>
+						<h4>04/21 - 09/21 (6 mois)</h4>
+						<p></p>
+					</div>
+				</div>
+				<div>
+					<div class="logo">
+						<img src="CM.png">
+						<svg width="100%">
+							<line x1="50%" y1="0" x2="50%" y2="100%" />
+						</svg>
+					</div>
+					<div class="experience-description">
+						<h3>AUXILIAIRE DE VACANCES - CDD</h3>
+						<h4>07/20 - 08/20 (2 mois)</h4>
+						<p>Accueil téléphonique : virements, CB, chèques, gestion de comptes et livrets, prise de
+							rendez-vous, information sur les tarifications, déblocages de prêts,...</p>
+					</div>
+				</div>
+				<div>
+					<div class="logo">
+						<img src="IPGR.png">
+						<svg width="100%">
+							<line x1="50%" y1="0" x2="50%" y2="100%" />
+						</svg>
+					</div>
+					<div class="experience-description">
+						<h3>DEVELOPPEUR UNITY 3D - STAGE</h3>
+						<h4>06/20 - 07/20 (2 mois)</h4>
+						<p>Continuation du Travail d'Etude et de Recherche (TER) commencé à la fin du M1 sur le
+							développement d'un simulateur d’inondation de musée sous Unity. Utilisation des
+							marching cubes et recherches sur les dernières technologies proposées par Unity
+							avec DOTS.</p>
+					</div>
+				</div>
+				<div>
+					<div class="logo">
+						<img src="CM.png">
+						<svg width="100%">
+							<line x1="50%" y1="0" x2="50%" y2="100%" />
+						</svg>
+					</div>
+					<div class="experience-description">
+						<h3>AUXILIAIRE DE VACANCES - CDD</h3>
+						<h4>07/19 - 08/19 (2 mois)</h4>
+						<p>Accueil téléphonique : virements, CB, chèques, gestion de comptes et livrets, prise de
+							rendez-vous, information sur les tarifications, déblocages de prêts,...</p>
+					</div>
+				</div>
+				<div>
+					<div class="logo">
+						<img src="CM.png">
+						<svg width="100%">
+							<line x1="50%" y1="0" x2="50%" y2="100%" />
+						</svg>
+					</div>
+					<div class="experience-description">
+						<h3>AUXILIAIRE DE VACANCES - CDD</h3>
+						<h4>07/18 - 08/18 (2 mois)</h4>
+						<p>Accueil téléphonique : virements, CB, chèques, gestion de comptes et livrets, prise de
+							rendez-vous, information sur les tarifications, déblocages de prêts,...</p>
+					</div>
+				</div>
+				<div>
+					<div class="logo">
+						<img src="FC.png">
+						<svg width="100%">
+							<line x1="50%" y1="0" x2="50%" y2="100%" />
+						</svg>
+					</div>
+					<div class="experience-description">
+						<h3>DEVELOPPEUR FULL STACK - STAGE</h3>
+						<h4>04/18 - 06/18 (3 mois)</h4>
+						<p>Amélioration de l'outil de gestion de projet open source en ajoutant la communication
+							avec l'outil interne de l'entreprise.</p>
+					</div>
+				</div>
+				<div>
+					<div class="logo">
+						<img src="CM.png">
+					</div>
+					<div class="experience-description">
+						<h3>AUXILIAIRE DE VACANCES - CDD</h3>
+						<h4>07/16 - 07/16 (1 mois)</h4>
+						<p>Agence Marseille La Joliette.
+							Déplacement et tri des archives, accueil clientèle (orientation, remises CB et chèques),
+							entrée des bilans d'entreprises sur l'outil informatique.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="schooling">
+			<div id="schooling-container">
+				<h2>PARCOURS</h2>
+				<div>
+					<div class="logo">
+						<img src="GIG.png">
+						<svg width="100%">
+							<line x1="50%" y1="0" x2="50%" y2="100%" />
+						</svg>
+					</div>
+					<div class="schooling-description">
+						<h3>MASTER INFORMATIQUE - GEOMETRIE ET INFORMATIQUE GRAPHIQUE</h3>
+						<h4>30/09/2021</h4>
+						<p>Options :
+							<br>
+							- Modélisation géométrique et maillages
+							<br>
+							- Interfaces homme-machine
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="logo">
+						<img src="FDS.png">
+						<svg width="100%">
+							<line x1="50%" y1="0" x2="50%" y2="100%" />
+						</svg>
+					</div>
+					<div class="schooling-description">
+						<h3>LICENCE INFORMATIQUE</h3>
+						<h4>30/09/2021</h4>
+						<p>Options :
+							<br>
+							- Modélisation 3D
+						</p>
+					</div>
+				</div>
+				<div>
+					<div class="logo">
+						<img src="IUT.png">
+					</div>
+					<div class="schooling-description">
+						<h3>DUT INFORMATIQUE</h3>
+						<h4>30/09/2021</h4>
+						<p>Options :
+							<br>
+							- Développement Android
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div id="contact-container">
+				<h2>CONTACT</h2>
+				<div>
+					<a href="mailto:pigotedouard@orange.fr">Mail : pigotedouard@orange.fr</a>
+				</div>
+				<div>
+					<a href="https://www.linkedin.com/in/edouard-pigot/" target="_blank" rel="noopener noreferrer">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 382 382">
+							<path d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
+							C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
+							H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806
+							c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1
+							s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73
+							c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079
+							c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426
+							c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472
+							L341.91,330.654L341.91,330.654z" />
+						</svg>
+					</a>
+					<a href="https://www.facebook.com/edouard.pigot" target="_blank" rel="noopener noreferrer">
+						<svg xmlns="http://www.w3.org/2000/svg"x="0px" y="0px" viewBox="0 0 167.657 167.657">
+							<path d="M83.829,0.349C37.532,0.349,0,37.881,0,84.178c0,41.523,30.222,75.911,69.848,82.57v-65.081H49.626v-23.42h20.222V60.978c0-20.037,12.238-30.956,30.115-30.956c8.562,0,15.92,0.638,18.056,0.919v20.944l-12.399,0.006c-9.72,0-11.594,4.618-11.594,11.397v14.947h23.193l-3.025,23.42H94.026v65.653c41.476-5.048,73.631-40.312,73.631-83.154C167.657,37.881,130.125,0.349,83.829,0.349z" />
+						</svg>
+					</a>
+					<a href="https://twitter.com/Pesm_" target="_blank" rel="noopener noreferrer">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
+							<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z" />
+						</svg>
+					</a>
+				</div>
+				<div id="copyright">
+					Edouard Pigot © 2021
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
 
-				$(".active").click(function () {
-					//$("a.activeItem").removeClass('activeItem');
-					var active_section = $(this).attr('href');
-					$('html, body').animate({
-						scrollTop: $(active_section).offset().top
-					}, 1000);					
-					//$(this).addClass('activeItem');
-					return false;
-				});
-
-				/*for(var i = 0; i < slideId.length; i++){
-					showSlides(1, i);
-				}*/
-			});
-			
-			function plusSlides(n, no) {
-			  showSlides(slideIndex[no] += n, no);
-			}
-			/*
-			function showSlides(n, no) {
-				var i;
-
-				var x = document.getElementsByClassName(slideId[no]);
-				var y = document.getElementsByClassName(dotId[no]);
-
-				if (n > x.length) {slideIndex[no] = 1}    
-				if (n < 1) {slideIndex[no] = x.length}
-				for (i = 0; i < x.length; i++) {
-					x[i].style.opacity = "0";  
-				}
-				for (i = 0; i < y.length; i++) {
-					y[i].className = y[i].className.replace(" active", "");
-				}
-				x[slideIndex[no]-1].style.opacity = "1";  
-				y[slideIndex[no]-1].className += " active";
-			}*/
-		</script>
-	</body>
 </html>
