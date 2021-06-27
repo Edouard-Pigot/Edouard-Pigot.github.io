@@ -11,7 +11,6 @@ html{
 
 body{
 	z-index: 0;
-	/*overflow: hidden;*/
 }
 
 #main-container{
@@ -350,6 +349,7 @@ line{
 }
 
 #project-viewer{
+	display: none;
 	position: fixed;
 	top: 0;
 	width: 100vw;
@@ -375,6 +375,8 @@ line{
 }
 
 .project-text{
+	display: flex;
+	align-items: center;
 	text-align: justify;
 	padding: 2em;
 	width: 50%;
@@ -387,6 +389,7 @@ line{
 .project-text ul li{
 	display: inline-block;
 	padding: .4em;
+	margin: 0 .6em 0 0;
 }
 
 svg{
@@ -419,13 +422,15 @@ svg:hover{
 .carousel{
 	position: relative;
 	width: 100%;
-	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
-.carousel-inner{
+#carousel-inner{
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	text-align: center;
 }
 
 .carousel-item{
@@ -447,35 +452,29 @@ svg:hover{
 }
 
 .carousel-item img{
-	width: 100%;
+	max-width: 100%;
 }
 
 .carousel-control-next, .carousel-control-prev{
-	position: absolute;
-	top: 0;
-	bottom: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 15%;
+	width: 6%;
+	cursor: default;
 }
 
 .carousel-control-next{
 	right: 0;
+	transform: scaleX(-1);
 } 
 
 .carousel-control-prev{
 	left: 0;
 }
 
-.p-3 {
-    padding: 1rem!important;
-}
-
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    height: 1em;
-    background-size: 100% 100%;
-	background-image: url("arrowLW-2.png");
+    height: 3.5em;
+	cursor: pointer;
 }
 
 .sr-only {
@@ -489,9 +488,15 @@ svg:hover{
     border: 0;
 }
 
-.carousel-inner .active{
+#carousel-inner .active-slide{
 	display: block!important;
 }
 
-
-
+#close-button{
+	position: absolute;
+	top: 2em;
+	right: 2em;
+	width: 2em;
+	height: 2em;
+	cursor: pointer;
+}
