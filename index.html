@@ -23,19 +23,25 @@
 	<div id="main-container">
 		<section id="home">
 			<nav id="navbar" class="theme-background">
-				<ul>
+				<ul id="menu">
 					<li id="home-nav" class="theme-item nav-item active"><a href="#home">Accueil</a></li>
 					<li id="about-nav" class="theme-item nav-item"><a href="#about">A propos</a></li>
 					<li id="projects-nav" class="theme-item nav-item"><a href="#projects">Projets</a></li>
 					<li id="experience-nav" class="theme-item nav-item"><a href="#experience">Experience</a></li>
 					<li id="schooling-nav" class="theme-item nav-item"><a href="#schooling">Parcours</a></li>
-					<li id="contact-nav" class="theme-item nav-item"><a href="#contact">Contact</a></li>
+					<li id="contact-nav" class="theme-item nav-item"><a href="#contact">Contact</a></li>					
 				</ul>
-				<a id="theme-button" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000"><rect fill="none" height="20" width="20" /><path d="M8.04,4.86C7.88,5.39,7.8,5.94,7.8,6.5c0,3.14,2.56,5.7,5.7,5.7c0.56,0,1.11-0.08,1.64-0.24c-0.79,2.07-2.8,3.54-5.14,3.54 c-3.03,0-5.5-2.47-5.5-5.5C4.5,7.66,5.97,5.65,8.04,4.86z M10,3c-3.87,0-7,3.13-7,7s3.13,7,7,7s7-3.13,7-7 c0-0.36-0.03-0.72-0.08-1.06C16.16,10,14.91,10.7,13.5,10.7c-2.32,0-4.2-1.88-4.2-4.2c0-1.41,0.7-2.66,1.76-3.42 C10.72,3.03,10.36,3,10,3L10,3z" /></svg></a>
+				<ul id="mobile-theme-button">
+					<li class="theme-item"><a class="theme-button" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000"><rect fill="none" height="20" width="20" /><path d="M8.04,4.86C7.88,5.39,7.8,5.94,7.8,6.5c0,3.14,2.56,5.7,5.7,5.7c0.56,0,1.11-0.08,1.64-0.24c-0.79,2.07-2.8,3.54-5.14,3.54 c-3.03,0-5.5-2.47-5.5-5.5C4.5,7.66,5.97,5.65,8.04,4.86z M10,3c-3.87,0-7,3.13-7,7s3.13,7,7,7s7-3.13,7-7 c0-0.36-0.03-0.72-0.08-1.06C16.16,10,14.91,10.7,13.5,10.7c-2.32,0-4.2-1.88-4.2-4.2c0-1.41,0.7-2.66,1.76-3.42 C10.72,3.03,10.36,3,10,3L10,3z" /></svg></a></li>
+				</ul>
+				  <a id="burger-icon" onclick="toggleMobileMenu()">
+					<i class="fa fa-bars"></i>
+				  </a>
+				<a id="desktop-theme-button" class="theme-button" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000"><rect fill="none" height="20" width="20" /><path d="M8.04,4.86C7.88,5.39,7.8,5.94,7.8,6.5c0,3.14,2.56,5.7,5.7,5.7c0.56,0,1.11-0.08,1.64-0.24c-0.79,2.07-2.8,3.54-5.14,3.54 c-3.03,0-5.5-2.47-5.5-5.5C4.5,7.66,5.97,5.65,8.04,4.86z M10,3c-3.87,0-7,3.13-7,7s3.13,7,7,7s7-3.13,7-7 c0-0.36-0.03-0.72-0.08-1.06C16.16,10,14.91,10.7,13.5,10.7c-2.32,0-4.2-1.88-4.2-4.2c0-1.41,0.7-2.66,1.76-3.42 C10.72,3.03,10.36,3,10,3L10,3z" /></svg></a>
 			</nav>
-			<div id="title" style="text-align: center !important; width: 100% !important; margin: 0 !important;">
+			<div id="title" >
 				<h1>EDOUARD PIGOT</h1>
-				<hr class="colored-border colored-background" style="width: 50% !important; margin-left: 25% !important	;">
+				<hr class="colored-border colored-background">
 				<h3>ETUDIANT EN M2 INFORMATIQUE, STAGIAIRE INGENIEUR LOGICIEL.</h3>
 			</div>
 		</section>
@@ -64,7 +70,7 @@
 				<div class="project-images">
 					<a class="carousel-control-prev" href="#carouselExampleControls">
 						<!--<span class="carousel-control-prev-icon bg-dark rounded-circle" onclick="plusSlides(1)"></span>-->
-						<svg class="carousel-control-prev-icon" onclick="plusSlides(1)" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000">
+						<svg class="carousel-control-prev-icon" onclick="plusSlides(-1)" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000">
 							<path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/>
 						</svg>
 					</a>
@@ -74,7 +80,7 @@
 					</div>
 					<a class="carousel-control-next" href="#carouselExampleControls">
 						<!--<span class="carousel-control-next-icon bg-dark rounded-circle" onclick="plusSlides(-1)"></span>-->
-						<svg class="carousel-control-next-icon" onclick="plusSlides(-1)" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000">
+						<svg class="carousel-control-next-icon" onclick="plusSlides(1)" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000">
 							<path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/>
 						</svg>
 					</a>

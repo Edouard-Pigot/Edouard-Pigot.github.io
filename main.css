@@ -13,6 +13,11 @@ body{
 	z-index: 0;
 }
 
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('Fonts/BebasNeue-Regular.ttf');
+}
+
 #main-container{
 	position: relative;
 	overflow-x: hidden;
@@ -53,17 +58,21 @@ a{
 }
 
 #title{
-	text-align: right;
+	text-align: center;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	margin-left: 5%;
 	float: left;
-	width: 40%;
+	width: 100%;
 }
 
 #title h3{
 	padding-top: 1em;
+}
+
+#title hr{
+	width: 50%;
+	margin-left: 25%;
 }
 
 #picture{
@@ -255,17 +264,13 @@ line{
 	filter: invert(var(--icon-invert));
 }
 
-#theme-button{
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	right: 2em;
+.theme-button{
 	cursor: pointer;
 	line-height: 1em;
 	padding: 0.25em;
 }
 
-#theme-button img{
+.theme-button img{
 	height: 1.5em;
 	width: 1.5em;
 	filter: invert(var(--icon-invert));
@@ -456,17 +461,18 @@ svg:hover{
 #carousel-inner{
 	position: relative;
 	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	text-align: center;
 }
 
 .carousel-item{
-	position: relative;
 	display: none;
-	align-items: center;
 	width: 100%;
-	backface-visibility: hidden;
-	perspective: 1000px;
+	height: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	vertical-align: middle;
 }
 
 .d-block{
@@ -480,6 +486,7 @@ svg:hover{
 
 .carousel-item img{
 	max-width: 100%;
+	max-height: 100%;
 }
 
 .carousel-control-next, .carousel-control-prev{
@@ -516,7 +523,7 @@ svg:hover{
 }
 
 #carousel-inner .active-slide{
-	display: block!important;
+	display: flex!important;
 }
 
 #close-button{
@@ -528,7 +535,115 @@ svg:hover{
 	cursor: pointer;
 }
 
-iframe{
-	width: 100%;
-	height: 16em;
+
+
+
+
+#desktop-theme-button{
+	display: block;
+	position: absolute;
+	top: 25%;
+	transform: translateY(-25%);
+	right: 2em;
+}
+
+#menu{
+	display: block;
+}
+
+#burger-icon{
+	display: none;
+}
+
+#mobile-theme-button{
+	display: none;
+	list-style: none;
+}
+
+
+@media screen and (max-width: 640px) {
+	.nav-item{
+		display: block;
+		margin: .4em;
+		cursor: pointer;
+	}
+
+	#menu{
+		display: none;
+	}
+
+	.displayed{
+		display: block!important;
+	}
+
+	#desktop-theme-button{
+		display: none;
+	}
+
+	#burger-icon{
+		display: block;
+	}
+
+	#mobile-theme-button{
+		display: none;
+	}
+
+	#about-container h2, #projects-container h2, #experience-container h2, #schooling-container h2, #contact-container h2{
+		padding: 0;
+	}
+
+	.column {
+		width: 100%;
+	}
+
+	#about-container, #projects-container, #experience-container, #schooling-container, #contact-container{
+		margin-left: 10%;
+		width: 80%;
+	}
+
+	.schooling-description, .experience-description{
+		width: auto;
+		float: none;
+	}
+
+	.logo{
+		width: auto;
+	}
+
+	.logo svg{
+		display:none;
+	}
+
+	h1{
+		font-size: 4em;
+	}
+
+	.project-images{
+		width: auto;
+	}
+
+	.project-text{
+		display: block;
+		align-items: unset;
+		width: auto;
+	}
+
+	.project{
+		height: auto;
+		width: auto;
+		display: block;
+		left: auto;
+		top: auto;
+		position: relative;
+		transform: none;
+	}
+
+	#close-button{
+		z-index: 10;
+	}
+
+	#project-text-container h2{
+		text-align: left;
+		width: 80%;
+	}
 }
