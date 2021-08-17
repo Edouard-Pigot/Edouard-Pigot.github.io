@@ -123,7 +123,7 @@ hr{
 	width: 100%;
 }
 
-#about-container, #projects-container, #experience-container, #schooling-container, #contact-container{
+#about-container, #projects-container, #skills-container, #experience-container, #schooling-container, #contact-container{
 	position: relative;
 	margin-left: 25%;
 	padding-top: 5em;
@@ -131,7 +131,7 @@ hr{
 	width: 50%;
 }
 
-#about-container h2, #projects-container h2, #experience-container h2, #schooling-container h2, #contact-container h2{
+#about-container h2, #projects-container h2, #skills-container h2, #experience-container h2, #schooling-container h2, #contact-container h2{
 	text-align: center;
 	padding: 0 2em 2em 2em;
 }
@@ -619,7 +619,7 @@ svg:hover{
 		display: none;
 	}
 
-	#about-container h2, #projects-container h2, #experience-container h2, #schooling-container h2, #contact-container h2{
+	#about-container h2, #projects-container h2, #skills-container h2, #experience-container h2, #schooling-container h2, #contact-container h2{
 		padding: 0;
 	}
 
@@ -627,7 +627,7 @@ svg:hover{
 		width: 100%;
 	}
 
-	#about-container, #projects-container, #experience-container, #schooling-container, #contact-container{
+	#about-container, #projects-container, #skills-container, #experience-container, #schooling-container, #contact-container{
 		margin-left: 10%;
 		width: 80%;
 	}
