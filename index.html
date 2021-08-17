@@ -18,8 +18,7 @@
 	<link rel="stylesheet" href="main.css" />
 </head>
 
-<body class="theme-background theme-text"
-	data-theme="light">
+<body class="theme-background theme-text" data-theme="light">
 	<div id="main-container">
 		<section id="home">
 			<nav id="navbar" class="theme-background">
@@ -29,17 +28,29 @@
 					<li id="projects-nav" class="theme-item nav-item"><a href="#projects">Projets</a></li>
 					<li id="experience-nav" class="theme-item nav-item"><a href="#experience">Experience</a></li>
 					<li id="schooling-nav" class="theme-item nav-item"><a href="#schooling">Parcours</a></li>
-					<li id="contact-nav" class="theme-item nav-item"><a href="#contact">Contact</a></li>					
+					<li id="contact-nav" class="theme-item nav-item"><a href="#contact">Contact</a></li>
 				</ul>
 				<ul id="mobile-theme-button">
-					<li class="theme-item"><a class="theme-button" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000"><rect fill="none" height="20" width="20" /><path d="M8.04,4.86C7.88,5.39,7.8,5.94,7.8,6.5c0,3.14,2.56,5.7,5.7,5.7c0.56,0,1.11-0.08,1.64-0.24c-0.79,2.07-2.8,3.54-5.14,3.54 c-3.03,0-5.5-2.47-5.5-5.5C4.5,7.66,5.97,5.65,8.04,4.86z M10,3c-3.87,0-7,3.13-7,7s3.13,7,7,7s7-3.13,7-7 c0-0.36-0.03-0.72-0.08-1.06C16.16,10,14.91,10.7,13.5,10.7c-2.32,0-4.2-1.88-4.2-4.2c0-1.41,0.7-2.66,1.76-3.42 C10.72,3.03,10.36,3,10,3L10,3z" /></svg></a></li>
+					<li class="theme-item"><a class="theme-button" onclick="toggleTheme()"><svg
+								xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px"
+								viewBox="0 0 20 20" width="36px" fill="#000000">
+								<rect fill="none" height="20" width="20" />
+								<path
+									d="M8.04,4.86C7.88,5.39,7.8,5.94,7.8,6.5c0,3.14,2.56,5.7,5.7,5.7c0.56,0,1.11-0.08,1.64-0.24c-0.79,2.07-2.8,3.54-5.14,3.54 c-3.03,0-5.5-2.47-5.5-5.5C4.5,7.66,5.97,5.65,8.04,4.86z M10,3c-3.87,0-7,3.13-7,7s3.13,7,7,7s7-3.13,7-7 c0-0.36-0.03-0.72-0.08-1.06C16.16,10,14.91,10.7,13.5,10.7c-2.32,0-4.2-1.88-4.2-4.2c0-1.41,0.7-2.66,1.76-3.42 C10.72,3.03,10.36,3,10,3L10,3z" />
+							</svg></a></li>
 				</ul>
-				  <a id="burger-icon" onclick="toggleMobileMenu()">
+				<a id="burger-icon" onclick="toggleMobileMenu()">
 					<i class="fa fa-bars"></i>
-				  </a>
-				<a id="desktop-theme-button" class="theme-button" onclick="toggleTheme()"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000"><rect fill="none" height="20" width="20" /><path d="M8.04,4.86C7.88,5.39,7.8,5.94,7.8,6.5c0,3.14,2.56,5.7,5.7,5.7c0.56,0,1.11-0.08,1.64-0.24c-0.79,2.07-2.8,3.54-5.14,3.54 c-3.03,0-5.5-2.47-5.5-5.5C4.5,7.66,5.97,5.65,8.04,4.86z M10,3c-3.87,0-7,3.13-7,7s3.13,7,7,7s7-3.13,7-7 c0-0.36-0.03-0.72-0.08-1.06C16.16,10,14.91,10.7,13.5,10.7c-2.32,0-4.2-1.88-4.2-4.2c0-1.41,0.7-2.66,1.76-3.42 C10.72,3.03,10.36,3,10,3L10,3z" /></svg></a>
+				</a>
+				<a id="desktop-theme-button" class="theme-button" onclick="toggleTheme()"><svg
+						xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px"
+						viewBox="0 0 20 20" width="36px" fill="#000000">
+						<rect fill="none" height="20" width="20" />
+						<path
+							d="M8.04,4.86C7.88,5.39,7.8,5.94,7.8,6.5c0,3.14,2.56,5.7,5.7,5.7c0.56,0,1.11-0.08,1.64-0.24c-0.79,2.07-2.8,3.54-5.14,3.54 c-3.03,0-5.5-2.47-5.5-5.5C4.5,7.66,5.97,5.65,8.04,4.86z M10,3c-3.87,0-7,3.13-7,7s3.13,7,7,7s7-3.13,7-7 c0-0.36-0.03-0.72-0.08-1.06C16.16,10,14.91,10.7,13.5,10.7c-2.32,0-4.2-1.88-4.2-4.2c0-1.41,0.7-2.66,1.76-3.42 C10.72,3.03,10.36,3,10,3L10,3z" />
+					</svg></a>
 			</nav>
-			<div id="title" >
+			<div id="title">
 				<h1>EDOUARD PIGOT</h1>
 				<hr class="colored-border colored-background">
 				<h3>ETUDIANT EN M2 INFORMATIQUE, STAGIAIRE INGENIEUR LOGICIEL.</h3>
@@ -58,8 +69,10 @@
 		</section>
 		<div id="project-viewer" class="theme-background">
 			<div id="close-button" onclick="closeProject()">
-				<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000">
-					<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/>
+				<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px"
+					viewBox="0 0 20 20" width="36px" fill="#000000">
+					<path
+						d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
 				</svg>
 			</div>
 			<div class="project">
@@ -70,8 +83,10 @@
 				<div class="project-images">
 					<a class="carousel-control-prev" href="#carouselExampleControls">
 						<!--<span class="carousel-control-prev-icon bg-dark rounded-circle" onclick="plusSlides(1)"></span>-->
-						<svg class="carousel-control-prev-icon" onclick="plusSlides(-1)" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000">
-							<path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/>
+						<svg class="carousel-control-prev-icon" onclick="plusSlides(-1)"
+							xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px"
+							viewBox="0 0 20 20" width="36px" fill="#000000">
+							<path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
 						</svg>
 					</a>
 					<div id="carouselExampleControls" class="carousel slide">
@@ -80,247 +95,320 @@
 					</div>
 					<a class="carousel-control-next" href="#carouselExampleControls">
 						<!--<span class="carousel-control-next-icon bg-dark rounded-circle" onclick="plusSlides(-1)"></span>-->
-						<svg class="carousel-control-next-icon" onclick="plusSlides(1)" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px" viewBox="0 0 20 20" width="36px" fill="#000000">
-							<path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"/>
+						<svg class="carousel-control-next-icon" onclick="plusSlides(1)"
+							xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 20 20" height="36px"
+							viewBox="0 0 20 20" width="36px" fill="#000000">
+							<path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z" />
 						</svg>
 					</a>
 				</div>
 			</div>
 		</div>
+		
 		<section id="projects">
 			<div id="projects-container">
 				<h2>PROJETS</h2>
-				<div class="row">
-					<div class="column">
-						<div class="container">
-							<img src="Project_Pictures/TP1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+				<ul>
+					<li>
+						<img src="Project_Pictures/TP1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="TANK PHYSICS"
+						data-subtitle="PROJET PERSONNEL"
+						data-tags="C#, Unity, Blender"
+						data-description="Premier véritable projet sous Unity qui consistait a créé un système complet de contrôle de char avec principalement les rotations des roues, le déplacement des suspensions et des chenilles, ainsi que les contrôles horizontaux et verticaux du canon et le tir. Les déplacements du char sont gérés par le moteur physique d'Unity. Les chenilles sont animées avec des os, rajoutés avec Blender, raccordés aux positions des roues et une texture dont l'offset varie en fonction de la vitesse du char."
+						data-images="Project_Pictures/TP1.jpg"
+						data-videos="https://www.youtube.com/embed/68eDZN8HCfo, https://www.youtube.com/embed/8wWuB8C4DEo, https://www.youtube.com/embed/0PHSP1Y-Pi0, https://www.youtube.com/embed/TjsQgEaoXg8, https://www.youtube.com/embed/ESW0nlIUDsc">
+							<div class="text theme-text-reverse">TANK PHYSICS</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/3D1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="MODELISATION 3D"
+						data-subtitle="PROJET DE MODELISATION 3D"
+						data-tags="Blender"
+						data-description="Projets scolaires d'introduction à la modélisation sous Blender. Réalisation d'un katana avec un patron et d'un poulpe grâce aux courbes de Bézier."
+						data-images="Project_Pictures/3D1.jpg, Project_Pictures/3D2.jpg">
+							<div class="text theme-text-reverse">MODELISATION 3D</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Procedural0.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="EPEES PROCEDURALES"
+						data-subtitle="PROJET DE MODELISATION 3D"
+						data-tags="Blender, Python"
+						data-description="Écriture d'un script Python sous Blender permettant la génération automatique d'armes (épées, poignards, lances, ...) en fonction de paramètres indiqués par l'utilisateur comme la longueur et l'épaisseur de la lame, la longueur du manche, la largeur de la garde, ..."
+						data-images="Project_Pictures/Procedural0.jpg, Project_Pictures/Procedural1.jpg, Project_Pictures/Procedural2.jpg">
+							<div class="text theme-text-reverse">EPEES PROCEDURALES</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Animation1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="ANIMATION SCRIPTEE"
+						data-subtitle="PROJET DE MODELISATION 3D"
+						data-tags="Blender, Python"
+						data-description="Script Python permettant l'animation d'un véhicule."
+						data-images="Project_Pictures/Animation1.jpg"
+						data-videos="https://www.youtube.com/embed/3gDdljqpWaw">
+							<div class="text theme-text-reverse">ANIMATION SCRIPTEE</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Ascenseur1.JPG">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="CONTROLEUR D'ASCENSEUR"
+						data-subtitle="PROJET DE GENIE LOGICIEL"
+						data-tags="Java, JavaFX"
+						data-description="Projet de génie logiciel demandant d'implémenter une interface et un système modulaire de gestion d'une cage d'ascenseur."
+						data-images="Project_Pictures/Ascenseur1.jpg, Project_Pictures/Ascenseur2.jpg">
+							<div class="text theme-text-reverse">CONTROLEUR D'ASCENSEUR</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Lumipic1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="LUMIPIC"
+						data-subtitle="PROJET D'INTERFACE HOMME MACHINE"
+						data-tags="C++, Qt, CSS"
+						data-description="Logiciel de création d'albums photo réalisé dans le cadre d'un cours d'Interface Homme-Machine. L'interface reprend la thématique de l'explorateur de fichier de Windows 10 et possède un thème sombre et un thème clair. Le programme permet d'explorer les dossiers contenus sur l'ordinateur et affiche seulement les fichiers image dans le répertoire courant. La création d'un album passe par la sélection puis l'ajout de plusieurs images dans un groupe que l'utilisateur peut nommer et supprimer."
+						data-images="Project_Pictures/Lumipic1.jpg, Project_Pictures/Lumipic2.jpg, Project_Pictures/Lumipic3.jpg, Project_Pictures/Lumipic4.jpg">
+							<div class="text theme-text-reverse">LUMIPIC</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Portfolio1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="PORTFOLIO"
+						data-subtitle="PROJET PERSONNEL"
+						data-tags="HTML, CSS, Javascript, JQuery"
+						data-description="Création de ce site afin de regrouper et présenter mes projets en un seul endroit dans le cadre de ma recherche de stage pour l'année 2021."
+						data-images="Project_Pictures/Portfolio1.jpg, Project_Pictures/Portfolio2.jpg">
+							<div class="text theme-text-reverse">PORTFOLIO</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Shader1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="INTRODUCTION AUX SHADERS"
+						data-subtitle="PROJET D'ANIMATION ET RENDU"
+						data-tags="GLSL"
+						data-description="Cours d'introduction au langage GLSL et à l'écritre de shaders sur le site shadertoy.com. Réalisation d'un fragment shader permettant l'affichage d'un cycle jour/nuit au dessus de la mer."
+						data-images="Project_Pictures/Shader1.jpg"
+						data-videos="https://www.youtube.com/embed/64Q_hfpvP3E">
+							<div class="text theme-text-reverse">INTRODUCTION AUX SHADERS</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Wallpaper1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="WALLPAPER"
+						data-subtitle="PROJET PERSONNEL"
+						data-tags="Unity, C#, Shaders"
+						data-description="Projet en cours"
+						data-images="Project_Pictures/Wallpaper1.jpg, Project_Pictures/Wallpaper2.jpg, Project_Pictures/Wallpaper3.jpg">
+							<div class="text theme-text-reverse">WALLPAPER</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Portfolio V21.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="PORTFOLIO V2"
+						data-subtitle="PROJET PERSONNEL"
+						data-tags="HTML, CSS, Javascript, JQuery"
+						data-description="Projet en cours"
+						data-images="Project_Pictures/Portfolio V21.jpg">
+							<div class="text theme-text-reverse">PORTFOLIO V2</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/TS1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="TANK SHOOTER"
+						data-subtitle="PROJET PERSONNEL"
+						data-tags="Unity, C#, Blender"
+						data-description="Prototype de top shooter sous Unity avec une gestion de la physique des projectiles pour avoir un système de ricochets sur les obstacles. Le clavier contrôle les déplacements du tank tandis que la tourelle est dirigée vers le curseur de la souris. Un générateur de maillage permet de laisser la trace du passage des chenilles sur le sol et le châssis du char se tourne automatiquement pour suivre la direction demandée par le joueur."
+						data-images="Project_Pictures/TS1.jpg"
+						data-videos="https://www.youtube.com/embed/9fJ0H2xdwhI">
+							<div class="text theme-text-reverse">TANK SHOOTER</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Faces6.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="DETECTEUR DE FACES"
+						data-subtitle="PROJET DE MODELISATION 3D"
+						data-tags="Blender, Python"
+						data-description="Scripts Python sous Blender qui parcours le maillage d'un objet 3D et va colorer les faces en fonction de différents paramètres :
+									- N faces
+									- N faces jusqu'à une distance maximale
+									- N faces en fonction des normales jusqu'à une distance maximale
+									- l'angle sur chaque face en fonction de ses voisines"
+						data-images="Project_Pictures/Faces1.jpg, Project_Pictures/Faces2.jpg, Project_Pictures/Faces3.jpg, Project_Pictures/Faces4.jpg, Project_Pictures/Faces5.jpg, Project_Pictures/Faces6.jpg, Project_Pictures/Faces7.jpg">
+							<div class="text theme-text-reverse">DETECTEUR DE FACES</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Blitz1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="BLITZ"
+						data-subtitle="PROJET DE FIN D'ANNEE"
+						data-tags="HTML, CSS, Javascript, NodeJS"
+						data-description="Projet de fin de L3 Informatique réalisé à 4. Il s'agit du jeu de carte Blitz. Disponible sur navigateur il permet de jouer en multijoueur en temps réel avec un lobby pour créer et rejoindre des parties, se connecter ou créer un compte. Le site et le jeu sont 100 % en HTML/CSS/NodeJS ce qui permet une compatibilité avec tous les appareils et une plus grande simplicité d'utilisation. L'interface est intuitive et incorpore une fonction de chat lors d'une partie."
+						data-images="Project_Pictures/Blitz1.jpg, Project_Pictures/Blitz2.jpg"
+						data-videos="https://www.youtube.com/embed/t8F-Bf9RsgE">
+							<div class="text theme-text-reverse">BLITZ</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Pacman1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="PACMAN"
+						data-subtitle="PROJET DE GENIE LOGICIEL"
+						data-tags="Java, JavaFX"
+						data-description="Second projet de génie logiciel. Il fallait créer un jeu de type Pacman. Nous avons recréé le Pacman de 1980 avec les mêmes graphismes, la même carte et les mêmes IA pour les fantômes. Le jeu est codé en utilisant massivement les Design Patterns afin de séparer chaque fonctionnalité et séparer la partie gameplay de la partie moteur."
+						data-images="Project_Pictures/Pacman1.jpg, Project_Pictures/Pacman2.jpg">
+							<div class="text theme-text-reverse">PACMAN</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/TER1.JPG">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="SIMULATEUR D'INONDATION"
+						data-subtitle="PROJET DE TRAVAIL EN ENVIRONNEMENT DE RECHERCHE ET STAGE"
+						data-tags="Unity, C#, ECS, Jobs system, Marching cubes"
+						data-description="Projet de TER (Travail en Environnement de Recherche) en lien avec l'IPGR. Le projet consiste à créer un simulateur d'inondation de musée afin d'apporter un élément pédagogique à la formation du personnel de musées dans le cadre de catastrophes comme une crue, une infiltration d'eau ou une rupture de canalisation. Développé sous Unity afin d'avoir une bonne compatibilité et la possibilité de déploiement de l'application sur le web. Le défi majeur est l'équilibre entre performance et qualité de rendu afin d'avoir une simulation la plus proche du réel tout en pouvant la faire fonctionner sur les machines les moins véloces.
+
+						Développé en binôme, ce projet a été continué en dehors du cadre scolaire sous la forme d'un stage de juin à juillet 2020."
+						data-images="Project_Pictures/TER1.JPG, Project_Pictures/TER2.JPG, Project_Pictures/TER3.JPG">
+							<div class="text theme-text-reverse">SIMULATEUR D'INONDATION</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Smoke1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="EMETTEUR DE PARTICULES"
+						data-subtitle="PROJET D'ANIMATION ET RENDU"
+						data-tags="C++, OpenGL, Qt, GLSL"
+						data-description="Projet d'Animation et Rendu. Création d'un système de particules qui émet de la fumée. Cette fumée peut recevoir des paramètres comme la couleur de la texture, le temps de vie et la fréquence d'émission d'une nouvelle particule. La texture est animée grâce à un atlas qui est découpé dans un shader qui y rajoute la couleur passée en paramètre."
+						data-images="Project_Pictures/Smoke1.jpg, Project_Pictures/Smoke2.jpg"
+						data-videos="https://www.youtube.com/embed/AYxKeyE_J90">
+							<div class="text theme-text-reverse">EMETTEUR DE PARTICULES</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Boids.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="BOIDS"
+						data-subtitle="PROJET D'ANIMATION ET RENDU"
+						data-tags="C++, OpenGL, Qt, GLSL"
+						data-description="Second projet d'Animation et Rendu consistant à créer une IA de poisson grâce aux boids. Intégration d'obstacles et de prédateurs sous la forme de sphères que les poissons évitent."
+						data-images="Project_Pictures/Boids.jpg"
+						data-videos="https://www.youtube.com/embed/xxDmx36Ojn8">
+							<div class="text theme-text-reverse">BOIDS</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Drones1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="CHOREGRAPHIE DE DRONES"
+						data-subtitle="PROJET D'ANIMATION ET RENDU"
+						data-tags="WebGL, HTML, CSS, Javascript, JQuery"
+						data-description="Projet d'Animation et Rendu. Réalisation d'un visualisateur de Chorégraphie de drones en WebGL. Un fichier de keyframes est lu et permet de mettre en place des modèles de drones dont la lecture de l'animation est contrôlée par l'utilisateur. Il peut choisir d'afficher ou non une grille, les repères des axes, les trajectoires des drones, une ligne qui va du drone au sol, le nom de chaque drones, et il peut jouer ou stopper l'animation. Le programme permet également de détecter les collisions et les vitesses trop élevées des drones."
+						data-images="Project_Pictures/Drones1.jpg">
+							<div class="text theme-text-reverse">CHOREGRAPHIE DE DRONES</div>
+						</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/Catan1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
+						data-title="CATAN"
+						data-subtitle="PROJET PERSONNEL"
+						data-tags="Unity, C#"
+						data-description="Projet en cours"
+						data-images="Project_Pictures/Catan1.jpg">
+							<div class="text theme-text-reverse">CATAN</div>
+						</div>
+					</li>
+					<li></li>
+				</ul>
+			</div>
+		</section>
+		<!--<section id="projects">
+			<div id="projects-container">
+				<h2>PROJETS</h2>
+				<ul>
+					<li>
+						<img src="Project_Pictures/TP1.jpg">
+						<div class="overlay colored-background-fade" onclick="displayProject(this)" 
 							data-title="TANK PHYSICS"
 							data-subtitle="PROJET PERSONNEL"
 							data-tags="C#, Unity, Blender"
 							data-description="Premier véritable projet sous Unity qui consistait a créé un système complet de contrôle de char avec principalement les rotations des roues, le déplacement des suspensions et des chenilles, ainsi que les contrôles horizontaux et verticaux du canon et le tir. Les déplacements du char sont gérés par le moteur physique d'Unity. Les chenilles sont animées avec des os, rajoutés avec Blender, raccordés aux positions des roues et une texture dont l'offset varie en fonction de la vitesse du char."
 							data-images="Project_Pictures/TP1.jpg"
 							data-videos="https://www.youtube.com/embed/68eDZN8HCfo, https://www.youtube.com/embed/8wWuB8C4DEo, https://www.youtube.com/embed/0PHSP1Y-Pi0, https://www.youtube.com/embed/TjsQgEaoXg8, https://www.youtube.com/embed/ESW0nlIUDsc">
-								<div class="text theme-text-reverse">TANK PHYSICS</div>
-							</div>
-
+							<div class="text theme-text-reverse">TANK PHYSICS</div>
 						</div>
-						<div class="container">
-							<img src="Project_Pictures/3D1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="MODELISATION 3D"
-							data-subtitle="PROJET DE MODELISATION 3D"
-							data-tags="Blender"
-							data-description="Projets scolaires d'introduction à la modélisation sous Blender. Réalisation d'un katana avec un patron et d'un poulpe grâce aux courbes de Bézier."
-							data-images="Project_Pictures/3D1.jpg, Project_Pictures/3D2.jpg">
-								<div class="text theme-text-reverse">MODELISATION 3D</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Procedural0.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="EPEES PROCEDURALES"
-							data-subtitle="PROJET DE MODELISATION 3D"
-							data-tags="Blender, Python"
-							data-description="Écriture d'un script Python sous Blender permettant la génération automatique d'armes (épées, poignards, lances, ...) en fonction de paramètres indiqués par l'utilisateur comme la longueur et l'épaisseur de la lame, la longueur du manche, la largeur de la garde, ..."
-							data-images="Project_Pictures/Procedural0.jpg, Project_Pictures/Procedural1.jpg, Project_Pictures/Procedural2.jpg">
-								<div class="text theme-text-reverse">EPEES PROCEDURALES</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Animation1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="ANIMATION SCRIPTEE"
-							data-subtitle="PROJET DE MODELISATION 3D"
-							data-tags="Blender, Python"
-							data-description="Script Python permettant l'animation d'un véhicule."
-							data-images="Project_Pictures/Animation1.jpg"
-							data-videos="https://www.youtube.com/embed/3gDdljqpWaw">
-								<div class="text theme-text-reverse">ANIMATION SCRIPTEE</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Ascenseur1.JPG" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="CONTROLEUR D'ASCENSEUR"
-							data-subtitle="PROJET DE GENIE LOGICIEL"
-							data-tags="Java, JavaFX"
-							data-description="Projet de génie logiciel demandant d'implémenter une interface et un système modulaire de gestion d'une cage d'ascenseur."
-							data-images="Project_Pictures/Ascenseur1.jpg, Project_Pictures/Ascenseur2.jpg">
-								<div class="text theme-text-reverse">CONTROLEUR D'ASCENSEUR</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Lumipic1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="LUMIPIC"
-							data-subtitle="PROJET D'INTERFACE HOMME MACHINE"
-							data-tags="C++, Qt, CSS"
-							data-description="Logiciel de création d'albums photo réalisé dans le cadre d'un cours d'Interface Homme-Machine. L'interface reprend la thématique de l'explorateur de fichier de Windows 10 et possède un thème sombre et un thème clair. Le programme permet d'explorer les dossiers contenus sur l'ordinateur et affiche seulement les fichiers image dans le répertoire courant. La création d'un album passe par la sélection puis l'ajout de plusieurs images dans un groupe que l'utilisateur peut nommer et supprimer."
-							data-images="Project_Pictures/Lumipic1.jpg, Project_Pictures/Lumipic2.jpg, Project_Pictures/Lumipic3.jpg, Project_Pictures/Lumipic4.jpg">
-								<div class="text theme-text-reverse">LUMIPIC</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Portfolio1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="PORTFOLIO"
-							data-subtitle="PROJET PERSONNEL"
-							data-tags="HTML, CSS, Javascript, JQuery"
-							data-description="Création de ce site afin de regrouper et présenter mes projets en un seul endroit dans le cadre de ma recherche de stage pour l'année 2021."
-							data-images="Project_Pictures/Portfolio1.jpg, Project_Pictures/Portfolio2.jpg">
-								<div class="text theme-text-reverse">PORTFOLIO</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Shader1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="INTRODUCTION AUX SHADERS"
-							data-subtitle="PROJET D'ANIMATION ET RENDU"
-							data-tags="GLSL"
-							data-description="Cours d'introduction au langage GLSL et à l'écritre de shaders sur le site shadertoy.com. Réalisation d'un fragment shader permettant l'affichage d'un cycle jour/nuit au dessus de la mer."
-							data-images="Project_Pictures/Shader1.jpg"
-							data-videos="https://www.youtube.com/embed/64Q_hfpvP3E">
-								<div class="text theme-text-reverse">INTRODUCTION AUX SHADERS</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Wallpaper1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="WALLPAPER"
-							data-subtitle="PROJET PERSONNEL"
-							data-tags="Unity, C#, Shaders"
-							data-description="Projet en cours"
-							data-images="Project_Pictures/Wallpaper1.jpg, Project_Pictures/Wallpaper2.jpg, Project_Pictures/Wallpaper3.jpg">
-								<div class="text theme-text-reverse">WALLPAPER</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Portfolio V21.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="PORTFOLIO V2"
-							data-subtitle="PROJET PERSONNEL"
-							data-tags="HTML, CSS, Javascript, JQuery"
-							data-description="Projet en cours"
-							data-images="Project_Pictures/Portfolio V21.jpg">
-								<div class="text theme-text-reverse">PORTFOLIO V2</div>
-							</div>
-						</div>
-					</div>
-					<div class="column">
-						<div class="container">
-							<img src="Project_Pictures/TS1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="TANK SHOOTER"
-							data-subtitle="PROJET PERSONNEL"
-							data-tags="Unity, C#, Blender"
-							data-description="Prototype de top shooter sous Unity avec une gestion de la physique des projectiles pour avoir un système de ricochets sur les obstacles. Le clavier contrôle les déplacements du tank tandis que la tourelle est dirigée vers le curseur de la souris. Un générateur de maillage permet de laisser la trace du passage des chenilles sur le sol et le châssis du char se tourne automatiquement pour suivre la direction demandée par le joueur."
-							data-images="Project_Pictures/TS1.jpg"
-							data-videos="https://www.youtube.com/embed/9fJ0H2xdwhI">
-								<div class="text theme-text-reverse">TANK SHOOTER</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Faces6.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="DETECTEUR DE FACES"
-							data-subtitle="PROJET DE MODELISATION 3D"
-							data-tags="Blender, Python"
-							data-description="Scripts Python sous Blender qui parcours le maillage d'un objet 3D et va colorer les faces en fonction de différents paramètres :
-										- N faces
-										- N faces jusqu'à une distance maximale
-										- N faces en fonction des normales jusqu'à une distance maximale
-										- l'angle sur chaque face en fonction de ses voisines"
-							data-images="Project_Pictures/Faces1.jpg, Project_Pictures/Faces2.jpg, Project_Pictures/Faces3.jpg, Project_Pictures/Faces4.jpg, Project_Pictures/Faces5.jpg, Project_Pictures/Faces6.jpg, Project_Pictures/Faces7.jpg">
-								<div class="text theme-text-reverse">DETECTEUR DE FACES</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Blitz1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="BLITZ"
-							data-subtitle="PROJET DE FIN D'ANNEE"
-							data-tags="HTML, CSS, Javascript, NodeJS"
-							data-description="Projet de fin de L3 Informatique réalisé à 4. Il s'agit du jeu de carte Blitz. Disponible sur navigateur il permet de jouer en multijoueur en temps réel avec un lobby pour créer et rejoindre des parties, se connecter ou créer un compte. Le site et le jeu sont 100 % en HTML/CSS/NodeJS ce qui permet une compatibilité avec tous les appareils et une plus grande simplicité d'utilisation. L'interface est intuitive et incorpore une fonction de chat lors d'une partie."
-							data-images="Project_Pictures/Blitz1.jpg, Project_Pictures/Blitz2.jpg"
-							data-videos="https://www.youtube.com/embed/t8F-Bf9RsgE">
-								<div class="text theme-text-reverse">BLITZ</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Pacman1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="PACMAN"
-							data-subtitle="PROJET DE GENIE LOGICIEL"
-							data-tags="Java, JavaFX"
-							data-description="Second projet de génie logiciel. Il fallait créer un jeu de type Pacman. Nous avons recréé le Pacman de 1980 avec les mêmes graphismes, la même carte et les mêmes IA pour les fantômes. Le jeu est codé en utilisant massivement les Design Patterns afin de séparer chaque fonctionnalité et séparer la partie gameplay de la partie moteur."
-							data-images="Project_Pictures/Pacman1.jpg, Project_Pictures/Pacman2.jpg">
-								<div class="text theme-text-reverse">PACMAN</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/TER1.JPG" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="SIMULATEUR D'INONDATION"
-							data-subtitle="PROJET DE TRAVAIL EN ENVIRONNEMENT DE RECHERCHE ET STAGE"
-							data-tags="Unity, C#, ECS, Jobs system, Marching cubes"
-							data-description="Projet de TER (Travail en Environnement de Recherche) en lien avec l'IPGR. Le projet consiste à créer un simulateur d'inondation de musée afin d'apporter un élément pédagogique à la formation du personnel de musées dans le cadre de catastrophes comme une crue, une infiltration d'eau ou une rupture de canalisation. Développé sous Unity afin d'avoir une bonne compatibilité et la possibilité de déploiement de l'application sur le web. Le défi majeur est l'équilibre entre performance et qualité de rendu afin d'avoir une simulation la plus proche du réel tout en pouvant la faire fonctionner sur les machines les moins véloces.
-
-							Développé en binôme, ce projet a été continué en dehors du cadre scolaire sous la forme d'un stage de juin à juillet 2020."
-							data-images="Project_Pictures/TER1.JPG, Project_Pictures/TER2.JPG, Project_Pictures/TER3.JPG">
-								<div class="text theme-text-reverse">SIMULATEUR D'INONDATION</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Smoke1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="EMETTEUR DE PARTICULES"
-							data-subtitle="PROJET D'ANIMATION ET RENDU"
-							data-tags="C++, OpenGL, Qt, GLSL"
-							data-description="Projet d'Animation et Rendu. Création d'un système de particules qui émet de la fumée. Cette fumée peut recevoir des paramètres comme la couleur de la texture, le temps de vie et la fréquence d'émission d'une nouvelle particule. La texture est animée grâce à un atlas qui est découpé dans un shader qui y rajoute la couleur passée en paramètre."
-							data-images="Project_Pictures/Smoke1.jpg, Project_Pictures/Smoke2.jpg"
-							data-videos="https://www.youtube.com/embed/AYxKeyE_J90">
-								<div class="text theme-text-reverse">EMETTEUR DE PARTICULES</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Boids.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="BOIDS"
-							data-subtitle="PROJET D'ANIMATION ET RENDU"
-							data-tags="C++, OpenGL, Qt, GLSL"
-							data-description="Second projet d'Animation et Rendu consistant à créer une IA de poisson grâce aux boids. Intégration d'obstacles et de prédateurs sous la forme de sphères que les poissons évitent."
-							data-images="Project_Pictures/Boids.jpg"
-							data-videos="https://www.youtube.com/embed/xxDmx36Ojn8">
-								<div class="text theme-text-reverse">BOIDS</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Drones1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="CHOREGRAPHIE DE DRONES"
-							data-subtitle="PROJET D'ANIMATION ET RENDU"
-							data-tags="WebGL, HTML, CSS, Javascript, JQuery"
-							data-description="Projet d'Animation et Rendu. Réalisation d'un visualisateur de Chorégraphie de drones en WebGL. Un fichier de keyframes est lu et permet de mettre en place des modèles de drones dont la lecture de l'animation est contrôlée par l'utilisateur. Il peut choisir d'afficher ou non une grille, les repères des axes, les trajectoires des drones, une ligne qui va du drone au sol, le nom de chaque drones, et il peut jouer ou stopper l'animation. Le programme permet également de détecter les collisions et les vitesses trop élevées des drones."
-							data-images="Project_Pictures/Drones1.jpg">
-								<div class="text theme-text-reverse">CHOREGRAPHIE DE DRONES</div>
-							</div>
-						</div>
-						<div class="container">
-							<img src="Project_Pictures/Catan1.jpg" alt="Avatar" class="image">
-							<div class="overlay colored-background-fade" onclick="displayProject(this)" 
-							data-title="CATAN"
-							data-subtitle="PROJET PERSONNEL"
-							data-tags="Unity, C#"
-							data-description="Projet en cours"
-							data-images="Project_Pictures/Catan1.jpg">
-								<div class="text theme-text-reverse">CATAN</div>
-							</div>
-						</div>
-					</div>
-				</div>
+					</li>
+					<li>
+						<img src="Project_Pictures/3D1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Procedural0.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Animation1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Ascenseur1.JPG">
+					</li>
+					<li>
+						<img src="Project_Pictures/Lumipic1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Portfolio1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Shader1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Wallpaper1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Portfolio V21.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/TS1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Faces6.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Blitz1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Pacman1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/TER1.JPG">
+					</li>
+					<li>
+						<img src="Project_Pictures/Smoke1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Boids.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Drones1.jpg">
+					</li>
+					<li>
+						<img src="Project_Pictures/Catan1.jpg">
+					</li>
+					<li></li>
+				</ul>
 			</div>
-		</section>
+		</section>-->
 		<section id="experience">
 			<div id="experience-container">
 				<h2>EXPERIENCE</h2>
@@ -334,10 +422,12 @@
 					<div class="experience-description">
 						<h3>INGENIEUR LOGICIEL - STAGE</h3>
 						<h4>04/21 - 09/21 (6 mois)</h4>
-						<p>Au sein de l'équipe CID/WebUX du service Human Interface, travail sur l'optimisation des manipulations en VR 
-							en proposant de nouvelles méthodes de picking permettant à l'utilisateur d'interagir le plus facilement possible 
+						<p>Au sein de l'équipe CID/WebUX du service Human Interface, travail sur l'optimisation des
+							manipulations en VR
+							en proposant de nouvelles méthodes de picking permettant à l'utilisateur d'interagir le plus
+							facilement possible
 							avec les éléments d'UI en fonction du contexte de la scène.
-						</br></br>
+							</br></br>
 							Technologies : C++, Visual Studio 2019</p>
 					</div>
 				</div>
@@ -365,8 +455,10 @@
 					<div class="experience-description">
 						<h3>DEVELOPPEUR UNITY 3D - STAGE</h3>
 						<h4>06/20 - 07/20 (2 mois)</h4>
-						<p>Continuation du Travail d'Etude et de Recherche (TER) commencé à la fin du M1 sur le développement d'un 
-							simulateur d’inondation de musée sous Unity. Utilisation des marching cubes et recherches sur les dernières 
+						<p>Continuation du Travail d'Etude et de Recherche (TER) commencé à la fin du M1 sur le
+							développement d'un
+							simulateur d’inondation de musée sous Unity. Utilisation des marching cubes et recherches
+							sur les dernières
 							technologies proposées par Unity avec DOTS.
 							</br></br>
 							Technologies : Unity, C#, Blender, Git</p>
@@ -410,8 +502,9 @@
 					<div class="experience-description">
 						<h3>DEVELOPPEUR FULL STACK - STAGE</h3>
 						<h4>04/18 - 06/18 (3 mois)</h4>
-						<p>Amélioration de l'outil de gestion de projet open source en ajoutant la communication avec l'outil interne de l'entreprise.
-						</br></br>
+						<p>Amélioration de l'outil de gestion de projet open source en ajoutant la communication avec
+							l'outil interne de l'entreprise.
+							</br></br>
 							Technologies : HTML, CSS, PHP, Smarty, SQL, Python</p>
 					</div>
 				</div>
@@ -502,13 +595,15 @@
 						</svg>
 					</a>
 					<a href="https://www.facebook.com/edouard.pigot" target="_blank" rel="noopener noreferrer">
-						<svg xmlns="http://www.w3.org/2000/svg"x="0px" y="0px" viewBox="0 0 167.657 167.657">
-							<path d="M83.829,0.349C37.532,0.349,0,37.881,0,84.178c0,41.523,30.222,75.911,69.848,82.57v-65.081H49.626v-23.42h20.222V60.978c0-20.037,12.238-30.956,30.115-30.956c8.562,0,15.92,0.638,18.056,0.919v20.944l-12.399,0.006c-9.72,0-11.594,4.618-11.594,11.397v14.947h23.193l-3.025,23.42H94.026v65.653c41.476-5.048,73.631-40.312,73.631-83.154C167.657,37.881,130.125,0.349,83.829,0.349z" />
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 167.657 167.657">
+							<path
+								d="M83.829,0.349C37.532,0.349,0,37.881,0,84.178c0,41.523,30.222,75.911,69.848,82.57v-65.081H49.626v-23.42h20.222V60.978c0-20.037,12.238-30.956,30.115-30.956c8.562,0,15.92,0.638,18.056,0.919v20.944l-12.399,0.006c-9.72,0-11.594,4.618-11.594,11.397v14.947h23.193l-3.025,23.42H94.026v65.653c41.476-5.048,73.631-40.312,73.631-83.154C167.657,37.881,130.125,0.349,83.829,0.349z" />
 						</svg>
 					</a>
 					<a href="https://twitter.com/Pesm_" target="_blank" rel="noopener noreferrer">
 						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
-							<path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z" />
+							<path
+								d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z" />
 						</svg>
 					</a>
 				</div>
