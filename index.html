@@ -23,13 +23,12 @@
 		<section id="home">
 			<nav id="navbar" class="theme-background">
 				<ul id="menu">
-					<li id="home-nav" class="theme-item nav-item active"><a href="#home">Accueil</a></li>
-					<li id="about-nav" class="theme-item nav-item"><a href="#about">A propos</a></li>
-					<li id="projects-nav" class="theme-item nav-item"><a href="#projects">Projets</a></li>
-					<!--<li id="skill-nav" class="theme-item nav-item"><a href="#skills">Compétences</a></li>-->
-					<li id="experience-nav" class="theme-item nav-item"><a href="#experience">Experience</a></li>
-					<li id="schooling-nav" class="theme-item nav-item"><a href="#schooling">Parcours</a></li>
-					<li id="contact-nav" class="theme-item nav-item"><a href="#contact">Contact</a></li>
+					<li id="home-nav" class="theme-item nav-item active" data-element="home"><p>Accueil</p></li>
+					<li id="about-nav" class="theme-item nav-item" data-element="about"><p>A propos</p></li>
+					<li id="projects-nav" class="theme-item nav-item" data-element="projects"><p>Projets</p></li>
+					<li id="experience-nav" class="theme-item nav-item" data-element="experience"><p>Experience</p></li>
+					<li id="schooling-nav" class="theme-item nav-item" data-element="schooling"><p>Parcours</p></li>
+					<li id="contact-nav" class="theme-item nav-item"data-element="contact"><p>Contact</p></li>
 				</ul>
 				<ul id="mobile-theme-button">
 					<li class="theme-item"><a class="theme-button" onclick="toggleTheme()"><svg
@@ -518,7 +517,7 @@
 					<a href="mailto:pigotedouard@orange.fr">Mail : pigotedouard@orange.fr</a>
 				</div>
 				<div>
-					<a href="https://www.linkedin.com/in/edouard-pigot/" target="_blank" rel="noopener noreferrer">
+					<a class="contact-button" href="https://www.linkedin.com/in/edouard-pigot/" target="_blank" rel="noopener noreferrer">
 						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 382 382">
 							<path d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
 							C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
@@ -531,19 +530,23 @@
 							L341.91,330.654L341.91,330.654z" />
 						</svg>
 					</a>
-					<a href="https://www.facebook.com/edouard.pigot" target="_blank" rel="noopener noreferrer">
+					<a class="contact-button" href="https://www.facebook.com/edouard.pigot" target="_blank" rel="noopener noreferrer">
 						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 167.657 167.657">
 							<path
 								d="M83.829,0.349C37.532,0.349,0,37.881,0,84.178c0,41.523,30.222,75.911,69.848,82.57v-65.081H49.626v-23.42h20.222V60.978c0-20.037,12.238-30.956,30.115-30.956c8.562,0,15.92,0.638,18.056,0.919v20.944l-12.399,0.006c-9.72,0-11.594,4.618-11.594,11.397v14.947h23.193l-3.025,23.42H94.026v65.653c41.476-5.048,73.631-40.312,73.631-83.154C167.657,37.881,130.125,0.349,83.829,0.349z" />
 						</svg>
 					</a>
-					<a href="https://twitter.com/Pesm_" target="_blank" rel="noopener noreferrer">
+					<a class="contact-button" href="https://twitter.com/Pesm_" target="_blank" rel="noopener noreferrer">
 						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 512 512">
 							<path
 								d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568    C480.224,136.96,497.728,118.496,512,97.248z" />
 						</svg>
 					</a>
-				</div>
+				</div>				
+			</div>
+		</section>
+		<section id="copyright">
+			<div id="copyright-container">
 				<div id="copyright">
 					Edouard Pigot © 2021
 				</div>

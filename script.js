@@ -22,16 +22,22 @@ for(var i = 0; i < 40; i++){
 var btns = document.getElementsByClassName("nav-item");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
+      var current = document.getElementsByClassName("clicked");
+      if(current.length > 0){
+        current[0].className = current[0].className.replace(" clicked", "");
+      }
+      this.className += " clicked";
+      location.href = "#";
+      location.href = "#" + this.getAttribute("data-element");
   });
 }
 
+var scrollRequested = false;
 $(document).scroll(function () {
+  scrollRequested = true;
   var position = $(document).scrollTop();
   var header = $('#navbar').outerHeight();
-  var offset = 200;
+  var offset = 0;
   $('section').each(function(i) {
       if($(this).position().top <= (position + header + offset))
       {
@@ -39,6 +45,28 @@ $(document).scroll(function () {
           $("li").eq(i).addClass('active');
       }
   });
+});
+
+var ticking = false;
+var isScrolling;
+window.addEventListener('scroll', function(e) {
+  window.clearTimeout( isScrolling );
+
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      isScrolling = setTimeout(function() {
+        closeMobileMenu();
+        var current = document.getElementsByClassName("clicked");
+        if(current.length > 0){
+          current[0].className = current[0].className.replace(" clicked", "");
+        }
+        this.className += " clicked";
+      }, 66);
+      ticking = false;
+    });
+  }
+
+  ticking = true;
 });
 
 var date = new Date();
@@ -177,16 +205,16 @@ $(document).keyup(function(e) {
   }
 });
 
-function toggleMobileMenu() {
-  if ($("#menu.displayed").length > 0) {
-    $("#menu.displayed").removeClass('displayed');
-  } else {
-    $("#menu").addClass('displayed');
+function closeMobileMenu(){
+  if ($("#navbar.displayed").length > 0) {
+    $("#navbar.displayed").removeClass('displayed');
   }
+}
 
-  if ($("#mobile-theme-button.displayed").length > 0) {
-    $("#mobile-theme-button.displayed").removeClass('displayed');
+function toggleMobileMenu() {
+  if ($("#navbar.displayed").length > 0) {
+    $("#navbar.displayed").removeClass('displayed');
   } else {
-    $("#mobile-theme-button").addClass('displayed');
+    $("#navbar").addClass('displayed');
   }
 }

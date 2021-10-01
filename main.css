@@ -46,10 +46,10 @@ nav ul{
 	padding: 1em;
 }
 
-a{
+.nav-item p {
 	text-decoration: none;
-	padding: .75em;
-	line-height: 2em;
+	padding: .5em;
+	line-height: 0.8em;
 	font-size: 1.3em;
 }
 
@@ -89,7 +89,7 @@ a{
 	height: 100%;
 }
 
-h1, h2, h3, h4, a{
+h1, h2, h3, h4, a, .nav-item p {
 	font-weight: normal;
 	font-family: 'Bebas Neue';
 }
@@ -123,12 +123,15 @@ hr{
 	width: 100%;
 }
 
-#about-container, #projects-container, #skills-container, #experience-container, #schooling-container, #contact-container{
+#about-container, #projects-container, #skills-container, #experience-container, #schooling-container, #contact-container, #copyright-container{
 	position: relative;
 	margin-left: 25%;
-	padding-top: 5em;
-	padding-bottom: 5em;
+	padding-top: 10em;
 	width: 50%;
+}
+
+#contact-container{
+	padding-bottom: 5em;
 }
 
 #about-container h2, #projects-container h2, #skills-container h2, #experience-container h2, #schooling-container h2, #contact-container h2{
@@ -283,11 +286,11 @@ line{
 	border: solid 2px var(--background-color);
 }
 
-*, a{
+*, a, .nav-item p {
 	color: var(--text-color);
 }
 
-.theme-text, ::selection, .active a, .theme-text-reverse{
+.theme-text, ::selection, .active a, .theme-text-reverse, .active p{
 	color: var(--text-color-accent);
 }
 
@@ -326,7 +329,12 @@ line{
 }
 
 .colored-background, .active, ::selection{
-	background-color: rgb(var(--accent-color));
+	background-color: rgb(var(--accent-color)) !important;
+}
+
+.clicked{
+	background-color: rgba(var(--accent-color), 0.6);
+	border-radius: 0.2em;
 }
 
 .colored-background-fade{
@@ -335,6 +343,8 @@ line{
 
 .colored-border, .active, .nav-item:hover{
 	border: solid 2px rgb(var(--accent-color));
+	border-radius: .2em;
+	transition: border 100ms;
 }
 
 .project-text ul li{
@@ -385,7 +395,7 @@ line{
 	transition: opacity 1s, transform 10s;
 }
 
-#contact-container div{
+#contact-container div, #copyright-container div{
 	text-align: center;
 	padding: 2em;
 }
@@ -462,6 +472,11 @@ svg{
 #contact-container svg{
 	max-width: 3em;
 	max-height: 3em;
+}
+
+.contact-button{
+	color: var(--background-color);
+	margin: 2em;
 }
 
 svg:hover{
@@ -574,7 +589,7 @@ svg:hover{
 	display: block;
 	position: absolute;
 	top: 25%;
-	transform: translateY(-25%);
+	transform: translateY(-10%);
 	right: 2em;
 }
 
@@ -599,12 +614,15 @@ svg:hover{
 		cursor: pointer;
 	}
 
-	#menu{
-		display: none;
+	#navbar{
+		line-height: 3em;
+		transform: translateY(calc(-100% + 3em));
+		transition: transform 300ms;
+		border-bottom: solid 2px rgb(var(--accent-color));
 	}
 
-	.displayed{
-		display: block!important;
+	#navbar.displayed{
+		transform: translateY(0) !important;
 	}
 
 	#desktop-theme-button{
@@ -616,7 +634,7 @@ svg:hover{
 	}
 
 	#mobile-theme-button{
-		display: none;
+		display: block;
 	}
 
 	#about-container h2, #projects-container h2, #skills-container h2, #experience-container h2, #schooling-container h2, #contact-container h2{
@@ -627,9 +645,23 @@ svg:hover{
 		width: 100%;
 	}
 
-	#about-container, #projects-container, #skills-container, #experience-container, #schooling-container, #contact-container{
+	#about-container, #projects-container, #skills-container, #experience-container, #schooling-container, #contact-container, #copyright-container{
 		margin-left: 10%;
 		width: 80%;
+	}
+
+	#projects-container ul{
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	#contact-container div{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#contact-container div a{
+		margin: 1e;
 	}
 
 	.schooling-description, .experience-description{
