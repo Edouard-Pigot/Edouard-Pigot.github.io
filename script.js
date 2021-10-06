@@ -116,7 +116,7 @@ function displayProject(data){
   slideIndex = 0;
 
   document.body.style.overflow = "hidden";
-  document.getElementById("project-viewer").style.display = "block";
+  document.getElementById("project-viewer").style.transform = "translateX(0)";
 
   var title = data.getAttribute("data-title");
   var subtitle = data.getAttribute("data-subtitle");
@@ -190,7 +190,7 @@ function displayProject(data){
 
 function closeProject(){
   document.body.style.overflowY = "scroll";
-  document.getElementById("project-viewer").style.display = "none";
+  document.getElementById("project-viewer").style.transform = "translateX(100%)";
 }
 
 $(document).keyup(function(e) {
