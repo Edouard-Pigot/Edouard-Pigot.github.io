@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Bebas neue";
+  src: url("./Fonts/BebasNeue-Regular.ttf");
+}
 body[light-theme] {
   --background-color: rgba(255, 255, 255, 0.8);
   --accent-color: #BDA27D;
