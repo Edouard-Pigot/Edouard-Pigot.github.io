@@ -183,7 +183,7 @@ h2 {
   list-style: none;
 }
 #main2 nav #link-container li {
-  padding: 0.7em 1em;
+  padding: 0.4em 0.7em;
   background-color: white;
 }
 #main2 nav #nav-decorators {
@@ -197,7 +197,7 @@ h2 {
   background-color: var(--accent-color);
 }
 #main2 #content-container {
-  height: calc(100% - 2.6em);
+  height: calc(100% - 2em);
 }
 #main2 #content-container #main-outside-container {
   background: var(--background-color);
