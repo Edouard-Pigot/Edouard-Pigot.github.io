@@ -15,7 +15,7 @@ body{
 
 @font-face {
 	font-family: 'Bebas Neue';
-	src: url('Fonts/BebasNeue-Regular.ttf');
+	src: url('../Fonts/BebasNeue-Regular.ttf');
 }
 
 #main-container{
