@@ -1,0 +1,219 @@
+[
+    {
+      "title": "TANK PHYSICS",
+      "subtitle": "PROJET PERSONNEL",
+      "tags": ["C#", "Unity", "Blender"],
+      "description": "Premier véritable projet sous Unity qui consistait à créé un système complet de contrôle de char avec principalement les rotations des roues, le déplacement des suspensions et des chenilles, ainsi que les contrôles horizontaux et verticaux du canon et le tir. Les déplacements du char sont gérés par le moteur physique d'Unity. Les chenilles sont animées avec des os, rajoutés avec Blender, raccordés aux positions des roues et une texture dont l'offset varie en fonction de la vitesse du char.",
+      "images": [
+        "Project_Pictures/TP1.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/embed/68eDZN8HCfo",
+        "https://www.youtube.com/embed/8wWuB8C4DEo",
+        "https://www.youtube.com/embed/0PHSP1Y-Pi0",
+        "https://www.youtube.com/embed/TjsQgEaoXg8",
+        "https://www.youtube.com/embed/ESW0nlIUDsc"
+      ]
+    },
+    {
+      "title": "MODELISATION 3D",
+      "subtitle": "PROJET DE MODELISATION 3D",
+      "tags": ["Blender"],
+      "description": "Projets scolaires d'introduction à la modélisation sous Blender. Réalisation d'un katana avec un patron et d'un poulpe grâce aux courbes de Bézier.",
+      "images": [
+        "Project_Pictures/3D1.jpg",
+        "Project_Pictures/3D2.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "TANK SHOOTER",
+      "subtitle": "PROJET PERSONNEL",
+      "tags": ["Unity", "C#", "Blender"],
+      "description": "Prototype de top shooter sous Unity avec une gestion de la physique des projectiles pour avoir un système de ricochets sur les obstacles. Le clavier contrôle les déplacements du tank tandis que la tourelle est dirigée vers le curseur de la souris. Un générateur de maillage permet de laisser la trace du passage des chenilles sur le sol et le châssis du char se tourne automatiquement pour suivre la direction demandée par le joueur.",
+      "images": [
+        "Project_Pictures/TS1.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/embed/9fJ0H2xdwhI"
+      ]
+    },
+    {
+      "title": "EPEES PROCEDURALES",
+      "subtitle": "PROJET DE MODELISATION 3D",
+      "tags": ["Blender", "Python"],
+      "description": "Écriture d'un script Python sous Blender permettant la génération automatique d'armes (épées, poignards, lances, ...) en fonction de paramètres indiqués par l'utilisateur comme la longueur et l'épaisseur de la lame, la longueur du manche, la largeur de la garde, ...",
+      "images": [
+        "Project_Pictures/Procedural0.jpg",
+        "Project_Pictures/Procedural1.jpg",
+        "Project_Pictures/Procedural2.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "DETECTEUR DE FACES",
+      "subtitle": "PROJET DE MODELISATION 3D",
+      "tags": ["Blender", "Python"],
+      "description": "Scripts Python sous Blender qui parcours le maillage d'un objet 3D et va colorer les faces en fonction de différents paramètres :\n- N faces\n- N faces jusqu'à une distance maximale\n- N faces en fonction des normales jusqu'à une distance maximale\n- l'angle sur chaque face en fonction de ses voisines",
+      "images": [
+        "Project_Pictures/Faces1.jpg",
+        "Project_Pictures/Faces2.jpg",
+        "Project_Pictures/Faces3.jpg",
+        "Project_Pictures/Faces4.jpg",
+        "Project_Pictures/Faces5.jpg",
+        "Project_Pictures/Faces6.jpg",
+        "Project_Pictures/Faces7.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "ANIMATION SCRIPTEE",
+      "subtitle": "PROJET DE MODELISATION 3D",
+      "tags": ["Blender", "Python"],
+      "description": "Script Python permettant l'animation d'un véhicule.",
+      "images": [
+        "Project_Pictures/Animation1.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/embed/3gDdljqpWaw"
+      ]
+    },
+    {
+      "title": "BLITZ",
+      "subtitle": "PROJET DE FIN D'ANNEE",
+      "tags": ["HTML", "CSS", "Javascript", "NodeJS"],
+      "description": "Projet de fin de L3 Informatique réalisé à 4. Il s'agit du jeu de carte Blitz. Disponible sur navigateur il permet de jouer en multijoueur en temps réel avec un lobby pour créer et rejoindre des parties, se connecter ou créer un compte. Le site et le jeu sont 100 % en HTML/CSS/NodeJS ce qui permet une compatibilité avec tous les appareils et une plus grande simplicité d'utilisation. L'interface est intuitive et incorpore une fonction de chat lors d'une partie.",
+      "images": [
+        "Project_Pictures/Blitz1.jpg",
+        "Project_Pictures/Blitz2.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/embed/t8F-Bf9RsgE"
+      ]
+    },
+    {
+      "title": "CONTROLEUR D'ASCENSEUR",
+      "subtitle": "PROJET DE GENIE LOGICIEL",
+      "tags": ["Java", "JavaFX"],
+      "description": "Projet de génie logiciel demandant d'implémenter une interface et un système modulaire de gestion d'une cage d'ascenseur.",
+      "images": [
+        "Project_Pictures/Ascenseur1.jpg",
+        "Project_Pictures/Ascenseur2.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "PACMAN",
+      "subtitle": "PROJET DE GENIE LOGICIEL",
+      "tags": ["Java", "JavaFX"],
+      "description": "Second projet de génie logiciel. Il fallait créer un jeu de type Pacman. Nous avons recréé le Pacman de 1980 avec les mêmes graphismes, la même carte et les mêmes IA pour les fantômes. Le jeu est codé en utilisant massivement les Design Patterns afin de séparer chaque fonctionnalité et séparer la partie gameplay de la partie moteur.",
+      "images": [
+        "Project_Pictures/Pacman1.jpg",
+        "Project_Pictures/Pacman2.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "LUMIPIC",
+      "subtitle": "PROJET D'INTERFACE HOMME MACHINE",
+      "tags": ["C++", "Qt", "CSS"],
+      "description": "Logiciel de création d'albums photo réalisé dans le cadre d'un cours d'Interface Homme-Machine. L'interface reprend la thématique de l'explorateur de fichier de Windows 10 et possède un thème sombre et un thème clair. Le programme permet d'explorer les dossiers contenus sur l'ordinateur et affiche seulement les fichiers image dans le répertoire courant. La création d'un album passe par la sélection puis l'ajout de plusieurs images dans un groupe que l'utilisateur peut nommer et supprimer.",
+      "images": [
+        "Project_Pictures/Lumipic1.jpg",
+        "Project_Pictures/Lumipic2.jpg",
+        "Project_Pictures/Lumipic3.jpg",
+        "Project_Pictures/Lumipic4.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "SIMULATEUR D'INONDATION",
+      "subtitle": "PROJET DE TRAVAIL EN ENVIRONNEMENT DE RECHERCHE ET STAGE",
+      "tags": ["Unity", "C#", "ECS", "Jobs system", "Marching cubes"],
+      "description": "Projet de TER (Travail en Environnement de Recherche) en lien avec l'IPGR. Le projet consiste à créer un simulateur d'inondation de musée afin d'apporter un élément pédagogique à la formation du personnel de musées dans le cadre de catastrophes comme une crue, une infiltration d'eau ou une rupture de canalisation. Développé sous Unity afin d'avoir une bonne compatibilité et la possibilité de déploiement de l'application sur le web. Le défi majeur est l'équilibre entre performance et qualité de rendu afin d'avoir une simulation la plus proche du réel tout en pouvant la faire fonctionner sur les machines les moins véloces.\n\nDéveloppé en binôme, ce projet a été continué en dehors du cadre scolaire sous la forme d'un stage de juin à juillet 2020.",
+      "images": [
+        "Project_Pictures/TER1.JPG",
+        "Project_Pictures/TER2.JPG",
+        "Project_Pictures/TER3.JPG"
+      ],
+      "videos": []
+    },
+    {
+      "title": "PORTFOLIO",
+      "subtitle": "PROJET PERSONNEL",
+      "tags": ["HTML", "CSS", "Javascript", "JQuery"],
+      "description": "Création de ce site afin de regrouper et présenter mes projets en un seul endroit dans le cadre de ma recherche de stage pour l'année 2021.",
+      "images": [
+        "Project_Pictures/Portfolio1.jpg",
+        "Project_Pictures/Portfolio2.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "EMETTEUR DE PARTICULES",
+      "subtitle": "PROJET D'ANIMATION ET RENDU",
+      "tags": ["C++", "OpenGL", "Qt", "GLSL"],
+      "description": "Projet d'Animation et Rendu. Création d'un système de particules qui émet de la fumée. Cette fumée peut recevoir des paramètres comme la couleur de la texture, le temps de vie et la fréquence d'émission d'une nouvelle particule. La texture est animée grâce à un atlas qui est découpé dans un shader qui y rajoute la couleur passée en paramètre.",
+      "images": [
+        "Project_Pictures/Smoke1.jpg",
+        "Project_Pictures/Smoke2.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/embed/AYxKeyE_J90"
+      ]
+    },
+    {
+      "title": "BOIDS",
+      "subtitle": "PROJET D'ANIMATION ET RENDU",
+      "tags": ["C++", "OpenGL", "Qt", "GLSL"],
+      "description": "Second projet d'Animation et Rendu consistant à créer une IA de poisson grâce aux boids. Intégration d'obstacles et de prédateurs sous la forme de sphères que les poissons évitent.",
+      "images": [
+        "Project_Pictures/Boids.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/embed/xxDmx36Ojn8"
+      ]
+    },
+    {
+      "title": "CHOREGRAPHIE DE DRONES",
+      "subtitle": "PROJET D'ANIMATION ET RENDU",
+      "tags": ["WebGL", "HTML", "CSS", "Javascript", "JQuery"],
+      "description": "Projet d'Animation et Rendu. Réalisation d'un visualisateur de Chorégraphie de drones en WebGL. Un fichier de keyframes est lu et permet de mettre en place des modèles de drones dont la lecture de l'animation est contrôlée par l'utilisateur. Il peut choisir d'afficher ou non une grille, les repères des axes, les trajectoires des drones, une ligne qui va du drone au sol, le nom de chaque drones, et il peut jouer ou stopper l'animation. Le programme permet également de détecter les collisions et les vitesses trop élevées des drones.",
+      "images": [
+        "Project_Pictures/Drones1.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "INTRODUCTION AUX SHADERS",
+      "subtitle": "PROJET D'ANIMATION ET RENDU",
+      "tags": ["GLSL"],
+      "description": "Cours d'introduction au langage GLSL et à l'écritre de shaders sur le site shadertoy.com. Réalisation d'un fragment shader permettant l'affichage d'un cycle jour/nuit au dessus de la mer.",
+      "images": [
+        "Project_Pictures/Shader1.jpg"
+      ],
+      "videos": [
+        "https://www.youtube.com/embed/64Q_hfpvP3E"
+      ]
+    },
+    {
+      "title": "PORTFOLIO V2",
+      "subtitle": "PROJET PERSONNEL",
+      "tags": ["HTML", "CSS", "Javascript", "JQuery"],
+      "description": "Projet en cours",
+      "images": [
+        "Project_Pictures/Portfolio V21.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "CATAN",
+      "subtitle": "PROJET PERSONNEL",
+      "tags": ["Unity", "C#"],
+      "description": "Projet en cours",
+      "images": [
+        "Project_Pictures/Catan1.jpg"
+      ],
+      "videos": []
+    }
+  ]

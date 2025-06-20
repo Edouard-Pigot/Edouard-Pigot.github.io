@@ -51,7 +51,8 @@ body[dark-theme] {
 }
 #main1 #main-outside-container {
   background: var(--background-color);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   margin: 1em;
   padding: 1em;
   box-sizing: border-box;
@@ -184,7 +185,8 @@ body[dark-theme] {
 }
 #main1ter #main-outside-container {
   background: var(--background-color);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   margin: 1em;
   padding: 1em;
   box-sizing: border-box;
@@ -332,7 +334,8 @@ body[dark-theme] {
 }
 #main1bis #main-outside-container {
   background: var(--background-color);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 0.5em;
   box-sizing: border-box;
   width: 63%;
@@ -465,7 +468,8 @@ body[dark-theme] {
 }
 #main2 nav {
   background-color: var(--background-color);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   display: flex;
 }
 #main2 nav #link-container {
@@ -498,7 +502,8 @@ body[dark-theme] {
 }
 #main2 #content-container #main-outside-container {
   background: var(--background-color);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 0.4em;
   box-sizing: border-box;
   width: 63%;
@@ -573,6 +578,4 @@ body[dark-theme] {
   display: flex;
   flex-direction: column;
   margin-left: -10em;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
