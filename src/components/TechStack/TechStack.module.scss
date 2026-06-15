@@ -1,0 +1,18 @@
+.tech-stack {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    border: 1px solid var(--decorator-color);
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 10px 10px 6px 10px;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-color: var(--main-text-color);
+      z-index: 1;
+    }
+  }
+}

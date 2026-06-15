@@ -1,0 +1,84 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-inline: 5rem;
+  padding-bottom: 5rem;
+  gap: 10rem;
+
+  button {
+    width: 100%;
+
+    & div > a, & div > p {
+      padding: 1rem !important;
+    }
+  }
+
+  .form {
+    flex: 0 0 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      input, 
+      textarea {
+        padding: 0.75rem 1rem;
+        border: 1px solid #d1d5db;
+        font-size: 1.5rem;
+        font-family: var(--font-lato);
+        transition: all 0.1s ease;
+        outline: none;
+        background-color: var(--main-bg-color);
+
+        &:focus {
+          border-color: var(--highlight-color);
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+    }
+
+    div label {
+      font-size: 1.5rem;
+    }
+
+    .status {
+      text-align: center;
+      margin-top: 1rem;
+      color: var(--highlight-color);
+
+      &[role="alert"]:contains("Failed") {
+        color: #ef4444;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contact {
+    .form {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+
+    .links {
+      max-width: 100%;
+    }
+  }
+}

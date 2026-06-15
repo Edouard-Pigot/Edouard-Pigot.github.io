@@ -1,0 +1,234 @@
+{
+  "loading": {
+    "loading": "Loading...",
+    "loaded": "Ready"
+  },
+  "home": {
+    "section_name": "home",
+    "subtitle": "Web Full-stack, C++ and 3D developper"
+  },
+  "about": {
+    "section_name": "about",
+    "description": "Multidisciplinary developer passionate about creating innovative solutions that meet user needs. My academic background and diverse professional experiences have allowed me to develop solid expertise in application and web software development, as well as project management. I am constantly self-learning to acquire new technical skills and refine my creativity on stimulating projects."
+  },
+  "projects": {
+    "section_name": "projects",
+    "details_button": "View project",
+    "work_in_progress": "In_progress",
+    "details": {
+      "tank_physics": {
+        "title": "Tank physics",
+        "description": "Project inspired by the tanks from the game Battlefield Heroes, and first project on the Unity game engine. Recovered 3D models from the game with BFMeshRipper, modified them with Blender to add bones controlling track deformation, and imported them into Unity. Created scripts in Unity controlling movement via keyboard keys, manipulating Unity's native WheelColliders. The wheels move the bones acting as suspensions, moving the track mesh, whose texture UVs are shifted to simulate rotation. Scripts also control the turret and cannon rotation with the mouse and firing with a reload delay. A draft implementation of online multiplayer connection and capture the flag logic (Battlefield's conquest mode) was also made."
+      },
+      "modeling_3d": {
+        "title": "3D Modeling",
+        "description": "Introductory course to modeling in Blender. Creation of 3D models including a katana, using reference images, and an octopus, using Bézier curves."
+      },
+      "tank_shooter": {
+        "title": "Tank shooter",
+        "description": "Game prototype on the Unity engine inspired by the Tanks! mini-game from Wii Play. Full projectile management without using Unity's physics via a script controlling movement and ricochets. Tank movement via keyboard, with chassis rotation calculation based on direction, and turret rotation calculated to face the aiming point. The tracks leave trails formed by a procedurally generated mesh."
+      },
+      "procedural_swords": {
+        "title": "Procedural swords",
+        "description": "Scripting course in Blender using Python allowing the automatic generation of swords based on user-provided parameters: blade length and thickness, handle length, guard width, tip type. Different parameter combinations allow generating different weapons (spears, claymores, rapiers...)."
+      },
+      "face_detector": {
+        "title": "Face detector",
+        "description": "Scripting course in Blender using Python allowing the traversal of a mesh, detection of incidence angles between each face, and coloring each of them according to their category: convex or concave."
+      },
+      "scripted_animation": {
+        "title": "Scripted animation",
+        "description": "Scripting course in Blender using Python. Modeling of a vehicle and scripting of an animation loop."
+      },
+      "blitz": {
+        "title": "Blitz",
+        "description": "Inspired by our games of Cabo between classes during the Computer Science Bachelor's degree, this year-end project was specified and developed in a group of four students. Features include the ability to create an account (with a verification email sent), invite players to a friend list and compare scores on a leaderboard, host and join games, customize card display, and chat with other players during a game."
+      },
+      "elevator_controller": {
+        "title": "Elevator controller",
+        "description": "Software engineering course project simulating an elevator management program, with information sharing between a central unit, the floors, and the elevator. The program adapts to any number of floors the elevator needs to manage."
+      },
+      "pacman": {
+        "title": "Pacman",
+        "description": "Second software engineering project, inspired by the game Pacman but with total creative freedom. For this project, the choice was made to exactly recreate the original Pacman game by consulting information from the gamedeveloper.com (formerly Gamasutra) website. The ghost AIs and entity movements are identical to the original, even the bugs! The game board consists of two grids: the main grid containing the logical representations of game objects (ghosts, walls, dots, Pacman...) and a sub-grid representing pixels, used for positioning ghost sprites and Pacman's movements (who can cut corners by turning diagonally within a main grid cell). Finally, the map is generated via an editable text file, allowing the creation of custom maps."
+      },
+      "lumipic": {
+        "title": "Lumipic",
+        "description": "Human-computer interaction course project. Software allowing users to view image files contained in computer folders, create albums, and move these images into them. The interface uses graphical elements from the Windows 10 file explorer, with a dark theme and a light theme."
+      },
+      "flood_simulator": {
+        "title": "Flood simulator",
+        "description": "Project proposed by the Institute for Risk Prevention and Management for the TER (Research Environment Work) course. Worked in pairs to improve a museum flood simulator intended for staff training in the event of water disasters. Building on the work of former students, we remade the fluid simulation and rendering systems to transition from simple planes rising in each room to calculating water movement in space, simulating water flowing through doors, windows, or stairs. Water rendering is done via Marching Cubes."
+      },
+      "portfolio_v1": {
+        "title": "Portfolio",
+        "description": "Creation of a portfolio website to gather and present my projects in one place as part of my search for an end-of-studies internship for the year 2021."
+      },
+      "particle_emitter": {
+        "title": "Particle emitter",
+        "description": "Animation and rendering course project. Creation of a particle system that emits smoke. The smoke consists of an animated texture via an atlas. Parameters allow modifying the color, lifetime, and emission frequency of the particles."
+      },
+      "boids": {
+        "title": "Boids",
+        "description": "Second animation and rendering project consisting of creating a fish school AI using boids."
+      },
+      "drone_choreography": {
+        "title": "Drone choreography",
+        "description": "Animation and rendering project. Creation of a drone choreography visualizer in WebGL. A keyframe file defines the drone animation, controlled by the user via a slider. Visual debugging allows displaying a grid, axes, drone trajectories, the drone's position relative to the ground, and the name of each drone. The program can detect collisions and excessive drone speeds, preventing accidents in real situations."
+      },
+      "shader_intro": {
+        "title": "Introduction to shaders",
+        "description": "Introductory course to the GLSL language and writing shaders on the shadertoy.com website. Creation of a fragment shader representing a day/night cycle over the sea with sunrise and sunset, moonrise and moonset, clouds, stars, and waves."
+      },
+      "portfolio_v2": {
+        "title": "Portfolio V2",
+        "description": "Updated the design and content of my portfolio, and added light and dark themes activated automatically based on the time or the user's choice."
+      },
+      "catan": {
+        "title": "Catan",
+        "description": "Experimentation to recreate the Catan board game in 3D on the Unity engine. The game board tiles are arranged randomly. A state machine manages the game loop, with the first two turns where players build their first settlements and gather resources, then the main loop where each player rolls the dice and performs available actions: moving the robber, stealing resources, building structures (settlement or road), and ending the turn."
+      },
+      "portfolio_v3": {
+        "title": "Portfolio V3",
+        "description": "Updated the design and content of my portfolio. The color theme is selected based on system preference or manual user choice. All texts are translated via i18next. The interfaces are fully responsive on desktop and mobile, and reusable via React components. The home section displays an interactive 3D model modeled by myself, with procedural animations, to demonstrate my 3D skills. The track mesh is a ThreeJS cylinder whose vertices are displaced along a predefined path via a shader. Optimization is maximized, with carousel media loaded on the fly, and video playback is activated only when visible on the screen."
+      },
+      "visit_paris": {
+        "title": "Visit Paris",
+        "description": "Web application project gathering the cultural and tourist sites in and around Paris that I have personally visited. The ultimate goal of this application is to allow tourists to organize their stay in Paris by easily spotting places that might interest them. Locations are displayed on a Leaflet map and are categorized by theme (monument, museum, park...). Tags allow filtering locations to match individual visit desires (historical period, visit theme, type of place, opening hours, price, temporary exhibitions, events...)."
+      }
+    }
+  },
+  "skills": {
+    "section_name": "skills",
+    "legend": {
+      "high": "Expertise",
+      "medium": "Proficient",
+      "low": "Fundamentals"
+    },
+    "groups": {
+      "frontend": "Front-end",
+      "backend": "Back-end & database",
+      "software": "Software & game dev",
+      "tools": "Tools & workflow"
+    }
+  },
+  "experiences": {
+    "section_name": "experience",
+    "contract_types": {
+      "internship": "Internship",
+      "temporary": "Fixed-term contract",
+      "permanent": "Permanent position"
+    },
+    "current_position": "Present",
+    "details": {
+      "credit_mutuel": {
+        "position": "Summer Assistant",
+        "company": "Crédit Mutuel"
+      },
+      "credit_mutuel_1": {
+        "description": "Marseille la Joliette branch.",
+        "tasks": "Sorting and moving the branch's physical archives.\\ Welcoming clients in person.\\ Data entry of corporate balance sheets to update client files."
+      },
+      "fiducial_cloud": {
+        "position": "Full-Stack Developer",
+        "company": "Fiducial Cloud",
+        "description": "Development of features for an open-source project management tool within a cloud infrastructure. Role as a full-stack developer to improve planning capabilities and data integration.",
+        "tasks": "Improvement of the open-source project management tool's features.\\ Development and maintenance of the planning module using PHP.\\ Design of scripts for extracting and processing data from internal databases."
+      },
+      "credit_mutuel_2": {
+        "description": "Mediterranean call center, where clients wishing to contact their advisor are redirected if they are unavailable.",
+        "tasks": "Collection of client identification information.\\ Identification of client needs and routing to the appropriate services.\\ Resolution of common problems related to accounts, bank cards, and other financial products.\\ Scheduling appointments for clients requiring branch assistance."
+      },
+      "ipgr": {
+        "position": "Unity 3D Developer",
+        "company": "Institute for the Prevention and Management of Urban Risks",
+        "description": "Development and optimization of an urban risk simulator, specifically a flood modeling tool within a museum. Role as a Unity developer to improve the accuracy of physical simulations and the performance of the rendering engine.",
+        "tasks": "Improvement of the flood simulation system by replacing static surfaces with dynamic physical simulation in C#.\\ Implementation of the marching cubes technique for realistic and fluid water rendering.\\ Performance optimization via a preliminary study and progressive integration of the Job System and ECS (Entity Component System).\\ Debugging and maintenance of the source code to ensure simulator stability."
+      },
+      "dassault_systemes": {
+        "position": "Software Engineer",
+        "company": "Dassault Systèmes"
+      },
+      "dassault_systemes_1": {
+        "description": "Development of advanced interaction solutions for virtual reality environments within an industrial software platform. As a software engineer, the goal was to improve the user experience and the extensibility of the existing system.",
+        "tasks": "Design and specification of new interaction methods dedicated to virtual reality interfaces.\\ Development of robust software modules in C++ while respecting a clear and extensible software architecture.\\ Design and exposure of APIs allowing client developers to extend the infrastructure's features.\\ Integration within a team following the Agile Scrum methodology to ensure development tracking and incremental delivery."
+      },
+      "dassault_systemes_2": {
+        "description": "Development and maintenance of user interface components intended for internal technical teams, aiming to harmonize and optimize development tools.",
+        "tasks": "Design and implementation of user interface components based on specifications gathered from clients and UX teams.\\ Corrective and evolutive maintenance of existing components to ensure tool reliability and performance.\\ Writing technical documentation to facilitate the integration and use of components by other development teams.\\ Active participation in Agile Scrum methodology rituals to organize the development cycle and deliver features iteratively."
+      }
+    }
+  },
+  "education": {
+    "section_name": "education",
+    "details": {
+      "bac": {
+        "name": "High School Diploma in Science and Technology of Industry and Sustainable Development (STI2D)",
+        "school": "Pierre-Gilles de Gennes High School",
+        "description": "Information Systems and Numeric Track",
+        "tasks": ""
+      },
+      "dut": {
+        "name": "Two-year University Degree in Technology (DUT) in Computer Science",
+        "school": "Technology Institute of Aix-en-Provence",
+        "description": "Android programming option",
+        "tasks": "Algorithms & Programming: C, Java, C++ languages\\Web Development: Client/Server Architecture (HTML5, CSS3, JavaScript, PHP)\\Databases: Design (Merise/UML) and Operation (SQL)\\Software Engineering: Object Modeling and Design Methodologies\\Systems & Networks: Linux/Unix Administration, Network Services, and Security\\Mobile Programming: Android Application Development\\Discrete Mathematics: Logic, Sets, and Graph Theory\\Algebra & Analysis: Linear Algebra and Matrix Computation\\Probability & Statistics: Data Analysis and Modeling\\Operations Research: Optimization and Decision Support\\Project Management: Agile Methods, Planning, and Tracking\\Economics & Law: IT Law, Organizational Functioning\\Technical English: Professional Communication and Documentation\\Expression-Communication: Technical Writing and Presentation Techniques"
+      },
+      "licence": {
+        "name": "Bachelor's Degree in Computer Science",
+        "school": "Marseille Luminy Faculty of Science",
+        "description": "HCI and 3D Modeling options",
+        "tasks": "Advanced Object-Oriented Programming: In-depth Java and Design Patterns.\\Systems Architecture: Internal Processor Operation and Memory Management.\\Operating Systems: System Programming in C (Processes, Signals, Pipes).\\Networks: Communication Protocols and TCP/IP Layers.\\Software Engineering: Software Development Lifecycle, Testing, and Validation.\\Algorithms & Complexity: Study of Algorithmic Efficiency.\\Computability & Logic: Automata, Grammars, and Limits of Computation.\\Databases: Relational Model, Normalization, and Transactions.\\Mathematics for Computer Science: Linear Algebra, Probability, and Numerical Analysis."
+      },
+      "master": {
+        "name": "Master's Degree in Computer Science",
+        "school": "Marseille Luminy Faculty of Science",
+        "description": "Geometry and Computer Graphics Track",
+        "tasks": "Real-Time Rendering: Graphics Pipeline, Shaders (GLSL), and Graphics APIs (OpenGL/Vulkan).\\3D Animation: Particle Systems, Forward/Inverse Kinematics, and Game Engines.\\Geometric Modeling: Bézier Curves, Splines, and Subdivision Surfaces.\\Mesh Processing: Topology, Smoothing, Compression, and 3D Surface Reconstruction.\\Computational Geometry: Delaunay Triangulations, Voronoi Diagrams, and Spatial Data Structures.\\Digital Image Processing: Filtering, Segmentation, and Frequency Analysis.\\Computer Vision: Pattern Recognition, Image Registration, and Camera Calibration.\\Machine Learning: Introduction to Neural Networks Applied to Images."
+      }
+    }
+  },
+  "contact": {
+    "section_name": "contact",
+    "name": "Name",
+    "nameExample": "John Doe",
+    "mail": "Mail",
+    "mailExample": "email@example.com",
+    "message": "Message",
+    "messageExample": "Hello, I am interested in your profile, please contact me!",
+    "send": "Send",
+    "fail": "Error while sending, try again",
+    "success": "Message sent",
+    "sending": "Sending...",
+    "resume": "Resume",
+    "resume_link": "/resumes/Resume_Edouard-PIGOT.pdf",
+    "resume_name": "Resume Edouard PIGOT.pdf"
+  },
+  "footer": {
+    "copyright": ", Edouard PIGOT, All rights reserved"
+  },
+  "theme": {
+    "toggle_aria_dark": "Switch to dark theme",
+    "toggle_aria_light": "Switch to light theme"
+  },
+  "language": {
+    "toggle_aria_en": "Switch to English",
+    "toggle_aria_fr": "Passer en français"
+  },
+  "dates": {
+    "months": {
+      "1": "January",
+      "2": "February",
+      "3": "March",
+      "4": "April",
+      "5": "May",
+      "6": "June",
+      "7": "July",
+      "8": "August",
+      "9": "September",
+      "10": "October",
+      "11": "November",
+      "12": "December"
+    }
+  }
+}

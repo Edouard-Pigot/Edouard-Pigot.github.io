@@ -1,0 +1,90 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--main-text-color);
+    fill: var(--main-text-color);
+    stroke: var(--main-text-color);
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+    
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+        
+    pointer-events: all;
+
+    position: relative;
+
+    
+    border: 1px solid var(--highlight-color);
+
+    &:disabled {
+        border: 1px solid var(--decorator-color);
+        cursor: not-allowed;
+        opacity: 0.5;
+        color: var(--decorator-color);
+    }
+
+    &:hover:not(:disabled) .button-text {
+        background-color: var(--highlight-color);
+        color: var(--main-bg-color);
+        fill: var(--main-bg-color);
+        stroke: var(--main-bg-color);
+    }
+
+    .button-text {
+        font-family: var(--font-oxanium);
+        font-weight: 500;
+        font-size: 1rem;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        height: 100%;
+
+        transition: background-color 0.2s, color 0.2s, fill 0.2s;
+
+        > * {
+            text-decoration: none;
+            color: var(--main-text-color);
+            fill: var(--main-text-color);
+            stroke: var(--main-text-color);
+        }
+
+        &:hover > * {
+            color: var(--main-bg-color);
+            fill: var(--main-bg-color);
+            stroke: var(--main-bg-color);
+        }
+
+        & > a, & > p {
+            margin-top: 3px;
+            font-weight: 500;
+            font-size: 1.2rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            text-decoration: none;
+            color: var(--main-text-color);
+            transition: color 0.2s;
+            height: 100%;
+            width: 100%;
+            padding: 5px 10px;
+        }
+    }
+
+    &.active > * {
+        color: var(--main-text-color);
+        fill: var(--main-text-color);
+        stroke: var(--main-text-color);
+        background-color: var(--main-bg-color);
+    }
+}

@@ -1,0 +1,50 @@
+@use "sass:color";
+
+$main-color: hsl(17, 89%, 48%);
+
+$light: hsl(0, 0%, 95%);
+$light-grey: hsl(12, 3%, 70%);
+$dark-grey: hsl(0, 0%, 33%);
+$dark: hsl(0, 0%, 1%);
+$dark-decoration: hsl(0, 0%, 30%);
+$light-decoration: hsl(0, 0%, 80%);
+
+:root {
+    color-scheme: light;
+    --main-text-color: #{$dark};
+
+    --contrast-text-color: #{$light};
+
+    --decorator-color: #{$light-decoration};
+
+    --main-bg-color: #{$light};
+    --contrast-bg-color: #{$dark};
+
+    --highlight-color: #{$main-color};
+    --highlight-high-color: #{$main-color};
+    --highlight-medium-color: #{$dark};
+    --highlight-low-color: #{$light-grey};
+
+    --3d-wireframe-color: #{$light-grey};
+    --3d-body-color: #{$light};
+}
+
+[data-theme='dark'] {
+    color-scheme: dark;
+    --main-text-color: #{$light};
+
+    --contrast-text-color: #{$dark};
+
+    --decorator-color: #{$dark-decoration};
+
+    --main-bg-color: #{$dark};
+    --contrast-bg-color: #{$light};
+
+    --highlight-color: #{$main-color};
+    --highlight-high-color: #{$main-color};
+    --highlight-medium-color: #{$light-grey};
+    --highlight-low-color: #{$dark-grey};
+
+    --3d-wireframe-color: #{$dark-grey};
+    --3d-body-color: #{$dark};
+}
